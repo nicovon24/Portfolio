@@ -9,7 +9,7 @@ import Works from "./components/Works"
 import Contact from "./components/Contact"
 
 function App() {return (
-    <div className='App main-bg'>
+    <div className='App'>
 			<Navbar/>
 
 			<Routes>

@@ -10,7 +10,7 @@ const Navbar = () => {
 
 	return (
 		<nav>
-			<div className="flex justify-between items-center pt-6 pb-2 pl-3 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto">
+			<div className="overflow-hidden flex justify-between items-center pt-6 pb-2 pl-3 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto">
 				{/* logo and Nicolás full-stack. Both in desktop and phone */}
 				<div className="flex items-center">
 					<img src={logo_white} className="h-16 w-24" />
