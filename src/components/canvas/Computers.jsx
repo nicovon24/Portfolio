@@ -21,8 +21,8 @@ const Computers = ({isMobile}) => {
         shadow-mapSize={1024}
       />
       <primitive 
-        object={computer.scene}
-        scale={isMobile ? 0.45 : 0.7}
+        object={computer.scene /* computer img */}
+        scale={isMobile ? 0.45 : 0.7 /* computer size */}
         position={isMobile ? [0, -1.5, -1.5] : [0, -2.5, -1]}
         rotation={[-0.01, -0.2, -0.1]}
       />
@@ -33,6 +33,7 @@ const Computers = ({isMobile}) => {
 const ComputersCanvas = () => {
   const [isMobile, setIsMobile] = useState(false)
 
+  //*Resizing the computers for mobile devices
   useEffect(()=>{
     const mediaQuery = window.matchMedia('(max-width: 650px')
 
@@ -57,7 +58,7 @@ const ComputersCanvas = () => {
       gl={{ preserveDrawingBuffer: true }}
     >
       <Suspense
-        fallback={<CanvasLoader/>}
+        fallback={<CanvasLoader/>} //loader until threejs animation loads
       >
         <OrbitControls 
           enableZoom={false}

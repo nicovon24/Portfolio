@@ -16,6 +16,9 @@ import {
 	redux,
 	tailwind,
 	postgres,
+	star_wars,
+	railway,
+	vercel,
 } from "../assets";
 
 export const navLinks = [
@@ -35,20 +38,24 @@ export const navLinks = [
 
 const services = [
 	{
-		title: "Web Developer",
-		icon: web,
-	},
-	{
 		title: "Frontend developer",
-		icon: mobile,
+		icon: "fa-solid fa-computer p-3",
+		// icon: mobile,
 	},
 	{
 		title: "Backend Developer",
-		icon: backend,
+		icon: "fa-solid fa-database px-4 py-3",
+		// icon: backend,
 	},
 	{
-		title: "Coder Enthusiast",
-		icon: creator,
+		title: "Sports enthusiast",
+		icon: "fa-regular fa-futbol px-4 py-3",
+		// icon: creator,
+	},
+	{
+		title: "Star Wars fan",
+		icon: star_wars,
+		// icon: web,
 	},
 ];
 
@@ -70,7 +77,7 @@ const technologies = [
 		icon: reactjs,
 	},
 	{
-		name: "Redux Toolkit",
+		name: "Redux",
 		icon: redux,
 	},
 	{
@@ -92,6 +99,14 @@ const technologies = [
 	{
 		name: "postgres",
 		icon: postgres,
+	},
+	{
+		name: "railway",
+		icon: railway,
+	},
+	{
+		name: "vercel",
+		icon: vercel,
 	},
 ];
 

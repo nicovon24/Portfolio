@@ -1,25 +1,27 @@
-import { useState } from 'react'
-import { Route, Routes } from 'react-router-dom'
-// import reactLogo from './assets/react.svg'
-// import viteLogo from '/vite.svg'
-import './App.css'
-import Navbar from "./components/Navbar"
-import About from "./components/About"
-import Works from "./components/Works"
-import Contact from "./components/Contact"
+import "./App.css";
+import Navbar from "./components/Navbar";
+import Home from "./pages/Home";
+// import { useState } from 'react'
+// import { Route, Routes } from 'react-router-dom'
+// import About from "./components/About"
+// import Works from "./components/Works"
+// import Contact from "./components/Contact"
 
-function App() {return (
-    <div className='App'>
-			<Navbar/>
+function App() {
+	return (
+		<div className="App">
+			<Navbar />
 
-			<Routes>
+			<Home />
+
+			{/* <Routes>
 				<Route exact path="/about" element={<About/>}/>
 				<Route exact path="/work" element={<Works/>}/>
 				<Route exact path="/contact" element={<Contact/>}/>
-			</Routes>
+			</Routes> */}
 			{/* <p className='read-the-docs'>3D Developer Portfolio</p> */}
 		</div>
-  )
+	);
 }
 
-export default App
+export default App;

@@ -18,6 +18,12 @@ import mongo from "./tech/mongo.png";
 import nodejs from "./tech/nodejs.png";
 import postgres from "./tech/postgres.png";
 import git from "./tech/git.png";
+import csharp from "./tech/c-sharp.png";
+import railway from "./tech/railway.png";
+import vercel from "./tech/vercel.png";
+
+import yo from "./yo_celeste.png";
+import star_wars from "./star_wars.png";
 
 export {
 	logo,
@@ -39,4 +45,9 @@ export {
 	redux,
 	tailwind,
 	postgres,
+	yo,
+	star_wars,
+	csharp,
+	railway,
+	vercel
 };

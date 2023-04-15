@@ -85,6 +85,23 @@
 }
 
 .App{
-  background-image: url("./assets/bg.png");
-  min-height: 100vh;
+  background-color: #0e1a2e;
+  /* background-image: url("./assets/bg.png"); */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.ball-icon{
+  transition: opacity 0.5s ease-in-out;
+}
+
+.ball-text {
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
+  text-transform: capitalize;
+}
+
+.ball-icon:hover > .ball-text {
+  opacity: 1;
 }

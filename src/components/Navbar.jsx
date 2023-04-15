@@ -10,11 +10,11 @@ const Navbar = () => {
 
 	return (
 		<nav>
-			<div className="overflow-hidden flex justify-between items-center pt-6 pb-2 pl-3 md:w-10/12 lg:w-9/12 xl:w-8/12 mx-auto">
+			<div className="overflow-hidden flex justify-between items-center pt-6 pb-2 px-8">
 				{/* logo and Nicolás full-stack. Both in desktop and phone */}
 				<div className="flex items-center">
 					<img src={logo_white} className="h-16 w-24" />
-					
+
 					{/* desktop, in the same line */}
 					<div className="hidden sm:flex font-bold">
 						<h3 className="text-white text-left">Nicolás </h3>
@@ -34,20 +34,23 @@ const Navbar = () => {
 
 				{/* desktop menu */}
 				<ul className="hidden sm:flex items-center">
-					{navLinks?.map((l) => {
+					<i className={`fa-solid fa-robot-astromech text-black bg-main-green text-3xl rounded-full`}></i>
+					{navLinks?.map((l, index) => {
 						return (
 							<li key={l?.id}>
-								<NavLink
+								<a
+									href={`#${l?.id}`}
 									to={l?.id}
 									className={`
-              text-slate-300 text-md cursor-pointer px-4
+              text-md cursor-pointer px-4
               ${
-															active === l?.title ? "text-white underline" : "text-secondary"
+															active === l?.title ? "text-main-green" : "text-white"
 														} hover:text-white`}
 									onClick={() => setActive(l?.title)}
 								>
-									{l?.title}
-								</NavLink>
+									<span className="text-main-green">0{index + 1}. </span>
+									<span className="hover:text-main-green ">{l?.title}</span>
+								</a>
 							</li>
 						);
 					})}
@@ -65,42 +68,26 @@ const Navbar = () => {
           top-20 right-0 mx-4 my-2 min-w-[140px] z-10 rounded-xl`}
 					>
 						<ul className="">
-							{navLinks?.map((l) => {
+							{navLinks?.map((l, index) => {
 								return (
 									<li key={l?.id}>
-										<NavLink
+										<a
+											href={`#${l?.id}`}
 											to={l?.id}
 											className={`
-              text-slate-300 text-md cursor-pointer px-4
-              ${
-															active === l?.title ? "text-white underline" : "text-secondary"
-														} hover:text-white`}
-											onClick={() => {
-												setToggleMenu(prev=>!prev)
-												setActive(l?.title)
-											}}
+										text-slate-300 text-md cursor-pointer px-4
+											${active === l?.title ? "text-main-green" : "text-white"} hover:text-white`}
+											onClick={() => setActive(l?.title)}
 										>
-											{l?.title}
-										</NavLink>
+											<span className="text-main-green">0{index + 1}. </span>
+											<span className="hover:text-main-green">{l?.title}</span>
+										</a>
 									</li>
 								);
 							})}
 						</ul>
 					</div>
 				</div>
-				{/* {toggleMenu &&  
-        <div>
-          <ul className='block sm:hidden items-center absolute right-0 top-24 '>
-            {navLinks?.map(l=>{
-              return <li key={l?.id} >
-                <NavLink to={l?.id} className={`
-                text-slate-300 text-md cursor-pointer px-4
-                ${active===l?.title ? "text-white underline" : "text-secondary"} hover:text-white`}
-                onClick={()=>setActive(l?.title)}>{l?.title}</NavLink>
-              </li>
-            })}
-          </ul>
-        </div>} */}
 			</div>
 		</nav>
 	);
