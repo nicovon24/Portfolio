@@ -11,6 +11,8 @@ const styles = {
 	sectionHeadText:
 		"text-main-green font-black md:text-[60px] sm:text-[50px] xs:text-[40px] text-[30px]",
 	sectionSubText: "sm:text-[18px] text-[14px] uppercase tracking-wider",
+	hoverChangeBorderAndColor:
+		"text-main-green border-main-green hover:text-white hover:border-white hover:opacity-90 duration-500",
 };
 
 export { styles };

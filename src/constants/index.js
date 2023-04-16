@@ -1,6 +1,4 @@
 import {
-	logo,
-	logo_white,
 	backend,
 	creator,
 	mobile,
@@ -19,41 +17,92 @@ import {
 	star_wars,
 	railway,
 	vercel,
+	mercadopago,
 } from "../assets";
 
 export const navLinks = [
 	{
 		id: "about",
-		title: "About",
+		english: "About",
+		spanish: "Sobre mi",
+	},
+	{
+		id: "tech",
+		english: "Tech",
+		spanish: "Tech",
 	},
 	{
 		id: "work",
-		title: "Work",
+		english: "Work",
+		spanish: "Trabajos",
 	},
 	{
 		id: "contact",
-		title: "Contact",
+		english: "Contact",
+		spanish: "Contacto",
 	},
 ];
+const titles = {
+	hero: {
+		spanish: {
+			title: "¡Hola! Soy Nico 👋",
+			subtitle:
+				"Lorem ipsum dolor sit amet consectetur \n adipisicing elit maxime",
+			check_cv: "¡Revisá mi CV!",
+		},
+		english: {
+			title: "Hi, here Nico 👋",
+			subtitle:
+				"Lorem ipsum dolor sit amet consectetur \n adipisicing elit maxime",
+			check_cv: "Check out my CV!",
+		},
+	},
+	about: {
+		spanish: {
+			title: "Summary",
+			subtitle: "01. About me",
+			text: "Lorem ipsum dolor sit amet consectetur \n adipisicing elit maxime",
+		},
+		english: {
+			title: "Introducción",
+			subtitle: "01. Sobre mí",
+			text: "Lorem ipsum dolor sit amet consectetur \n adipisicing elit maxime",
+		},
+	},
+	tech: {
+		spanish: {
+			title: "Tecnologías",
+			subtitle: "02. Conocimientos",
+		},
+		english: {
+			title: "Technologies",
+			subtitle: "02. Tech stack",
+		},
+	},
+};
 
 const services = [
 	{
-		title: "Frontend developer",
+		spanish: "Desarrollador Front-end",
+		english: "Frontend developer",
 		icon: "fa-solid fa-computer p-3",
 		// icon: mobile,
 	},
 	{
-		title: "Backend Developer",
+		spanish: "Desarrollador Back-end",
+		english: "Backend Developer",
 		icon: "fa-solid fa-database px-4 py-3",
 		// icon: backend,
 	},
 	{
-		title: "Sports enthusiast",
+		spanish: "Amante del deporte",
+		english: "Sports enthusiast",
 		icon: "fa-regular fa-futbol px-4 py-3",
 		// icon: creator,
 	},
 	{
-		title: "Star Wars fan",
+		spanish: "Fan de Star Wars",
+		english: "Star Wars fan",
 		icon: star_wars,
 		// icon: web,
 	},
@@ -93,16 +142,20 @@ const technologies = [
 		icon: git,
 	},
 	{
-		name: "mongo",
+		name: "mongo DB",
 		icon: mongo,
+	},
+	{
+		name: "railway",
+		icon: railway,
 	},
 	{
 		name: "postgres",
 		icon: postgres,
 	},
 	{
-		name: "railway",
-		icon: railway,
+		name: "MP Api",
+		icon: mercadopago,
 	},
 	{
 		name: "vercel",
@@ -219,4 +272,4 @@ const projects = [
 	// },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, testimonials, projects, titles };

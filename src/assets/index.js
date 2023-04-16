@@ -1,5 +1,5 @@
-import logo from "./logo.png";
 import logo_white from "./logo_white.png";
+import logo_celeste from "./logo_celeste.png";
 import backend from "./backend.png";
 import creator from "./creator.png";
 import mobile from "./mobile.png";
@@ -21,13 +21,17 @@ import git from "./tech/git.png";
 import csharp from "./tech/c-sharp.png";
 import railway from "./tech/railway.png";
 import vercel from "./tech/vercel.png";
+import mercadopago from "./tech/mercado-pago.png";
 
 import yo from "./yo_celeste.png";
 import star_wars from "./star_wars.png";
 
+import english from "./english.png";
+import spanish from "./spanish.png";
+
 export {
-	logo,
 	logo_white,
+	logo_celeste,
 	backend,
 	creator,
 	mobile,
@@ -49,5 +53,8 @@ export {
 	star_wars,
 	csharp,
 	railway,
-	vercel
+	vercel,
+	mercadopago,
+	english,
+	spanish,
 };

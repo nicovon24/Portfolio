@@ -1,17 +1,20 @@
 import React from 'react'
 import {BallCanvas} from "./canvas/Ball"
 import SectionWrapper from "../hoc/SectionWrapper"
-import {technologies} from "../constants/index"
+import {technologies, titles} from "../constants/index"
 import { motion } from "framer-motion";
 import { styles } from "../styles";
 import { textVariant } from "../utils/motion";
+import { useSelector } from 'react-redux';
 
 const Tech = () => {
+  const {language} = useSelector(s=>s)
+  const {title, subtitle} = titles?.tech[language]
   return (
-    <div>
+    <div id="tech">
       <motion.div variants={textVariant()} className="mt-8 mb-4 text-left">
-          <p className={`${styles.sectionSubText} text-white`}>02. Tech stack</p>
-          <h2 className={`${styles.sectionHeadText} text-main-green`}>Technologies</h2>
+          <p className={`${styles.sectionSubText} text-white`}> {subtitle}</p>
+          <h2 className={`${styles.sectionHeadText} text-main-green`}>{title}</h2>
       </motion.div>
       {/* para que queden centrados los ultimos, justify-center y right-12 */}
       <div className='flex flex-wrap gap-x-10 gap-y-10 justify-center relative right-12'>

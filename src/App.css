@@ -85,11 +85,11 @@
 }
 
 .App{
-  background-color: #0e1a2e;
+  /* background-color: #0e1a2e; */
   /* background-image: url("./assets/bg.png"); */
-  background-position: center;
+  /* background-position: center;
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat; */
 }
 
 .ball-icon{
@@ -104,4 +104,16 @@
 
 .ball-icon:hover > .ball-text {
   opacity: 1;
+}
+
+/* style in navbar choose language sweet alert buttons */
+.swal-footer{
+  display: flex; 
+  justify-content: center;
+}
+.swal-btn-cancel:hover{
+  background-color: #dc2626 !important;
+}
+.swal-btn-ok:hover{
+  background-color: #15803d !important;
 }

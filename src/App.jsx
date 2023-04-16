@@ -1,6 +1,7 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
+import { useDispatch, useSelector } from "react-redux";
 // import { useState } from 'react'
 // import { Route, Routes } from 'react-router-dom'
 // import About from "./components/About"
@@ -8,8 +9,9 @@ import Home from "./pages/Home";
 // import Contact from "./components/Contact"
 
 function App() {
+
 	return (
-		<div className="App">
+		<div className="App bg-main-bg bg-cover bg-no-repeat">
 			<Navbar />
 
 			<Home />

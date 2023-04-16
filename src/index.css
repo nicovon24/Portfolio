@@ -6,11 +6,16 @@
 @tailwind components;
 @tailwind utilities;
 
+/*for navbar */
+@font-face {
+  font-family: 'SF Mono';
+  src: url('./assets/fonts/SFMonoMedium.otf') format('opentype');
+}
+
 *{
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-	font-family: 'Poppins', 'Helvetica Neue';
 }
 
 .hash-span {
@@ -197,3 +202,7 @@
 			-2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
 	}
 }
+
+/* p, span, li, a{
+	font-family: 'Poppins', 'Helvetica Neue';
+} */
