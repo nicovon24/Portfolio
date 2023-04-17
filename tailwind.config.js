@@ -11,6 +11,7 @@ module.exports = {
 				primary: "#050816" /* text-primary */,
 				"main-green": "#64ffda",
 				"main-blue": "#0e1a2e",
+				"main-pink": "#ff69b4 ",
 				secondary: "#aaa6c3",
 				tertiary: "#151030",
 				"black-100": "#100d25",

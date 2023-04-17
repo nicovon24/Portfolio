@@ -18,6 +18,9 @@ import {
 	railway,
 	vercel,
 	mercadopago,
+	express,
+	sequelize,
+	trello,
 } from "../assets";
 
 export const navLinks = [
@@ -108,60 +111,75 @@ const services = [
 	},
 ];
 
-const technologies = [
-	{
-		name: "HTML 5",
-		icon: html,
-	},
-	{
-		name: "CSS 3",
-		icon: css,
-	},
-	{
-		name: "JavaScript",
-		icon: javascript,
-	},
-	{
-		name: "React JS",
-		icon: reactjs,
-	},
-	{
-		name: "Redux",
-		icon: redux,
-	},
-	{
-		name: "Tailwind CSS",
-		icon: tailwind,
-	},
-	{
-		name: "Node JS",
-		icon: nodejs,
-	},
-	{
-		name: "git",
-		icon: git,
-	},
-	{
-		name: "mongo DB",
-		icon: mongo,
-	},
-	{
-		name: "railway",
-		icon: railway,
-	},
-	{
-		name: "postgres",
-		icon: postgres,
-	},
-	{
-		name: "MP Api",
-		icon: mercadopago,
-	},
-	{
-		name: "vercel",
-		icon: vercel,
-	},
-];
+const technologies = {
+	"Front end": [
+		{
+			name: "HTML 5",
+			icon: html,
+		},
+		{
+			name: "CSS 3",
+			icon: css,
+		},
+		{
+			name: "React JS",
+			icon: reactjs,
+		},
+		{
+			name: "Redux",
+			icon: redux,
+		},
+		{
+			name: "Tailwind CSS",
+			icon: tailwind,
+		},
+	],
+	"Back end and DB": [
+		{
+			name: "Node JS",
+			icon: nodejs,
+		},
+		{
+			name: "express",
+			icon: express,
+		},
+		{
+			name: "sequelize",
+			icon: sequelize,
+		},
+		{
+			name: "postgreSQL",
+			icon: postgres,
+		},
+		{
+			name: "mongo DB",
+			icon: mongo,
+		},
+	],
+	Tools: [
+		{
+			name: "JavaScript",
+			icon: javascript,
+		},
+		{
+			name: "railway",
+			icon: railway,
+		},
+
+		{
+			name: "vercel",
+			icon: vercel,
+		},
+		{
+			name: "trello",
+			icon: trello,
+		},
+		{
+			name: "git",
+			icon: git,
+		},
+	],
+};
 
 const experiences = [
 	// {

@@ -22,6 +22,9 @@ import csharp from "./tech/c-sharp.png";
 import railway from "./tech/railway.png";
 import vercel from "./tech/vercel.png";
 import mercadopago from "./tech/mercado-pago.png";
+import trello from "./tech/trello.png";
+import sequelize from "./tech/sequelize.png";
+import express from "./tech/express.png";
 
 import yo from "./yo_celeste.png";
 import star_wars from "./star_wars.png";
@@ -60,6 +63,9 @@ export {
 	mercadopago,
 	english,
 	spanish,
+	sequelize,
+	express,
+	trello,
 	// cursor,
 	// cursor_pointer,
 };

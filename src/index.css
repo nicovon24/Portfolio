@@ -45,9 +45,19 @@
 }
 
 .green-pink-gradient {
-	background: '#64ffda';
-	background: linear-gradient(90.13deg, rgb(209, 231, 232) 1.9%, #64ffda 97.5%);
-	background: -webkit-linear-gradient(-90.13deg, rgb(209, 231, 232) 1.9%, #64ffda 97.5%);
+	height: auto;
+	width: auto;
+  background: '#64ffda';
+  background: linear-gradient(90.13deg, #64ffda 1.9%, #64ffda 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #64ffda 1.9%, #64ffda 97.5%);
+}
+
+.green-pink-gradient:hover {
+  background: '#ff69b4';
+  background: linear-gradient(90.13deg, #ff69b4 1.9%, #ff69b4 97.5%);
+  background: -webkit-linear-gradient(-90.13deg, #ff69b4 1.9%, #ff69b4 97.5%);
+	opacity: 0.9;
+	
 }
 
 .orange-text-gradient {

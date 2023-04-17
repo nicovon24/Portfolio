@@ -26,8 +26,8 @@ const ServiceCard = ({service, index}) => {
         className="bg-[#112240] rounded-[20px] py-5 px-12 min-h-[280px]
         flex justify-evenly items-center flex-col">
           
-          {title.includes("Star Wars") ? <img src={icon} alt={title} className="w-16 h-16 p-1 rounded-full bg-main-green object-contain"/> 
-          : <i className={`${icon} text-black bg-main-green text-3xl rounded-full`}></i>}
+          {title.includes("Star Wars") ? <img src={icon} alt={title} className="w-16 h-16 p-1 rounded-full bg-main-green hover:bg-main-pink object-contain"/> 
+          : <i className={`${icon} text-black bg-main-green hover:bg-main-pink opacity-90 duration-500 text-3xl rounded-full`}></i>}
           <h3 className="text-secondary text-[20px] font-bold ry">{title}</h3>
         </div>
       </motion.div>
@@ -44,7 +44,7 @@ const About = () => {
 			<div className="mx-auto">
         <motion.div variants={textVariant()} className="mt-8 text-left">
           <p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>
-          <h2 className={`${styles.sectionHeadText} text-main-green`}>{title}</h2>
+          <h2 className={`${styles.sectionHeadText} text-main-green hover:text-main-pink`}>{title}</h2>
         </motion.div>
 
         <motion.p variant={fadeIn("", "", 0.1, 1)}

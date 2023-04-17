@@ -126,16 +126,16 @@ const Navbar = () => {
 										href={`#${l?.id}`}
 										to={l?.id}
 										className={`
-              text-sm cursor-pointer px-4
-              ${
+										text-sm cursor-pointer px-4
+									${
 															active === l?.spanish ? "text-main-green" : "text-white"
 														} hover:text-white`}
 										onClick={() => setActive(l?.spanish)}
 									>
-										<span className="text-main-green text-[13px] xl:text-[15px]  cursor-pointer">
+										<span className={`text-main-green hover:text-main-pink text-[13px] xl:text-[15px]  cursor-pointer ${styles?.hoverChangeColorToPink}`}>
 											0{index + 1}.{" "}
 										</span>
-										<span className="hover:text-main-green text-[14px] xl:text-[14px] relative left-[-5px] cursor-pointer">
+										<span className={`text-[14px] xl:text-[14px] relative left-[-5px] cursor-pointer ${styles?.hoverChangeColorToPink}`}>
 											{l[language.toLowerCase()]}
 										</span>
 									</a>
@@ -192,9 +192,9 @@ const Navbar = () => {
 										to={l?.id}
 										className={`
               			cursor-pointer px-4
-              		${
-																	active === l?.spanish ? "text-main-green" : "text-white"
-																} hover:text-white`}
+										${
+											active === l?.spanish ? "text-main-green" : "text-white"
+										} hover:text-white`}
 										onClick={() => {
 											setActive(l?.spanish);
 											setToggleMenu(false);
