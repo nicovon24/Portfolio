@@ -1,27 +1,24 @@
 import "./App.css";
 import Navbar from "./components/Navbar";
-import Home from "./pages/Home";
-import { useDispatch, useSelector } from "react-redux";
-// import { useState } from 'react'
-// import { Route, Routes } from 'react-router-dom'
-// import About from "./components/About"
-// import Works from "./components/Works"
-// import Contact from "./components/Contact"
+import Home from "./pages/Home"
+import React from "react";
+// import Cursor from 'react-animated-cursor';
 
 function App() {
 
 	return (
 		<div className="App bg-main-bg bg-cover bg-no-repeat">
+
+			{/* <AnimatedCursor /> */}
+
 			<Navbar />
 
 			<Home />
 
-			{/* <Routes>
-				<Route exact path="/about" element={<About/>}/>
-				<Route exact path="/work" element={<Works/>}/>
-				<Route exact path="/contact" element={<Contact/>}/>
-			</Routes> */}
-			{/* <p className='read-the-docs'>3D Developer Portfolio</p> */}
+<div class="scrollbar" id="style-1">
+  <div class="force-overflow"></div>
+</div>
+
 		</div>
 	);
 }

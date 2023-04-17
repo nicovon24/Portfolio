@@ -30,7 +30,24 @@ module.exports = {
 				"hero-pattern": "url('/src/assets/herobg.png')",
 				"main-bg": "url('./src/assets/bg_nuevo.svg')",
 			},
+			keyframes: {
+				"open-menu": {
+					"0%": { transform: "scaleY(0)" },
+					"80%": { transform: "scaleY(1.2)" },
+					"100%": { transform: "scaleY(2)" },
+				},
+			},
+			animation: {
+				"open-menu": "open-menu 0.5s ease-in-out forwards",
+			},
 		},
 	},
-	plugins: [],
+	plugins: [
+		require("postcss-import"),
+		require("tailwindcss"),
+		require("autoprefixer"),
+	],
+	variants: {
+		cursor: ["responsive", "hover", "focus"],
+	},
 };

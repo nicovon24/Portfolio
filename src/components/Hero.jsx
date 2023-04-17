@@ -1,6 +1,6 @@
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import { styles } from "../styles";
-import { ComputersCanvas } from "./canvas";
+// import { ComputersCanvas } from "./canvas";
 import {yo} from "../assets/index"
 import { useSelector } from "react-redux";
 import { titles } from "../constants";
@@ -15,6 +15,7 @@ const Hero = () => {
 	const titleName = titleSplit[titleSplit.length-2]
 	const titleWave = titleSplit[titleSplit.length-1]
 
+	//*the structure varies in mobile, tablet and desktop
 	return (
 		<div className="text-white text-left pt-36 min-h-[87vh] overflow-hidden ">
 			<section
@@ -37,21 +38,51 @@ const Hero = () => {
 						<p className={`${styles.heroSubText} mt-2 text-white-100`}>
 							{subtitle}
 						</p>
-						<button className={`font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}>
+						<button className={`hidden md:block font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}>
 							{check_cv}
 						</button>
-						<div className="mt-24">
-							<i className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
-							<i className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
-							<i className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+
+						{/* follow me desktop */}
+						<div className="hidden xl:block mt-24 tracking-wide">
+							<p className="uppercase mb-3 font-medium inline w-54 border-b-2 border-secondary">
+								{language==="spanish" ? "Sígueme" : "Follow me"} &nbsp;
+								<i className="fa-solid fa-arrow-right inline w-54"></i>
+							</p>
+							<div className="mt-4">
+								<i className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+								<i className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+								<i className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+								<i className={`fa-regular fa-envelope text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+							</div>
 						</div>
 					</div>
 				</div>
 
 
 				{/* me picture */}
-				<div className="flex justify-center mt-8">
-					<img src={yo} className="w-[300px] sm:w-[400px] relative z-10  border-main-green" alt="me picture"/>
+				<div className="md:flex relative left-8 mt-8">
+					<div>
+						<img src={yo} className="w-[300px] sm:w-[350px] sm:h-[400px] md:w-[400px] xl:w-[450px] lg:h-[450px] relative  border-main-green" alt="me picture"/>
+					</div>
+
+					{/* follow me mobile */}
+					<div className="block xl:hidden mt-8 tracking-wide relative left-8">
+							<p className="uppercase mb-3 font-medium inline w-54 border-b-2 border-secondary">
+							{language==="spanish" ? "Sígueme" : "Follow me"} &nbsp;
+								<i className="fa-solid fa-arrow-right inline w-54"></i>
+							</p>
+							<div className="mt-4">
+								<i className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+								<i className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+								<i className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+								<i className={`fa-regular fa-envelope text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}></i>
+							</div>
+							
+							{/* show btn after social media in mobile */}
+							<button className={`block md:hidden font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}>
+								{check_cv}
+							</button>
+						</div>
 				</div>
 				{/* computer and move to about button */}
 				{/* NO BORRAR POR LAS DUDAS*/}

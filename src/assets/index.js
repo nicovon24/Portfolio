@@ -29,6 +29,9 @@ import star_wars from "./star_wars.png";
 import english from "./english.png";
 import spanish from "./spanish.png";
 
+// import cursor from "./cursor.png";
+// import cursor_pointer from "./cursor_pointer.png";
+
 export {
 	logo_white,
 	logo_celeste,
@@ -57,4 +60,6 @@ export {
 	mercadopago,
 	english,
 	spanish,
+	// cursor,
+	// cursor_pointer,
 };

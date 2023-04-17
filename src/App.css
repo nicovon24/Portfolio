@@ -1,46 +1,3 @@
-/* #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-} */
-
 #root {
   /* max-width: 1280px; */
   width: 100%;
@@ -105,7 +62,6 @@
 .ball-icon:hover > .ball-text {
   opacity: 1;
 }
-
 /* style in navbar choose language sweet alert buttons */
 .swal-footer{
   display: flex; 
@@ -116,4 +72,35 @@
 }
 .swal-btn-ok:hover{
   background-color: #15803d !important;
+}
+
+/*scroll*/
+::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: #ada9c1AA;
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #64ffda;
+  border-radius: 9px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: #31d8b1;
+}
+
+.toggle-btn > div::before {
+  transform: translateY(0) rotate(-45deg);
+}
+
+.toggle-btn > div::after {
+  transform: translateY(0) rotate(45deg);
+}
+
+.toggle-btn > div {
+  background-color: transparent;
 }

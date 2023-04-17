@@ -64,8 +64,8 @@ const titles = {
 			text: "Lorem ipsum dolor sit amet consectetur \n adipisicing elit maxime",
 		},
 		english: {
-			title: "Introducción",
-			subtitle: "01. Sobre mí",
+			title: "Introduction",
+			subtitle: "01. About me",
 			text: "Lorem ipsum dolor sit amet consectetur \n adipisicing elit maxime",
 		},
 	},
