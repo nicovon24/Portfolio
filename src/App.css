@@ -1,3 +1,9 @@
+:root{
+  --main-blue: "#0e1a2e",
+  --main-green: "#64ffda",
+  --main-pink: "#ff69b4",
+}
+
 #root {
   /* max-width: 1280px; */
   width: 100%;
@@ -106,4 +112,42 @@
 
 .toggle-btn > div {
   background-color: transparent;
+}
+
+.num-nav:hover + .link-nav, .num-nav:hover{
+  color: #ff69b4;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+}
+
+.link-nav:hover{
+  color: #ff69b4;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+}
+
+.cursor::after {
+  display: block;
+  content: '';
+  position: absolute;
+  width: 4px;
+  height: 100%;
+  background-color: #fff;
+  animation: cursor 0.6s linear infinite alternate;
+  will-change: opacity;
+}
+ 
+@keyframes cursor {
+  0%,
+  20% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 1;
+  }
+ 
+  60%,
+  100% {
+    opacity: 0;
+  }
 }

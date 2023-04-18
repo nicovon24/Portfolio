@@ -132,10 +132,10 @@ const Navbar = () => {
 														} hover:text-white`}
 										onClick={() => setActive(l?.spanish)}
 									>
-										<span className={`text-main-green hover:text-main-pink text-[13px] xl:text-[15px]  cursor-pointer ${styles?.hoverChangeColorToPink}`}>
+										<span className={`num-nav text-main-green text-[13px] xl:text-[15px]  cursor-pointer`}>
 											0{index + 1}.{" "}
 										</span>
-										<span className={`text-[14px] xl:text-[14px] relative left-[-5px] cursor-pointer ${styles?.hoverChangeColorToPink}`}>
+										<span className={`link-nav text-[14px] xl:text-[14px] relative left-[-5px] cursor-pointer`}>
 											{l[language.toLowerCase()]}
 										</span>
 									</a>

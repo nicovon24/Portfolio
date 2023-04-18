@@ -33,9 +33,15 @@ const Hero = () => {
 						</div>
 
 						<div>
-							<h1 className={`${styles.heroHeadText} text-white`}>
-								{titleIntro}{" "}
-								<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000">{titleName + " " + titleWave}</span>
+							<h1 className="mb-2 font-medium text-4xl text-gray-100 md:text-6xl">
+								{titleIntro}{" "} <br className="block md:hidden" />
+								<span className="relative">
+									<span className={`h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent ${styles?.heroHeadText}`}>
+										<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000">{titleName}</span> 
+										<span className="text-3xl md:text-5xl">{titleWave}</span>
+									</span>
+									<span className="{`cursor absolute -bottom-0 left-0 -top-1 inline-block bg-[#00132b] w-full animate-type will-change`}"></span>
+								</span>
 							</h1>
 							<p className={`${styles.heroSubText} mt-2 text-white-100`}>{subtitle}</p>
 							<button

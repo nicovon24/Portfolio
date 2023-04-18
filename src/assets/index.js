@@ -32,8 +32,7 @@ import star_wars from "./star_wars.png";
 import english from "./english.png";
 import spanish from "./spanish.png";
 
-// import cursor from "./cursor.png";
-// import cursor_pointer from "./cursor_pointer.png";
+import complex from "./company/complex.png";
 
 export {
 	logo_white,
@@ -66,6 +65,5 @@ export {
 	sequelize,
 	express,
 	trello,
-	// cursor,
-	// cursor_pointer,
+	complex,
 };

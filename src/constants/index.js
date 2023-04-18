@@ -21,6 +21,7 @@ import {
 	express,
 	sequelize,
 	trello,
+	complex,
 } from "../assets";
 
 export const navLinks = [
@@ -144,12 +145,12 @@ const technologies = {
 			icon: express,
 		},
 		{
-			name: "sequelize",
-			icon: sequelize,
-		},
-		{
 			name: "postgreSQL",
 			icon: postgres,
+		},
+		{
+			name: "sequelize",
+			icon: sequelize,
 		},
 		{
 			name: "mongo DB",
@@ -225,27 +226,16 @@ const testimonials = [
 ];
 
 const projects = [
-	// {
-	// 	name: "Car Rent",
-	// 	description:
-	// 		"Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-	// 	tags: [
-	// 		{
-	// 			name: "react",
-	// 			color: "blue-text-gradient",
-	// 		},
-	// 		{
-	// 			name: "mongodb",
-	// 			color: "green-text-gradient",
-	// 		},
-	// 		{
-	// 			name: "tailwind",
-	// 			color: "pink-text-gradient",
-	// 		},
-	// 	],
-	// 	image: carrent,
-	// 	source_code_link: "https://github.com/",
-	// },
+	{
+		name_english: "Complex Gym",
+		name_spanish: "Complex Gym",
+		description_english: "Full-stack SPA fully responsive for a real client",
+		description_spanish: "Full-stack SPA responsive para un cliente real",
+		tags: ["react", "express", "tailwind"],
+		image: complex,
+		source_code_link: "https://github.com/",
+		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
+	},
 	// {
 	// 	name: "Job IT",
 	// 	description:
