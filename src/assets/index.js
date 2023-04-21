@@ -33,6 +33,10 @@ import english from "./english.png";
 import spanish from "./spanish.png";
 
 import complex from "./company/complex.png";
+import rick from "./company/rick.png";
+import videospedia from "./company/videospedia.png";
+import bg_home from "../assets/bg_home.png";
+import todo_list from "../assets/company/todo-list.png";
 
 export {
 	logo_white,
@@ -66,4 +70,8 @@ export {
 	express,
 	trello,
 	complex,
+	rick,
+	videospedia,
+	bg_home,
+	todo_list
 };

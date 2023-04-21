@@ -13,22 +13,22 @@ const TechCard = ({ tech, spanish, english, index }) => {
 
 	return (
 		<div
-			className="flex flex-wrap gap-8 justify-center relative pt-8 "
+			className={`flex flex-wrap gap-8 justify-between relative pt-8`}
 			key={index}
 		>
-			<Tilt className="w-full mb-16">
+			<Tilt className="w-full mb-16" 
+					options={{
+						max: 20,
+						scale: 1,
+						speed: 200,
+					}}
+				>
 				<motion.div
 					variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-					className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card max-w-[650px]"
-					whileHover={{ tilt: 10 }}
-      		transition={{ duration: 2 }}
+					className="2xl:min-w-[700px] 3xl:min-w-[900px] green-pink-gradient p-[1px] rounded-[20px] shadow-card "
+					
 				>
 					<div
-						options={{
-							max: 45,
-							scale: 1,
-							speed: 450,
-						}}
 						className="bg-[#112240] rounded-[20px] py-5 px-12 min-h-[280px] flex flex-col justify-center
         		"
 					>
@@ -47,7 +47,7 @@ const TechCard = ({ tech, spanish, english, index }) => {
 								return (
 									<div className="ball-icon" key={index}>
 										<img src={t?.icon} alt={t?.name} className={`
-										${t?.name==="express" ? "w-[6.6rem]" : "w-20"}
+										${t?.name==="express" ? "w-20" : "w-20"}
 										${t?.name==="sequelize" && "bg-white rounded-full p-2"}
 										${t?.name==="mongo DB" && "bg-gray-700 rounded-full p-1"}` 
 										} />
@@ -72,18 +72,20 @@ const Tech = () => {
 	const { Tools } = technologies;
 
 	return (
-		<div id="tech ">
-			<motion.div variants={textVariant()} className="mt-8 mb-4 text-left">
+		<div id="tech " className={`max-w-[90vw] mx-auto`}>
+			<div variants={textVariant()} className={`mt-32 mb-4 text-left `}>
 				<p className={`${styles.sectionSubText} text-white`}> {subtitle}</p>
-				<h2 className={`${styles.sectionHeadText} text-main-green`}>{title}</h2>
-			</motion.div>
+				<div className="flex">
+					<h2 className={`${styles.sectionHeadText} text-main-green`}>{title}</h2>
+				</div>
+			</div>
 			{/* para que queden centrados los ultimos, justify-center y right-12 */}
-			<div className="grid md:grid-cols-2 gap-4 md:gap-16">
+			<div className="flex flex-wrap justify-between">
 				<TechCard tech={techFront} spanish={"Front-end"} english={"Front-end"} />
 
 				<TechCard tech={techBack} spanish={"Back-end"} english={"Back-end"} />
 
-				<TechCard tech={Tools} spanish={"Lenguajes y tecnologías"} english={"Languages and tools:"} />
+				<TechCard tech={Tools} spanish={"Tecnologías"} english={"Tools"} />
 			</div>
 		</div>
 	);

@@ -11,12 +11,15 @@ module.exports = {
 				primary: "#050816" /* text-primary */,
 				"main-green": "#64ffda",
 				"main-blue": "#0e1a2e",
+				"secondary-blue": "#112240",
 				"main-pink": "#ff69b4 ",
 				secondary: "#aaa6c3",
 				tertiary: "#151030",
 				"black-100": "#100d25",
 				"black-200": "#090325",
 				"white-100": "#f3f3f3",
+				input: "#090325",
+				contact: "#112240",
 			},
 			fontFamily: {
 				secondary: ["SF Mono", "sans-serif"],
@@ -30,6 +33,7 @@ module.exports = {
 			backgroundImage: {
 				"hero-pattern": "url('/src/assets/herobg.png')",
 				"main-bg": "url('./src/assets/bg_nuevo.svg')",
+				"home-bg": "url(./src/assets/bg_home.png)",
 			},
 			keyframes: {
 				"open-menu": {
@@ -39,16 +43,16 @@ module.exports = {
 				},
 				type: {
 					"0%": { transform: "translateX(0ch)" },
-					"5%, 10%": { transform: "translateX(1ch)" },
-					"15%, 20%": { transform: "translateX(2ch)" },
-					"25%, 30%": { transform: "translateX(3ch)" },
-					"35%, 40%": { transform: "translateX(4ch)" },
-					"45%, 50%": { transform: "translateX(5ch)" },
-					"55%, 60%": { transform: "translateX(6ch)" },
-					"65%, 70%": { transform: "translateX(7ch)" },
-					"75%, 80%": { transform: "translateX(8ch)" },
-					"85%, 90%": { transform: "translateX(9ch)" },
-					"95%, 100%": { transform: "translateX(11ch)" },
+					"5%, 10%": { transform: "translateX(0.7ch)" },
+					"15%, 20%": { transform: "translateX(1.4ch)" },
+					"25%, 30%": { transform: "translateX(2.1ch)" },
+					"35%, 40%": { transform: "translateX(2.8ch)" },
+					"45%, 50%": { transform: "translateX(3.5ch)" },
+					"55%, 60%": { transform: "translateX(4.2ch)" },
+					"65%, 70%": { transform: "translateX(4.9ch)" },
+					"75%, 80%": { transform: "translateX(5.6ch)" },
+					"85%, 90%": { transform: "translateX(6.3ch)" },
+					"95%, 100%": { transform: "translateX(7.4ch)" },
 				},
 			},
 			animation: {
@@ -56,6 +60,10 @@ module.exports = {
 			},
 			animation: {
 				type: "type 2.7s ease-out .8s infinite alternate both",
+			},
+			screens: {
+				"3xl": { min: "1500px", max: "1800px" },
+				"4xl": { min: "1800px", max: "3000px" },
 			},
 		},
 	},

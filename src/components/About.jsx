@@ -13,10 +13,15 @@ const ServiceCard = ({service, index}) => {
   const title = service[language]
 
   return(
-    <Tilt className="xs:w-[240px] 2xl:w-[260px] w-full mb-16">
+    <Tilt className="w-full xs:w-full md:w-[300px] 2xl:w-[300px]"
+    options={{
+      max: 25,
+      scale: 1,
+      speed: 200,
+    }}>
       <motion.div 
       variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-      className="w-full green-pink-gradient p-[1px] rounded-[20px] shadow-card">
+      className="green-pink-gradient p-[1px] rounded-[20px] shadow-card">
         <div
         options={{
           max: 45,
@@ -24,7 +29,7 @@ const ServiceCard = ({service, index}) => {
           speed: 450
         }}
         className="bg-[#112240] rounded-[20px] py-5 px-12 min-h-[280px]
-        flex justify-evenly items-center flex-col">
+        flex flex-col justify-evenly items-center">
           
           {title.includes("Star Wars") ? <img src={icon} alt={title} className="w-16 h-16 p-1 rounded-full bg-main-green hover:bg-main-pink object-contain"/> 
           : <i className={`${icon} text-black bg-main-green hover:bg-main-pink opacity-90 duration-500 text-3xl rounded-full`}></i>}
@@ -37,29 +42,26 @@ const ServiceCard = ({service, index}) => {
 
 const About = () => {
   const {language} = useSelector(s=>s)
-  const {title, subtitle} = titles?.about[language]
+  const {title, subtitle, text} = titles?.about[language]
 
 	return (
-		<div className="2xl:px-0" id="about">
-			<div className="mx-auto">
+		<div className="2xl:px-0 max-w-[90vw] mx-auto" id="about">
+			<div className="mx-aut0 leading-relaxed">
         <motion.div variants={textVariant()} className="mt-8 text-left">
           <p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>
-          <h2 className={`${styles.sectionHeadText} text-main-green hover:text-main-pink`}>{title}</h2>
+          <div className="flex">
+            <h2 className={`${styles.sectionHeadText} text-main-green hover:text-main-pink`}>{title}</h2>
+          </div>
         </motion.div>
 
         <motion.p variant={fadeIn("", "", 0.1, 1)}
         className="mt-4 text-secondary text-[17px] max-w-3xl leading-[30px] text-left
         ">
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia,
-          molestiae quas vel sint commodi repudiandae consequuntur voluptatum laborum
-          numquam blanditiis harum quisquam eius sed odit fugiat iusto fuga
-          praesentium optio, eaque rerum! Provident similique accusantium nemo autem.
-          Veritatis obcaecati tenetur iure eius earum ut molestias architecto
-          voluptate aliquam nihil, eveniet aliquid culpa officia aut
+          {text}
         </motion.p>
       </div>
 
-      <div className="mt-20 grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-4 place-items-center xl:place-items-start gap-4">
+      <div className="mt-20 flex flex-wrap justify-between gap-12 w-full">
         {services?.map((service, index)=>{
           return <ServiceCard key={index} service={service} index={index}/>
         })}

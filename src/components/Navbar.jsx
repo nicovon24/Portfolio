@@ -127,15 +127,17 @@ const Navbar = () => {
 										to={l?.id}
 										className={`
 										text-sm cursor-pointer px-4
-									${
-															active === l?.spanish ? "text-main-green" : "text-white"
-														} hover:text-white`}
+									${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
 										onClick={() => setActive(l?.spanish)}
 									>
-										<span className={`num-nav text-main-green text-[13px] xl:text-[15px]  cursor-pointer`}>
+										<span
+											className={`num-nav text-main-green text-[13px] xl:text-[15px]  cursor-pointer`}
+										>
 											0{index + 1}.{" "}
 										</span>
-										<span className={`link-nav text-[14px] xl:text-[14px] relative left-[-5px] cursor-pointer`}>
+										<span
+											className={`link-nav text-[14px] xl:text-[14px] relative left-[-5px] cursor-pointer`}
+										>
 											{l[language.toLowerCase()]}
 										</span>
 									</a>
@@ -143,7 +145,22 @@ const Navbar = () => {
 							);
 						})}
 
-						<div className="flex flex-col items-center">
+						<button
+							className="btn2 py-4 relative border-1 font-secondary  tracking-wider leading-none overflow-hidden hover:text-main-pink  hover:border-main-pink rounded-md text-[12px] w-[130px] text-main-green border-main-green border-[1px] cursor-pointer"
+							type="button"
+							onClick={handleChooseLanguage}
+						>
+							<span className="absolute inset-0 bg-[#1a345d] cursor-pointer"></span>
+							<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
+								{language === "spanish" ? "Cambiar a " : "Switch to"}&nbsp;
+								<img
+									className="w-4 text-white"
+									src={language === "spanish" ? english : spanish}
+								/>
+							</span>
+						</button>
+
+						{/* <div className="flex flex-col items-center">
 							<button
 								className={`ml-4 px-4 py-2 rounded-[4px] min-w-[40px] text-xs cursor-pointer border-[1px] 
 							flex items-center ${styles?.hoverChangeBorderAndColor}`}
@@ -157,7 +174,7 @@ const Navbar = () => {
 									src={language === "spanish" ? english : spanish}
 								/>
 							</button>
-						</div>
+						</div> */}
 					</ul>
 				</div>
 			</nav>
@@ -178,7 +195,7 @@ const Navbar = () => {
 			</div>
 			<section
 				id="mobile-menu"
-				className={`fixed bg-black w-full max-h-[100vh] top-0 left-0 z-[1000000] origin-top animate-open-menu ${
+				className={`fixed bg-main-blue w-full min-h-[100vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
 					toggleMenu ? "block" : "hidden"
 				} md:hidden`}
 			>
@@ -192,9 +209,7 @@ const Navbar = () => {
 										to={l?.id}
 										className={`
               			cursor-pointer px-4
-										${
-											active === l?.spanish ? "text-main-green" : "text-white"
-										} hover:text-white`}
+										${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
 										onClick={() => {
 											setActive(l?.spanish);
 											setToggleMenu(false);
@@ -218,14 +233,14 @@ const Navbar = () => {
 						})}
 						<div className="flex justify-center">
 							<img
-								className={`cursor-pointer w-[54px] h-[32px] ${
+								className={`cursor-pointer w-[54px] h-[48px] ${
 									language === "english" && "opacity-50"
 								} mr-8`}
 								src={spanish}
 								onClick={() => handleChooseMobile("spanish")}
 							/>
 							<img
-								className={`cursor-pointer w-[54px] h-[32px] ${
+								className={`cursor-pointer w-[54px] h-[48px] ${
 									language === "spanish" && "opacity-50"
 								}`}
 								src={english}

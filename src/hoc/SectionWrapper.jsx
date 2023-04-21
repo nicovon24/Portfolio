@@ -11,7 +11,7 @@ const StarWrapper = (Component, idName) =>
         whileInView='show'
         viewport={{ once: true, amount: 0.25 }}
         transition={{ delay: 1 }}
-        className={`${styles.padding} max-w-[83vw] mx-auto relative z-0`}
+        className={`mx-auto relative z-0`}
       >
         <span className='hash-span' id={idName}>
           &nbsp;

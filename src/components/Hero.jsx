@@ -17,37 +17,53 @@ const Hero = () => {
 
 	//*the structure varies in mobile, tablet and desktop
 	return (
-		<div className="w-full text-white pt-36 min-h-[87vh] overflow-hidden flex justify-center">
-			<div className="sm:ml-[5rem] xl:ml-[8rem]">
+		<div className="w-full text-white pt-36 min-h-[90vh] overflow-hidden flex justify-center items-center">
+			<div className="">
 				<section
 					className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto overflow-hidden`}
 				>
-					{/* intro text and cv */}
+					{/* intro text, gradient and cv */}
 					<div
 						className={`inset-0 max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
 						// className={`inset-0 top-[60px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
 					>
 						<div className="flex flex-col justify-center items-center mt-5">
 							<div className="w-5 h-5 rounded-full bg-main-green" />
-							<div className="w-1 sm:h-80 h-40 main-green-gradient" />
+							<div className="w-1 h-[10rem] sm:h-[23rem] main-green-gradient" />
 						</div>
 
 						<div>
-							<h1 className="mb-2 font-medium text-4xl text-gray-100 md:text-6xl">
-								{titleIntro}{" "} <br className="block md:hidden" />
+							<h1 className="mb-2 font-medium text-4xl text-gray-100 md:text-5xl">
+								{titleIntro}{" "}
 								<span className="relative">
-									<span className={`h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent ${styles?.heroHeadText}`}>
-										<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000">{titleName}</span> 
+									<span
+										className={`h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent ${styles?.heroHeadText} `}
+									>
+										<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000">
+											{titleName}
+										</span>
 										<span className="text-3xl md:text-5xl">{titleWave}</span>
 									</span>
-									<span className="{`cursor absolute -bottom-0 left-0 -top-1 inline-block bg-[#00132b] w-full animate-type will-change`}"></span>
+									<span className="{`cursor absolute -bottom-0 left-0 xl:left-10 -top-2 inline-block bg-[#00132b] border-l-8 border-main-green w-full animate-type will-change`}"></span>
 								</span>
 							</h1>
 							<p className={`${styles.heroSubText} mt-2 text-white-100`}>{subtitle}</p>
+
+
 							<button
-								className={`hidden md:block font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}
+								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none overflow-hidden text-[13px] w-[180px] 
+								hidden md:block font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
+								type="button"
+								onClick={() =>
+									window.open(
+										"https://drive.google.com/drive/folders/1WmRm2cVt6o1H8b7lDP8cdx0telYNCJNn?usp=share_link"
+									)
+								}
 							>
-								{check_cv}
+								<span className="absolute inset-0 bg-[#1a345d]"></span>
+								<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
+									{check_cv}
+								</span>
 							</button>
 
 							{/* follow me desktop */}
@@ -57,17 +73,24 @@ const Hero = () => {
 									<i className="fa-solid fa-arrow-right inline w-54"></i>
 								</p>
 								<div className="mt-4">
+									{/* linkedin */}
 									<i
 										className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+										onClick={() =>
+											window.open("https://www.linkedin.com/in/nicolas-von-muhlinen/")
+										}
 									></i>
+
+									{/* github */}
 									<i
 										className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+										onClick={() => window.open("https://github.com/nicovon24")}
 									></i>
+
+									{/* tw */}
 									<i
 										className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
-									></i>
-									<i
-										className={`fa-regular fa-envelope text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+										onClick={() => window.open("https://twitter.com/nicovon2")}
 									></i>
 								</div>
 							</div>
@@ -75,11 +98,11 @@ const Hero = () => {
 					</div>
 
 					{/* me picture */}
-					<div className="md:flex relative left-8 mt-8">
+					<div className="md:flex relative left-8 flex flex-col 2xl:items-center">
 						<div>
 							<img
 								src={yo}
-								className="w-[300px] sm:w-[350px] sm:h-[400px] md:w-[400px] xl:w-[450px] lg:h-[450px] relative  border-main-green"
+								className="w-[300px] sm:w-[350px] sm:h-[400px] md:w-[350px] md:h-[350px] lg:h-[400px] 2xl:w-[550px] 2xl:h-[550px] relative z-[100] border-main-green"
 								alt="me picture"
 							/>
 						</div>
@@ -106,6 +129,7 @@ const Hero = () => {
 							</div>
 
 							{/* show btn after social media in mobile */}
+
 							<button
 								className={`block md:hidden font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}
 							>
