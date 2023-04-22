@@ -9,6 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { changeLanguage } from "../redux/actions/actions";
 import { styles } from "../styles";
 import { useRef } from "react";
+import { Link } from "react-scroll";
 
 const Navbar = () => {
 	const [active, setActive] = useState("");
@@ -123,9 +124,10 @@ const Navbar = () => {
 						{navLinks?.map((l, index) => {
 							return (
 								<li key={l?.id}>
-									<a
-										href={`#${l?.id}`}
-										to={l?.id}
+									<Link
+										to={`${l?.id}`}
+										smooth duration={500}
+										// to={l?.id}
 										className={`
 										link-nav text-sm px-4
 									${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
@@ -141,7 +143,7 @@ const Navbar = () => {
 										>
 											{l[language.toLowerCase()]}
 										</span>
-									</a>
+									</Link>
 								</li>
 							);
 						})}
@@ -180,7 +182,7 @@ const Navbar = () => {
 			</div>
 			<section
 				id="mobile-menu"
-				className={`fixed bg-[rgba(17,34,64,1)] w-full min-h-[100vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
+				className={`fixed w-full min-h-[100vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
 					toggleMenu ? "block" : "hidden"
 				} lg:hidden`}
 			>
@@ -189,11 +191,11 @@ const Navbar = () => {
 						{navLinks?.map((l, index) => {
 							return (
 								<li key={l?.id} className="list-none">
-									<a
-										href={`#${l?.id}`}
-										to={l?.id}
+									<Link
+										to={`${l?.id}`}
+										smooth duration={500}
 										className={`
-              			cursor-pointer px-4
+              			cursor-pointer px-4 transition duration-500 ease-in-out
 										${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
 										onClick={() => {
 											setActive(l?.spanish);
@@ -213,7 +215,7 @@ const Navbar = () => {
 												{l[language.toLowerCase()]}
 											</span>
 										</span>
-									</a>
+									</Link>
 								</li>
 							);
 						})}

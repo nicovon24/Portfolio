@@ -173,3 +173,15 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
+/* hiding cursor */
+body {
+  cursor: none;
+}
+
+#mobile-menu{
+  background: url("https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682190632/fondo_nav_mobile_2_lcj0sz.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
