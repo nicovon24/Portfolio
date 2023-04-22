@@ -3,6 +3,7 @@ import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import React from "react";
+import { trailingCursor } from "cursor-effects";
 
 function App() {
 	const {language} = useSelector(s=>s)
@@ -40,14 +41,14 @@ function App() {
 		document.head.appendChild(icon);
 	});
 
+	//*cursor effect
 	window.addEventListener("load", (event) => {
-		new cursoreffects.trailingCursor({
-			particles: 25,
-			rate: 0.4,
-			baseImageSrc: [
-				"https://o.remove.bg/downloads/44b40fff-a230-4c5d-a81c-8924ea64165a/luna-llena__7_-removebg-preview.png",
+		new trailingCursor({
+			particles: 15,
+			rate: 0.5,
+			baseImageSrc: "https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682172774/cursor-celeste_cn1rpr.png",
 				// "https://o.remove.bg/downloads/7e9a5784-8a12-412e-b038-36c3158c7122/luna-llena__9_-removebg-preview.png"
-			],
+			
 		});
 	});
 
