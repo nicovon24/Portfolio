@@ -32,7 +32,7 @@ import star_wars from "./star_wars.png";
 import english from "./english.png";
 import spanish from "./spanish.png";
 
-import complex from "./company/complex.png";
+// import complex from "./company/complex.png";
 import complex_logo from "./company/complex_logo.png";
 import rick from "./company/rick.png";
 import videospedia from "./company/videospedia.png";
@@ -71,7 +71,7 @@ export {
 	sequelize,
 	express,
 	trello,
-	complex,
+	// complex,
 	complex_logo,
 	rick,
 	videospedia,
