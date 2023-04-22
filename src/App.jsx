@@ -45,8 +45,8 @@ function App() {
 	window.addEventListener("load", (event) => {
 		new trailingCursor({
 			particles: 15,
-			rate: 0.5,
-			baseImageSrc: "https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682172774/cursor-celeste_cn1rpr.png",
+			rate: 0.2,
+			baseImageSrc: "https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186541/cursor-celeste-jr_bmub6j.png",
 				// "https://o.remove.bg/downloads/7e9a5784-8a12-412e-b038-36c3158c7122/luna-llena__9_-removebg-preview.png"
 			
 		});

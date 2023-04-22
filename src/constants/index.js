@@ -363,7 +363,8 @@ const projects = [
 			{ name: "auth0", color: "text-gray-400" },
 		],
 		image: "",
-		// image: complex,
+		image:
+			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186873/complex_zzdgnf.png",
 		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
 		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	},

@@ -7,7 +7,7 @@ import Works from "../components/Works.jsx";
 
 const Home = () => {
   return (
-    <div className="mx-auto">
+    <div className="mx-auto bg-home">
       <Hero/>
       <About/>
       <Tech/>

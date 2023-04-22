@@ -35,7 +35,7 @@ module.exports = {
 			},
 			backgroundImage: {
 				"hero-pattern": "url('/src/assets/herobg.png')",
-				"main-bg": "url('./src/assets/bg_nuevo.svg')",
+				// "main-bg": "url('./src/assets/bg_nuevo.svg')",
 				"home-bg": "url(./src/assets/bg_home.png)",
 			},
 			keyframes: {
