@@ -362,7 +362,6 @@ const projects = [
 			{ name: "tailwind", color: "text-yellow-500" },
 			{ name: "auth0", color: "text-gray-400" },
 		],
-		image: "",
 		image:
 			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186873/complex_zzdgnf.png",
 		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
@@ -382,7 +381,7 @@ const projects = [
 		],
 		image: rick,
 		source_code_link: "https://github.com/nicovon24/Rick-and-Morty-App",
-		// source_deploy: "https://videospedia-nico-von.vercel.app/",
+		source_deploy: "https://rick-and-morty-nico-vonm-front.onrender.com/",
 	},
 	{
 		name_english: "Videospedia - PI Henry",
