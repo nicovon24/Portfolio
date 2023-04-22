@@ -7,10 +7,10 @@ import { titles } from "../constants";
 
 const Contact = () => {
 	const {language} = useSelector(s=>s)
-	const {title, subtitle, formTitle, formSubtitle} = titles?.contact[language]
+	const {title, subtitle} = titles?.contact[language]
 
 	return (
-		<div className="text-white text-left py-12 mx-auto w-full" id="contact">
+		<div className="text-white text-left py-12 mx-auto w-full">
 			<div className="max-w-[90vw] pl-4 mx-auto">
 				{/* titles */}
 				<p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>
@@ -28,21 +28,21 @@ const Contact = () => {
 						<div>
 							<div className="flex items-center">
 								<i
-									className={`fa-solid fa-phone mt- p-2 text-[12px] md:p-3 md:text-[14px] mr-4 ${styles?.hoverChangeBorderAndColor} border-2 rounded-full`}
+									className={`fa-solid fa-phone mt- p-2 text-[12px] md:p-3 md:text-[14px] mr-4 border-2 rounded-full`}
 								></i>
 								<p>+54 9 351 2007 668</p>
 							</div>
 
 							<div className="flex items-center">
 								<i
-									className={`fa-solid fa-envelope mt-3 p-2 text-[12px] md:p-3 md:text-[14px] mr-4 ${styles?.hoverChangeBorderAndColor} border-2 rounded-full`}
+									className={`fa-solid fa-envelope mt-3 p-2 text-[12px] md:p-3 md:text-[14px] mr-4 border-2 rounded-full`}
 								></i>
 								<p>nicovon24@gmail.com</p>
 							</div>
 
 							<div className="flex items-center">
 								<i
-									className={`fa-solid fa-location-dot mt-3 p-2 text-[12px] md:p-3 md:text-[14px] mr-4 ${styles?.hoverChangeBorderAndColor} border-2 rounded-full`}
+									className={`fa-solid fa-location-dot mt-3 p-2 text-[12px] md:p-3 md:text-[14px] mr-4 border-2 rounded-full`}
 								></i>
 								<p>&nbsp;Córdoba Capital, Argentina</p>
 							</div>

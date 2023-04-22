@@ -21,6 +21,9 @@ module.exports = {
 				input: "#090325",
 				contact: "#112240",
 			},
+			cursor: {
+				pointer: "pointer",
+			},
 			fontFamily: {
 				secondary: ["SF Mono", "sans-serif"],
 			},
@@ -38,8 +41,8 @@ module.exports = {
 			keyframes: {
 				"open-menu": {
 					"0%": { transform: "scaleY(0)" },
-					"80%": { transform: "scaleY(1.2)" },
-					"100%": { transform: "scaleY(2)" },
+					"50%": { transform: "scaleY(0.5)" },
+					"100%": { transform: "scaleY(1)" },
 				},
 				type: {
 					"0%": { transform: "translateX(0ch)" },
@@ -57,13 +60,10 @@ module.exports = {
 			},
 			animation: {
 				"open-menu": "open-menu 0.5s ease-in-out forwards",
-			},
-			animation: {
 				type: "type 2.7s ease-out .8s infinite alternate both",
 			},
 			screens: {
-				"3xl": { min: "1500px", max: "1800px" },
-				"4xl": { min: "1800px", max: "3000px" },
+				"3xl": { min: "1650px", max: "3000px" },
 			},
 		},
 	},
@@ -72,7 +72,4 @@ module.exports = {
 		require("tailwindcss"),
 		require("autoprefixer"),
 	],
-	variants: {
-		cursor: ["responsive", "hover", "focus"],
-	},
 };

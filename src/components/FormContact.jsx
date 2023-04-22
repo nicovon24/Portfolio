@@ -4,10 +4,102 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../utils/motion";
 import { useSelector } from "react-redux";
 import { titles } from "../constants";
+import { useState } from "react";
+import validateForm from "./ValidateForm";
+import emailjs from "@emailjs/browser";
 
 const FormContact = () => {
-	const {language} = useSelector(s=>s)
-	const {formTitle, formSubtitle} = titles?.contact[language]
+	const { language } = useSelector((s) => s);
+	const { formTitle, formSubtitle } = titles?.contact[language];
+
+	const [inputs, setInputs] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+	const [errors, setErrors] = useState({
+		name: "",
+		email: "",
+		message: "",
+	});
+
+	const handleChange = (e, property) => {
+		setInputs({
+			...inputs,
+			[e.target.name]: e.target.value,
+		});
+		setErrors(
+			validateForm({
+				...inputs,
+				[e.target.name]: e.target.value,
+			})
+		);
+	};
+
+	const onHandleSubmit = (e) => {
+		e.preventDefault();
+
+		//template_eue0omc  -> template id
+		//service_2n12b5l   -> service id
+		//wlCYUd_KEO_Z9vBR7 -> public key
+
+		const valuesErrors = Object.values(errors);
+
+		if (valuesErrors.length === 0) {
+			emailjs
+				.send(
+					"service_2n12b5l", //service id
+					"template_eue0omc",
+					{
+						from_name: inputs?.name,
+						to_name: "Nicolás",
+						from_email: inputs?.email,
+						to_email: "nicovon24@gmail.com",
+						message: inputs?.message,
+					},
+					"wlCYUd_KEO_Z9vBR7"
+				)
+				.then(() => {
+					swal({
+						cursor: "text",
+						title: `${language === "english" ? "Success:" : "Éxitoso:"}`,
+						text: `${language === "english" ? "Email sended" : "Mail mandado"}`,
+						icon: "success",
+					});
+					setInputs({
+						name: "",
+						email: "",
+						message: "",
+					});
+				})
+				.catch(() => {
+					swal({
+						cursor: "text",
+						title: `${language === "english" ? "Fail:" : "Error:"}`,
+						text: `${
+							language === "english"
+								? "Email could not be sent"
+								: "Mail no pudo ser mandado"
+						}`,
+						icon: "error",
+					});
+				});
+
+				
+		} 
+		else {
+			swal({
+				cursor: "text",
+				title: `${language === "english" ? "Fail:" : "Error:"}`,
+				text: `${
+					language === "english"
+						? Object.values(errors).map(el=>el[language]).join(". \n")
+						: Object.values(errors).map(el=>el[language]).join(". \n")
+				}`,
+				icon: "error",
+			});
+		}
+	};
 
 	return (
 		<Tilt
@@ -20,14 +112,12 @@ const FormContact = () => {
 		>
 			<motion.div
 				variants={fadeIn("right", "spring", 0.5 * 0.75)}
-				className="green-pink-gradient p-[1px] rounded-[20px] shadow-card "
+				className="green-pink-gradient green-pink-gradient p-[1px] rounded-[20px] shadow-card "
 			>
 				<div>
 					{/* form */}
 					<div class="min-w-screen flex items-center justify-center">
-						<div
-							class="bg-gray-100 text-gray-500 rounded-xl border-main-green border-[2px] shadow-xl w-full overflow-hidden"
-						>
+						<div class="bg-gray-100 text-gray-500 rounded-xl border-main-green hover:border-main-pink hover:opacity-[99] duration-400 border-[2px] shadow-xl w-full overflow-hidden">
 							<div class="md:flex w-full">
 								<div class="hidden md:block w-1/2 bg-contact py-10 px-10">
 									{/* person and phone */}
@@ -238,30 +328,45 @@ const FormContact = () => {
 										<p className="text-secondary pt-2">{formSubtitle}</p>
 									</div>
 
-									<form className="grid grid-cols-2 gap-4">
+									<form className="grid grid-cols-2 gap-4" onSubmit={onHandleSubmit}>
 										{/* form */}
 
 										{/* name */}
-										<InputText property="name" />
+										<div>
+											<InputText property="name" onHandleChange={handleChange} value={inputs?.name}/>
+											{errors?.name && (
+												<p className="text-[13px] text-red-500">{errors?.name[language]}</p>
+											)}
+										</div>
 
 										{/* email */}
-										<InputText property="email" />
+										<div>
+											<InputText property="email" onHandleChange={handleChange} value={inputs?.email}/>
+											{errors?.email && (
+												<p className="text-[13px] text-red-500">{errors?.email[language]}</p>
+											)}
+										</div>
 
 										{/* message */}
-										<InputTextArea property="message" />
+										<InputTextArea property="message" onHandleChange={handleChange} value={inputs?.message}/>
+										{errors?.message && (
+											<p className="text-[13px] text-red-500 col-span-2">
+												{errors?.message[language]}
+											</p>
+										)}
 
 										<div
 											className="w-full col-span-2 my-4 mr-2 
                 flex justify-end"
 										>
 											<button
-												className="btn2 px-10 py-6 relative border border-white uppercase font-semibold tracking-wider leading-none overflow-hidden hover:text-black cursor-pointer rounded-md w-full
+												className="btn2 px-10 py-6 relative border border-white uppercase font-semibold tracking-wider leading-none overflow-hidden hover:text-black rounded-md w-full
 										bg-white"
 												type="submit"
 											>
-												<span className="absolute inset-0 bg-[#c4d6dc]"></span>
-												<span className="absolute inset-0 flex justify-center items-center font-bold cursor-pointer">
-													{language==="spanish" ? "Enviar mensaje" : "Submit message"}
+												<span className="absolute inset-0 bg-[#efa8cc]"></span>
+												<span className="absolute inset-0 flex justify-center items-center font-bold">
+													{language === "spanish" ? "Enviar mensaje" : "Submit message"}
 												</span>
 											</button>
 										</div>

@@ -17,7 +17,7 @@ const Hero = () => {
 
 	//*the structure varies in mobile, tablet and desktop
 	return (
-		<div className="w-full text-white pt-36 min-h-[90vh] overflow-hidden flex justify-center items-center">
+		<div className="w-[85vw] md:w-[90vw] text-white pt-36 min-h-[94vh] overflow-hidden flex justify-center items-center">
 			<div className="">
 				<section
 					className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto overflow-hidden`}
@@ -102,7 +102,7 @@ const Hero = () => {
 						<div>
 							<img
 								src={yo}
-								className="w-[300px] sm:w-[350px] sm:h-[400px] md:w-[350px] md:h-[350px] lg:h-[400px] 2xl:w-[550px] 2xl:h-[550px] relative z-[100] border-main-green"
+								className="w-[250px] sm:w-[350px] sm:h-[400px] md:w-[350px] md:h-[350px] lg:h-[400px] 2xl:w-[550px] 2xl:h-[550px] relative z-[100] border-main-green"
 								alt="me picture"
 							/>
 						</div>
@@ -131,7 +131,7 @@ const Hero = () => {
 							{/* show btn after social media in mobile */}
 
 							<button
-								className={`block md:hidden font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}
+								className={`block Fmd:hidden font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}
 							>
 								{check_cv}
 							</button>

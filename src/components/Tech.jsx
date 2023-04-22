@@ -25,7 +25,7 @@ const TechCard = ({ tech, spanish, english, index }) => {
 				>
 				<motion.div
 					variants={fadeIn("right", "spring", 0.5 * index, 0.75)}
-					className="2xl:min-w-[700px] 3xl:min-w-[900px] green-pink-gradient p-[1px] rounded-[20px] shadow-card "
+					className="2xl:min-w-[700px] 3xl:min-w-[800px] green-pink-gradient p-[1px] rounded-[20px] shadow-card "
 					
 				>
 					<div
@@ -47,9 +47,10 @@ const TechCard = ({ tech, spanish, english, index }) => {
 								return (
 									<div className="ball-icon" key={index}>
 										<img src={t?.icon} alt={t?.name} className={`
-										${t?.name==="express" ? "w-20" : "w-20"}
+										${t?.name==="express" ? "w-[5.2rem] md:w-[5.6rem]" : "w-[4.8rem] md:w-[5.2rem]"}
 										${t?.name==="sequelize" && "bg-white rounded-full p-2"}
-										${t?.name==="mongo DB" && "bg-gray-700 rounded-full p-1"}` 
+										${t?.name==="mongo DB" && "bg-gray-700 rounded-full p-1"}
+										` 
 										} />
 										<p className={`ball-text text-secondary relative top-[3px] ${t?.name==="git" && "top-[4px]"}`}>{t?.name}</p>
 									</div>
@@ -72,8 +73,8 @@ const Tech = () => {
 	const { Tools } = technologies;
 
 	return (
-		<div id="tech " className={`max-w-[90vw] mx-auto`}>
-			<div variants={textVariant()} className={`mt-32 mb-4 text-left `}>
+		<div id="tech " className={`mt-32 w-[85vw] md:w-[90vw] mx-auto`}>
+			<div variants={textVariant()} className={` mb-4 text-left `}>
 				<p className={`${styles.sectionSubText} text-white`}> {subtitle}</p>
 				<div className="flex">
 					<h2 className={`${styles.sectionHeadText} text-main-green`}>{title}</h2>

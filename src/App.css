@@ -114,48 +114,55 @@
   background-color: transparent;
 }
 
-.num-nav:hover + .link-nav, .num-nav:hover{
-  color: #ff69b4;
-  opacity: 0.9;
-  transition-duration: 0.5s;
-}
-
 .link-nav:hover{
+  color: #ff69b4 !important;
+  opacity: 0.9;
+  transition-duration: 500ms;
+}
+
+.link-nav:hover > .num-nav, .num-nav:hover > .link-nav{
+  color: #ff69b4 !important;
+  opacity: 0.9;
+  transition-duration: 500ms;
+}
+
+
+/* .num-nav:hover + .link-nav, .num-nav:hover{
   color: #ff69b4;
   opacity: 0.9;
   transition-duration: 0.5s;
 }
 
-.cursor::after {
-  display: block;
-  content: '';
-  position: absolute;
-  width: 4px;
-  height: 100%;
-  background-color: #fff;
-  animation: cursor 0.6s linear infinite alternate;
-  will-change: opacity;
-}
- 
-@keyframes cursor {
-  0%,
-  20% {
-    opacity: 0;
-  }
-  40% {
-    opacity: 1;
-  }
- 
-  60%,
-  100% {
-    opacity: 0;
-  }
-}
+.link-nav:hover, .link-nav:hover > .num-nav{
+  color: #ff69b4;
+  opacity: 0.9;
+  transition-duration: 0.5s;
+} */
 
+/* btn animation */
 .btn2 span:first-child{
   transform: translateX(-101%);
   transition: transform .3s ease-in
 }
 .btn2:hover span{
   transform: translateX(0)
+}
+
+/* swal cursor */
+.swal-modal, .swal-icon, .swal-title, .swal-text {
+  cursor: text;
+}
+
+/* changing color and width of timeline in experience */
+.vertical-timeline::before{
+  background-color: #64ffda !important;
+  width: 3px !important;
+}
+
+/* adjusting position of dates in experience */
+.date-experience-1, .date-experience-3{
+  left: 92% !important;
+}
+.date-experience-2{
+  margin-right: 15px;
 }

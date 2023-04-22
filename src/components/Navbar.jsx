@@ -57,7 +57,6 @@ const Navbar = () => {
 				},
 			},
 		}).then((data) => {
-			console.log(data);
 			if (data !== false) {
 				dispatch(changeLanguage());
 			}
@@ -71,13 +70,15 @@ const Navbar = () => {
 			dispatch(changeLanguage());
 	};
 
-	const handleAnimateHamburger = () => {
+	const handleAnimateHamburger = (changeToggle = true) => {
 		//*animation
 		if (refBtn.current) {
 			const element = refBtn.current;
 			refBtn.current?.classList?.toggle("toggle-btn");
 		}
-		setToggleMenu((prev) => !prev);
+		if(changeToggle===true){
+			setToggleMenu((prev) => !prev);
+		}
 	};
 
 	return (
@@ -98,7 +99,7 @@ const Navbar = () => {
 						/>
 
 						{/* desktop, in the same line */}
-						<div className="hidden sm:flex font-bold">
+						<div className="hidden lg:flex font-bold">
 							<h3 className="text-main-green text-left">Nicolás </h3>
 							<label className="text-white text-left relative z-100">
 								&nbsp; | Full-stack developer
@@ -106,7 +107,7 @@ const Navbar = () => {
 						</div>
 
 						{/*mobile, in different line */}
-						<div className="block sm:hidden font-bold">
+						<div className="block lg:hidden font-bold">
 							<h3 className="text-white text-left">Nicolás </h3>
 							<label className="text-white text-left relative z-100">
 								| Full-stack developer
@@ -115,7 +116,7 @@ const Navbar = () => {
 					</div>
 
 					{/* desktop menu */}
-					<ul className="hidden md:flex flex-wrap gap-y-2 items-center font-secondary">
+					<ul className="hidden lg:flex flex-wrap gap-y-2 items-center font-secondary">
 						<i
 							className={`fa-solid fa-robot-astromech text-black bg-main-green text-2xl rounded-full`}
 						></i>
@@ -126,7 +127,7 @@ const Navbar = () => {
 										href={`#${l?.id}`}
 										to={l?.id}
 										className={`
-										text-sm cursor-pointer px-4
+										link-nav text-sm px-4
 									${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
 										onClick={() => setActive(l?.spanish)}
 									>
@@ -146,12 +147,12 @@ const Navbar = () => {
 						})}
 
 						<button
-							className="btn2 py-4 relative border-1 font-secondary  tracking-wider leading-none overflow-hidden hover:text-main-pink  hover:border-main-pink rounded-md text-[12px] w-[130px] text-main-green border-main-green border-[1px] cursor-pointer"
+							className="btn2 py-4 relative border-1 font-secondary  tracking-wider leading-none overflow-hidden hover:text-main-pink  hover:border-main-pink rounded-md text-[12px] w-[130px] text-main-green border-main-green border-[1px]"
 							type="button"
 							onClick={handleChooseLanguage}
 						>
-							<span className="absolute inset-0 bg-[#1a345d] cursor-pointer"></span>
-							<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
+							<span className="absolute inset-0 bg-[#1a345d]"></span>
+							<span className="absolute inset-0 flex justify-center px-2 items-center font-bold">
 								{language === "spanish" ? "Cambiar a " : "Switch to"}&nbsp;
 								<img
 									className="w-4 text-white"
@@ -159,33 +160,17 @@ const Navbar = () => {
 								/>
 							</span>
 						</button>
-
-						{/* <div className="flex flex-col items-center">
-							<button
-								className={`ml-4 px-4 py-2 rounded-[4px] min-w-[40px] text-xs cursor-pointer border-[1px] 
-							flex items-center ${styles?.hoverChangeBorderAndColor}`}
-								onClick={handleChooseLanguage}
-							>
-								<span className="cursor-pointer">
-									{language === "spanish" ? "Cambiar a " : "Switch to"}&nbsp;
-								</span>
-								<img
-									className="cursor-pointer w-4"
-									src={language === "spanish" ? english : spanish}
-								/>
-							</button>
-						</div> */}
 					</ul>
 				</div>
 			</nav>
 
 			{/* MOBILE */}
-			<div className="block md:hidden text-right mr-2 fixed top-[24px] right-0 z-[100000000]">
+			<div className="block lg:hidden text-right mr-2 fixed top-[24px] right-0 z-[100000000]">
 				<button
 					id="hamburger-menu"
-					className="text-3xl md:hidden cursor-pointer relative w-8 h-8 right-4"
+					className="text-3xl lg:hidden cursor-pointer relative w-8 h-8 right-4"
 					ref={refBtn}
-					onClick={handleAnimateHamburger}
+					onClick={()=>handleAnimateHamburger(true)}
 				>
 					<div
 						className="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3
@@ -195,9 +180,9 @@ const Navbar = () => {
 			</div>
 			<section
 				id="mobile-menu"
-				className={`fixed bg-main-blue w-full min-h-[100vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
+				className={`fixed bg-[rgba(17,34,64,1)] w-full min-h-[100vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
 					toggleMenu ? "block" : "hidden"
-				} md:hidden`}
+				} lg:hidden`}
 			>
 				<div className="w-full">
 					<div className="h-[50vh] relative top-[10vh] ">
@@ -213,6 +198,7 @@ const Navbar = () => {
 										onClick={() => {
 											setActive(l?.spanish);
 											setToggleMenu(false);
+											handleAnimateHamburger(false)
 										}}
 									>
 										{/* text */}

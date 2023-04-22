@@ -45,7 +45,7 @@ const About = () => {
   const {title, subtitle, text} = titles?.about[language]
 
 	return (
-		<div className="2xl:px-0 max-w-[90vw] mx-auto" id="about">
+		<div className="2xl:px-0 w-[85vw] md:w-[90vw] mx-auto">
 			<div className="mx-aut0 leading-relaxed">
         <motion.div variants={textVariant()} className="mt-8 text-left">
           <p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>

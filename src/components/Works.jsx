@@ -13,7 +13,7 @@ const WorkCard = ({ project, index, language }) => {
 	return (
 		<div
 			className="flex flex-wrap gap-8 justify-center pt-8 
-			w-[90vw] md:w-[400px] lg:w-[450px] xl:w-[480px] 2xl:w-[415px]"
+			w-[90vw] md:w-[400px] lg:w-[450px] xl:w-[480px] 2xl:w-[410px] 3xl:w-[440px]"
 			key={index}
 		>
 			<Tilt className="w-[75vw] mb-16"
@@ -94,7 +94,7 @@ const Works = () => {
 					</h2>
 				</div>
 			</motion.div>
-			<div className="text-white flex flex-wrap justify-between gap-x-10 gap-y-6">
+			<div className="text-white flex flex-wrap justify-between gap-x-10 ">
 				{projects?.map((project, index) => {
 					return (
 						<WorkCard

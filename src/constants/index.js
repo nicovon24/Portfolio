@@ -25,6 +25,8 @@ import {
 	rick,
 	videospedia,
 	todo_list,
+	henry,
+	complex_logo,
 } from "../assets";
 
 export const navLinks = [
@@ -33,10 +35,15 @@ export const navLinks = [
 		english: "About",
 		spanish: "Sobre mi",
 	},
+	// {
+	// 	id: "tech",
+	// 	english: "Tech",
+	// 	spanish: "Tech",
+	// },
 	{
-		id: "tech",
-		english: "Tech",
-		spanish: "Tech",
+		id: "experience",
+		english: "Experience",
+		spanish: "Experiencia",
 	},
 	{
 		id: "work",
@@ -66,7 +73,7 @@ const titles = {
 	},
 	about: {
 		spanish: {
-			title: "Summary",
+			title: "Introducción",
 			subtitle: "01. Sobre mí",
 			text:
 				"¡Hola a todos! Radicado en Córdoba - Argentina, soy un desarrollador full-stack y estudiante de analista de sistemas. Hablo tres idiomas y me apasiona mejorar mis habilidades de codificación y de desarrollo de aplicaciones y sitios web con las tecnologías PERN. Además, me encanta trabajar por mi cuenta para mejorar mis habilidades blandas y duras creando proyectos individuales y de equipo",
@@ -81,11 +88,21 @@ const titles = {
 	tech: {
 		spanish: {
 			title: "Tecnologías",
-			subtitle: "02. Conocimientos",
+			// subtitle: "02. Conocimientos",
 		},
 		english: {
 			title: "Technologies",
-			subtitle: "02. Tech stack",
+			// subtitle: "02. Tech stack",
+		},
+	},
+	experiences: {
+		spanish: {
+			title: "Experiencia",
+			subtitle: "02. Prácticas y experiencia",
+		},
+		english: {
+			title: "Experiences",
+			subtitle: "02. Practical experience",
 		},
 	},
 	works: {
@@ -214,19 +231,94 @@ const technologies = {
 };
 
 const experiences = [
-	// {
-	// 	title: "React.js Developer",
-	// 	company_name: "Starbucks",
-	// 	icon: complex,
-	// 	iconBg: "#383E56",
-	// 	date: "March 2020 - April 2021",
-	// 	points: [
-	// 		"Developing and maintaining web applications using React.js and other related technologies.",
-	// 		"Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-	// 		"Implementing responsive design and ensuring cross-browser compatibility.",
-	// 		"Participating in code reviews and providing constructive feedback to other developers.",
-	// 	],
-	// }
+	/* COMPLEX */
+	{
+		title: {
+			spanish: "Desarrollador Front-end",
+			english: "Front-end Developer",
+		},
+		company_name: {
+			spanish: "Gimnasio Complex",
+			english: "Complex Gym",
+		},
+		icon: complex_logo,
+		iconBg: "#a7d7e7",
+		date: "Feb. 2023 - Mar. 2023",
+		points: {
+			spanish: [
+				"Desarrollo de una SPA responsive utilizando principalmente React JS",
+				"Trabajar con otros desarrolladores para crear un producto que sobrepase los requerimientos del usuario",
+				"Diseñar y elaborar un panel de administrador para uso exclusivo de profesores y dueños",
+				"Participar en reuniones utilizando metodologías ágiles para facilitar la mejora continua en el producto.",
+			],
+			english: [
+				"Develop a responsive SPA primarily using React JS apart from other technologies",
+				"Collaborate with other developers to create a product that exceeds user requirements",
+				"Design and build an exclusive administrator panel for trainers and owners' use",
+				"Participate in meetings using agile methodologies to facilitate continuous improvement in the product.",
+			],
+		},
+	},
+
+	/* Teaching Assistant */
+	{
+		title: {
+			spanish: "Asistente de enseñanza / Tutor",
+			english: "Teaching Assistant / Tutor",
+		},
+		company_name: {
+			spanish: "Soy Henry",
+			english: "Soy Henry",
+		},
+		icon: henry,
+		iconBg: "#ffff01",
+		date: "Jan. 2023 - Apr. 2023",
+		points: {
+			spanish: [
+				"Coordinar el grupo de estudiantes con el objetivo de lograr su adaptación al programa",
+				"Orientar a los estudiantes en los primeros pasos de la cursada y resolver sus inquietudes",
+				"Asistir y acompañar en la resolución de ejercicios y promover la colaboración grupal (Pair Programming)",
+				"Proponer ideas para la mejora de los procesos del Bootcamp",
+				"Promover la cohesión grupal y generar comunidad",
+			],
+			english: [
+				"Coordinate a group of new joining students throughout the whole bootcamp experience",
+				"Guide students in the first steps of the course and clarify their doubts",
+				"Provide assistance in solving exercises and encourage group teamwork (Pair Programming)",
+				"Suggest ideas to improve the Bootcamp processes",
+				"Promote collaboration and build community within the students",
+			],
+		},
+	},
+
+	/* PI */
+	{
+		title: {
+			spanish: "Desarollador Full-stack",
+			english: "Full-stack Developer",
+		},
+		company_name: {
+			spanish: "Soy Henry",
+			english: "Soy Henry",
+		},
+		icon: henry,
+		iconBg: "#ffff01",
+		date: "Jan. 2023 - Feb. 2023",
+		points: {
+			spanish: [
+				"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",
+				"Conexión del back-end y la base de datos con la api Rawg referente a videojuegos",
+				"Diseño y elaboración del UX y UI",
+				"Presentación formal del proyecto ante los profesores de Henry",
+			],
+			english: [
+				"Building of the database using entity relationship diagrams and PostgreSQL",
+				"Connecting of the back-end and database with the Rawg API for video games",
+				"Designing and developing of the UX and UI",
+				"Formal presentation of the project to Henry",
+			],
+		},
+	},
 ];
 
 const testimonials = [
@@ -258,10 +350,12 @@ const testimonials = [
 
 const projects = [
 	{
-		name_english: "Complex Gym",
-		name_spanish: "Gimnasio Complex",
-		description_english: "Full-stack SPA fully responsive for a real client",
-		description_spanish: "Full-stack SPA responsive para un cliente real",
+		name_english: "Complex Gym - PF Henry",
+		name_spanish: "Gimnasio Complex - PF Henry",
+		description_english:
+			"Full-stack SPA fully responsive for a real client, we had to work with a team of 8 people.",
+		description_spanish:
+			"Full-stack SPA responsive para un cliente real, trabajamos en un equipo de ocho personas.",
 		tags: [
 			{ name: "react", color: "text-[#2f80ed]" },
 			{ name: "node", color: "text-green-500" },
@@ -275,8 +369,10 @@ const projects = [
 	{
 		name_english: "Rick and Morty Site",
 		name_spanish: "App de Rick and Morty",
-		description_english: "Full-stack SPA fully responsive for a real client",
-		description_spanish: "Full-stack SPA responsive para un cliente real",
+		description_english:
+			"SPA winner of a contest in a cohort of more than 400 people in Henry's bootcamp.",
+		description_spanish:
+			"SPA ganadora de un concurso en una cohorte de más de 400 personas en Henry.",
 		tags: [
 			{ name: "react", color: "text-[#2f80ed]" },
 			{ name: "node", color: "text-green-500" },
@@ -287,10 +383,12 @@ const projects = [
 		// source_deploy: "https://videospedia-nico-von.vercel.app/",
 	},
 	{
-		name_english: "Videospedia",
-		name_spanish: "Videospedia",
-		description_english: "Full-stack SPA fully responsive for a real client",
-		description_spanish: "Full-stack SPA responsive para un cliente real",
+		name_english: "Videospedia - PI Henry",
+		name_spanish: "Videospedia - PI Henry",
+		description_english:
+			"Full-stack project made for Soy Henry bootcamp, with the topic of videogames.",
+		description_spanish:
+			"Proyecto full-stack hecho para el bootcamp de Soy Henry, con el tema de videojuegos.",
 		tags: [
 			{ name: "react", color: "text-[#2f80ed]" },
 			{ name: "node", color: "text-green-500" },
@@ -303,8 +401,9 @@ const projects = [
 	{
 		name_english: "Todo-list",
 		name_spanish: "Lista de tareas",
-		description_english: "Full-stack SPA fully responsive for a real client",
-		description_spanish: "Full-stack SPA responsive para un cliente real",
+		description_english:
+			"First project made with Mongo DB and Mongoose technology.",
+		description_spanish: "Primer proyecto hecho con Mongo DB y Mongoose.",
 		tags: [
 			{ name: "react", color: "text-[#2f80ed]" },
 			{ name: "mongo", color: "text-white" },

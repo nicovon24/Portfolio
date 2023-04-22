@@ -6,6 +6,14 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+	.toggle-btn {
+		@layer [&>div::before]:translate-y-0 [&>div::before]
+		:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 
+		[&>div]:bg-transparent:rotate-[720deg]
+	}
+}
+
 /*for navbar */
 @font-face {
   font-family: 'SF Mono';
@@ -212,7 +220,3 @@
 			-2.6em 0em 0 0em rgba(255, 255, 255, 0.7), -1.8em -1.8em 0 0em #ffffff;
 	}
 }
-
-/* p, span, li, a{
-	font-family: 'Poppins', 'Helvetica Neue';
-} */
