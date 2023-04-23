@@ -1,6 +1,4 @@
-// import { motion } from "framer-motion";
 import { styles } from "../styles";
-// import { ComputersCanvas } from "./canvas";
 import { yo } from "../assets/index";
 import { useSelector } from "react-redux";
 import { titles } from "../constants";
@@ -17,7 +15,7 @@ const Hero = () => {
 
 	//*the structure varies in mobile, tablet and desktop
 	return (
-		<div className="w-[85vw] md:w-[90vw] text-white pt-36 min-h-[94vh] overflow-hidden flex justify-center items-center">
+		<div className="bg-hero w-[85vw] md:w-[90vw] text-white pt-36 min-h-[94vh] overflow-hidden flex justify-center items-center">
 			<div className="">
 				<section
 					className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto overflow-hidden`}
@@ -49,7 +47,6 @@ const Hero = () => {
 							</h1>
 							<p className={`${styles.heroSubText} mt-2 text-white-100`}>{subtitle}</p>
 
-
 							<button
 								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none overflow-hidden text-[13px] w-[180px] 
 								hidden md:block font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
@@ -72,26 +69,30 @@ const Hero = () => {
 									{language === "spanish" ? "Sígueme" : "Follow me"} &nbsp;
 									<i className="fa-solid fa-arrow-right inline w-54"></i>
 								</p>
-								<div className="mt-4">
-									{/* linkedin */}
-									<i
-										className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
-										onClick={() =>
-											window.open("https://www.linkedin.com/in/nicolas-von-muhlinen/")
-										}
-									></i>
+								
+								{/* desktop */}
+								<div className="md:block">
+									<div className="mt-4">
+										{/* linkedin */}
+										<i
+											className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+											onClick={() =>
+												window.open("https://www.linkedin.com/in/nicolas-von-muhlinen/")
+											}
+										></i>
 
-									{/* github */}
-									<i
-										className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
-										onClick={() => window.open("https://github.com/nicovon24")}
-									></i>
+										{/* github */}
+										<i
+											className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+											onClick={() => window.open("https://github.com/nicovon24")}
+										></i>
 
-									{/* tw */}
-									<i
-										className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
-										onClick={() => window.open("https://twitter.com/nicovon2")}
-									></i>
+										{/* tw */}
+										<i
+											className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+											onClick={() => window.open("https://twitter.com/nicovon2")}
+										></i>
+									</div>
 								</div>
 							</div>
 						</div>
@@ -107,61 +108,55 @@ const Hero = () => {
 							/>
 						</div>
 
-						{/* follow me mobile */}
+						{/* MOBILE follow me */}
 						<div className="block xl:hidden mt-8 tracking-wide relative left-8">
 							<p className="uppercase mb-3 font-medium inline w-54 border-b-2 border-secondary">
 								{language === "spanish" ? "Sígueme" : "Follow me"} &nbsp;
 								<i className="fa-solid fa-arrow-right inline w-54"></i>
 							</p>
 							<div className="mt-4">
+								{/* linkedin */}
+								{/* linkedin */}
 								<i
 									className={`fa-brands fa-linkedin-in text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+									onClick={() =>
+										window.open("https://www.linkedin.com/in/nicolas-von-muhlinen/")
+									}
 								></i>
+
+								{/* github */}
 								<i
 									className={`fa-brands fa-github text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+									onClick={() => window.open("https://github.com/nicovon24")}
 								></i>
+
+								{/* tw */}
 								<i
 									className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
-								></i>
-								<i
-									className={`fa-regular fa-envelope text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
+									onClick={() => window.open("https://twitter.com/nicovon2")}
 								></i>
 							</div>
 
 							{/* show btn after social media in mobile */}
 
 							<button
-								className={`block Fmd:hidden font-medium mt-8  px-6 py-3 rounded-lg ${styles.hoverChangeBorderAndColor} border-[1px]`}
+								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none overflow-hidden text-[13px] w-[180px] 
+								block md:hidden font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink hover:border-main-pink
+								z-[100]"
+								type="button"
+								onClick={() =>
+									window.open(
+										"https://drive.google.com/drive/folders/1WmRm2cVt6o1H8b7lDP8cdx0telYNCJNn?usp=share_link"
+									)
+								}
 							>
-								{check_cv}
+								<span className="absolute inset-0 bg-[#1a345d]"></span>
+								<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
+									{check_cv}
+								</span>
 							</button>
 						</div>
 					</div>
-					{/* computer and move to about button */}
-					{/* NO BORRAR POR LAS DUDAS*/}
-					{/* <div
-					className={`flex absolute inset-0 top-[60px] max-w-7xl mx-auto ${styles.paddingX} flex flex-row items-start gap-5`}
-				>
-					<ComputersCanvas />
-				</div> */}
-
-					{/* <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
-					<a href="#about">
-						<div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
-							<motion.div
-								animate={{
-									y: [0, 24, 0],
-								}}
-								transition={{
-									duration: 1.5,
-									repeat: Infinity,
-									repeatType: "loop",
-								}}
-								className="w-3 h-3 rounded-full bg-secondary mb-1"
-							/>
-						</div>
-					</a>
-				</div> */}
 				</section>
 			</div>
 		</div>

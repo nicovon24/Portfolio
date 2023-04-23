@@ -182,7 +182,7 @@ const Navbar = () => {
 			</div>
 			<section
 				id="mobile-menu"
-				className={`fixed w-full min-h-[100vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
+				className={`fixed w-full min-h-[102vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
 					toggleMenu ? "block" : "hidden"
 				} lg:hidden`}
 			>

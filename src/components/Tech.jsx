@@ -1,5 +1,4 @@
 import React from "react";
-import { BallCanvas } from "./canvas/Ball";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { technologies, titles } from "../constants/index";
 import { motion } from "framer-motion";

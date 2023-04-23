@@ -1,13 +1,17 @@
-import About from "../components/About.jsx";
-import Contact from "../components/Contact.jsx";
-import Experience from "../components/Experience.jsx";
-import Hero from "../components/Hero.jsx"
-import Tech from "../components/Tech.jsx";
-import Works from "../components/Works.jsx";
+import {
+  Hero,
+	Navbar,
+	About,
+	Tech,
+	Experience,
+	Works,
+	Feedbacks,
+	Contact
+} from "../components/index.js"
 
 const Home = () => {
   return (
-    <div className="mx-auto bg-home">
+    <div className="mx-auto bg-main-blue">
       <Hero/>
       <About/>
       <Tech/>

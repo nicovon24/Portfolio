@@ -242,7 +242,7 @@ const experiences = [
 			english: "Complex Gym",
 		},
 		icon: complex_logo,
-		iconBg: "#a7d7e7",
+		iconBg: "rgba(238, 237, 242)",
 		date: "Feb. 2023 - Mar. 2023",
 		points: {
 			spanish: [
