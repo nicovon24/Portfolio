@@ -399,62 +399,20 @@ const projects = [
 		source_code_link: "https://github.com/nicovon24/PI-Videogames-SoyHenry.git",
 		// source_deploy: "https://videospedia-nico-von.vercel.app/",
 	},
-	{
-		name_english: "Todo-list",
-		name_spanish: "Lista de tareas",
-		description_english:
-			"First project made with Mongo DB and Mongoose technology.",
-		description_spanish: "Primer proyecto hecho con Mongo DB y Mongoose.",
-		tags: [
-			{ name: "react", color: "text-[#2f80ed]" },
-			{ name: "mongo", color: "text-white" },
-			{ name: "tailwind", color: "text-yellow-500" },
-		],
-		image: todo_list,
-		source_code_link: "https://github.com/nicovon24/Todo-List-Mongo",
-		// source_deploy: "https://pf-complex-gym-henry.vercel.app/",
-	},
 	// {
-	// 	name: "Job IT",
-	// 	description:
-	// 		"Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
+	// 	name_english: "Todo-list",
+	// 	name_spanish: "Lista de tareas",
+	// 	description_english:
+	// 		"First project made with Mongo DB and Mongoose technology.",
+	// 	description_spanish: "Primer proyecto hecho con Mongo DB y Mongoose.",
 	// 	tags: [
-	// 		{
-	// 			name: "react",
-	// 			color: "blue-text-gradient",
-	// 		},
-	// 		{
-	// 			name: "restapi",
-	// 			color: "green-text-gradient",
-	// 		},
-	// 		{
-	// 			name: "scss",
-	// 			color: "pink-text-gradient",
-	// 		},
+	// 		{ name: "react", color: "text-[#2f80ed]" },
+	// 		{ name: "mongo", color: "text-white" },
+	// 		{ name: "tailwind", color: "text-yellow-500" },
 	// 	],
-	// 	image: jobit,
-	// 	source_code_link: "https://github.com/",
-	// },
-	// {
-	// 	name: "Trip Guide",
-	// 	description:
-	// 		"A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-	// 	tags: [
-	// 		{
-	// 			name: "nextjs",
-	// 			color: "blue-text-gradient",
-	// 		},
-	// 		{
-	// 			name: "supabase",
-	// 			color: "green-text-gradient",
-	// 		},
-	// 		{
-	// 			name: "css",
-	// 			color: "pink-text-gradient",
-	// 		},
-	// 	],
-	// 	image: tripguide,
-	// 	source_code_link: "https://github.com/",
+	// 	image: todo_list,
+	// 	source_code_link: "https://github.com/nicovon24/Todo-List-Mongo",
+	// 	// source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	// },
 ];
 
