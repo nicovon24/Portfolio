@@ -15,7 +15,7 @@ const Hero = () => {
 
 	//*the structure varies in mobile, tablet and desktop
 	return (
-		<div className="bg-hero w-[85vw] md:w-[90vw] text-white pt-[100px] xl:pt-[170px] min-h-[95vh] sm:min-h-[130vh] xl:min-h-[100vh]">
+		<div className="bg-hero w-[85vw] md:w-[90vw] text-white pt-[130px] xl:pt-[170px] min-h-[95vh] sm:min-h-[130vh] xl:min-h-[100vh]">
 			<div className="">
 				<section
 					className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto `}
@@ -49,7 +49,7 @@ const Hero = () => {
 
 							<button
 								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none  text-[13px] w-[180px] 
-								hidden md:block font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
+								hidden md:block overflow-hidden font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
 								type="button"
 								onClick={() =>
 									window.open(
@@ -141,7 +141,7 @@ const Hero = () => {
 
 							<button
 								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none  text-[13px] w-[180px] 
-								block md:hidden font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink hover:border-main-pink
+								block md:hidden overflow-hidden  font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink hover:border-main-pink
 								z-[100]"
 								type="button"
 								onClick={() =>
