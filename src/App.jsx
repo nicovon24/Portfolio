@@ -4,13 +4,15 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import React from "react";
 import { trailingCursor } from "cursor-effects";
+import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
-	const {language} = useSelector(s=>s)
+	const { language } = useSelector((s) => s);
 
 	//*app title and icon, changing it
 	window.addEventListener("blur", () => {
-		document.title = language==="spanish" ? "Regresá al Portafolio" : "Come back to Portfolio"; 
+		document.title =
+			language === "spanish" ? "Regresá al Portafolio" : "Come back to Portfolio";
 
 		//*changing document icon
 		const icon =
@@ -46,15 +48,15 @@ function App() {
 		new trailingCursor({
 			particles: 15,
 			rate: 0.2,
-			baseImageSrc: "https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186541/cursor-celeste-jr_bmub6j.png",
-				// "https://o.remove.bg/downloads/7e9a5784-8a12-412e-b038-36c3158c7122/luna-llena__9_-removebg-preview.png"
+			baseImageSrc:
+				"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186541/cursor-celeste-jr_bmub6j.png",
+			// "https://o.remove.bg/downloads/7e9a5784-8a12-412e-b038-36c3158c7122/luna-llena__9_-removebg-preview.png"
 		});
 	});
 
-	return (
-		<div className="App bg-main-bg bg-cover bg-no-repeat overflow-hidden">
-			{/* <CustomCursor/> */}
 
+	return (
+		<div className="App  bg-cover bg-no-repeat overflow-hidden">
 			<Navbar />
 
 			<Home />

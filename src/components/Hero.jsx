@@ -15,10 +15,10 @@ const Hero = () => {
 
 	//*the structure varies in mobile, tablet and desktop
 	return (
-		<div className="bg-hero w-[85vw] md:w-[90vw] text-white pt-36 min-h-[94vh] overflow-hidden flex justify-center items-center">
+		<div className="bg-hero w-[85vw] md:w-[90vw] text-white pt-[100px] xl:pt-[170px] min-h-[95vh] sm:min-h-[130vh] xl:min-h-[100vh]">
 			<div className="">
 				<section
-					className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto overflow-hidden`}
+					className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto `}
 				>
 					{/* intro text, gradient and cv */}
 					<div
@@ -35,7 +35,7 @@ const Hero = () => {
 								{titleIntro}{" "}
 								<span className="relative">
 									<span
-										className={`h-20 pt-2 overflow-x-hidden whitespace-nowrap text-brand-accent ${styles?.heroHeadText} `}
+										className={`h-20 pt-2 whitespace-nowrap text-brand-accent ${styles?.heroHeadText} `}
 									>
 										<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000">
 											{titleName}
@@ -48,7 +48,7 @@ const Hero = () => {
 							<p className={`${styles.heroSubText} mt-2 text-white-100`}>{subtitle}</p>
 
 							<button
-								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none overflow-hidden text-[13px] w-[180px] 
+								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none  text-[13px] w-[180px] 
 								hidden md:block font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
 								type="button"
 								onClick={() =>
@@ -140,7 +140,7 @@ const Hero = () => {
 							{/* show btn after social media in mobile */}
 
 							<button
-								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none overflow-hidden text-[13px] w-[180px] 
+								className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none  text-[13px] w-[180px] 
 								block md:hidden font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink hover:border-main-pink
 								z-[100]"
 								type="button"
