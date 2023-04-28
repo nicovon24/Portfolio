@@ -49,8 +49,9 @@ const About = () => {
 			<div className="mx-aut0 leading-relaxed">
         <motion.div variants={textVariant()} className="mt-8 text-left">
           <p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>
-          <div className="flex">
+          <div className="flex items-center">
             <h2 className={`${styles.sectionHeadText} text-main-green hover:text-main-pink`}>{title}</h2>
+            <div className={styles.lineTitle}></div>
           </div>
         </motion.div>
 

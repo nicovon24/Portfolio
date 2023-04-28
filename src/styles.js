@@ -14,6 +14,8 @@ const styles = {
 	hoverChangeBorderAndColor:
 		"text-main-green  border-main-green hover:text-main-pink hover:border-main-pink hover:opacity-90 duration-500",
 	hoverChangeColorToPink: "hover:text-main-pink duration-500 opacity-90",
+	lineTitle:
+		"linea border-b-2 border-secondary opacity-60 h-[2px] w-[42vw] xl:w-[500px] ml-[20px] md:ml-[30px] relative top-2",
 };
 
 export { styles };

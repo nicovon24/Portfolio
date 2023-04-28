@@ -88,10 +88,11 @@ const Works = () => {
 				<p className={`${styles.sectionSubText} text-white`}>
 					{titles?.works[language]?.subtitle}
 				</p>
-				<div className="flex">
+				<div className="flex items-center">
 					<h2 className={`${styles.sectionHeadText} text-main-green`}>
 						{titles?.works[language]?.title}
 					</h2>
+					<div className={styles.lineTitle}></div>
 				</div>
 			</motion.div>
 			<div className="text-white flex flex-wrap justify-between gap-x-10 ">

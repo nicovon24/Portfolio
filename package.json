@@ -34,6 +34,7 @@
     "react-scroll": "^1.8.9",
     "react-tilt": "^1.0.2",
     "react-tsparticles": "^2.9.3",
+    "react-type-animation": "^3.0.1",
     "react-typewriter-effect": "^1.1.0",
     "react-vertical-timeline-component": "^3.6.0",
     "redux-thunk": "^2.4.2",

@@ -75,9 +75,13 @@ const Experience = () => {
 				<p className={`${styles.sectionSubText} text-white text-left`}>
 					{subtitle}
 				</p>
-				<h2 className={`${styles.sectionHeadText} text-left`}>
-					{title}
-				</h2>
+				<div className="flex items-center">
+					<h2 className={`${styles.sectionHeadText} text-left`}>
+						{title}
+					</h2>
+					<div className={styles.lineTitle}></div>
+				</div>
+				
 			</motion.div>
 
 			<div className="mt-10 flex flex-col">

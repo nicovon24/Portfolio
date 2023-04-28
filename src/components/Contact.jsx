@@ -14,8 +14,9 @@ const Contact = () => {
 			<div className="max-w-[90vw] pl-4 mx-auto">
 				{/* titles */}
 				<p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>
-				<div className="flex">
+				<div className="flex items-center">
 					<h2 className={`${styles?.sectionHeadText}`}>{title}</h2>
+					<div className={styles.lineTitle}></div>
 				</div>
 
 				<div className="grid xl:grid-cols-[1.75fr,1fr] gap-8 xl:gap-16 pt-8">
