@@ -54,10 +54,7 @@ const Hero = () => {
 														"Von", // Deletes 'One' and types 'Two'
 														2000, // Waits 2s
 														titleWave,
-														2000,
-														() => {
-															console.log("Sequence completed"); // Place optional callbacks anywhere in the array
-														},
+														2000
 													]}
 													wrapper="span"
 													cursor={true}

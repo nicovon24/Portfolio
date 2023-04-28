@@ -116,10 +116,10 @@ const FormContact = () => {
 			>
 				<div>
 					{/* form */}
-					<div class="min-w-screen flex items-center justify-center">
-						<div class="bg-gray-100 text-gray-500 rounded-xl border-main-green hover:border-main-pink hover:opacity-[99] duration-400 border-[2px] shadow-xl w-full overflow-hidden">
-							<div class="md:flex w-full">
-								<div class="hidden md:block w-1/2 bg-contact py-10 px-10">
+					<div className="min-w-screen flex items-center justify-center">
+						<div className="bg-gray-100 text-gray-500 rounded-xl border-main-green hover:border-main-pink hover:opacity-[99] duration-400 border-[2px] shadow-xl w-full overflow-hidden">
+							<div className="md:flex w-full">
+								<div className="hidden md:block w-1/2 bg-contact py-10 px-10">
 									{/* person and phone */}
 									<svg
 										id="a87032b8-5b37-4b7e-a4d9-4dbfbe394641"
@@ -322,9 +322,9 @@ const FormContact = () => {
 								</div>
 
 								{/*formulare*/}
-								<div class="w-full md:w-1/2 py-10 px-5 md:px-10 bg-contact">
-									<div class="text-center mb-10">
-										<h1 class="text-3xl text-white font-medium uppercase">{formTitle}</h1>
+								<div className="w-full md:w-1/2 py-10 px-5 md:px-10 bg-contact">
+									<div className="text-center mb-10">
+										<h1 className="text-3xl text-white font-medium uppercase">{formTitle}</h1>
 										<p className="text-secondary pt-2">{formSubtitle}</p>
 									</div>
 

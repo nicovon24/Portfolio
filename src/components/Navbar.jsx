@@ -87,7 +87,7 @@ const Navbar = () => {
 			<nav>
 				<div
 					className={`fixed w-full overflow-hidden flex justify-between items-center py-6 px-8
-					z-[10000000] bg-main-blue opacity-70 cursor-default ${
+					z-[10000000]  opacity-70 cursor-default ${
 						scrollPosition > 200 && "bg-[#081325] shadow-sm shadow-main-green"
 					}`}
 				>
@@ -181,8 +181,8 @@ const Navbar = () => {
 				</button>
 			</div>
 			<section
-				id="mobile-menu"
-				className={`fixed w-full min-h-[102vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
+				id=""
+				className={`fixed bg-hero w-full min-h-[102vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
 					toggleMenu ? "block" : "hidden"
 				} lg:hidden`}
 			>
