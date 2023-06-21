@@ -39,6 +39,8 @@ import videospedia from "./company/videospedia.png";
 import bg_home from "../assets/bg_home.png";
 import todo_list from "../assets/company/todo-list.png";
 import henry from "../assets/company/henry.png";
+import no_country from "../assets/company/no_country.png";
+import freelance from "../assets/company/freelance.png";
 
 export {
 	logo_white,
@@ -78,4 +80,6 @@ export {
 	bg_home,
 	todo_list,
 	henry,
+	no_country,
+	freelance,
 };

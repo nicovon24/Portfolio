@@ -21,12 +21,14 @@ import {
 	express,
 	sequelize,
 	trello,
+	no_country,
 	// complex,
 	rick,
 	videospedia,
 	todo_list,
 	henry,
 	complex_logo,
+	freelance,
 } from "../assets";
 
 export const navLinks = [
@@ -61,13 +63,14 @@ const titles = {
 		spanish: {
 			title: "¡Hola! Soy Nico 👋",
 			subtitle:
-				"Soy un desarrollador Full Stack, en JavaScript, con un entusiasmo por crear aplicaciones web atractivas y fáciles de usar. Y me apasiona lo que hago 💙.",
+				"Soy un apasionado desarrollador Full Stack con habilidades en JavaScript, siempre motivado para aprender y crecer tanto personal como profesionalmente. Y amo lo que hago. 💙",
 			check_cv: "¡Revisá mi CV!",
 		},
 		english: {
 			title: "Hi, here Nico 👋",
 			subtitle:
-				"I am a Javascript full-stack developer with a passion for creating engaging and user-friendly web applications. And I love what I do 💙.",
+				"I am a passionate Full Stack developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
+
 			check_cv: "Check out my CV!",
 		},
 	},
@@ -231,6 +234,64 @@ const technologies = {
 };
 
 const experiences = [
+	/* ALDIA */
+	{
+		title: {
+			spanish: "Front-end developer",
+			english: "Front-end developer",
+		},
+		company_name: {
+			spanish: "Freelance en Gen Consultores",
+			english: "Freelance in Gen Consultores",
+		},
+		icon: freelance,
+		iconBg: "#0087e0",
+		date: "Apr. 2023 - Jun. 2023",
+		points: {
+			spanish: [
+				"Estilado y diseño de gran parte de la aplicación",
+				"Renderizado de componentes en diferentes secciones",
+				"Mantenimiento y optimización de la app",
+				"Asegurar alta calidad y rendimiento",
+				"Trabajo en equipo y propuestas de mejora",
+			],
+			english: [
+				"Styles and design of a great part of the application",
+				"Rendering of the components in different sections",
+				"Maintaining  and optimization of the site",
+				"Ensuring high quality and performance",
+				"Teamwork and proposing improvement opportunities",
+			],
+		},
+	},
+	/* No Country */
+	{
+		title: {
+			spanish: "Full-stack developer",
+			english: "Full-stack developer",
+		},
+		company_name: {
+			spanish: "No Country",
+			english: "No Country",
+		},
+		icon: no_country,
+		iconBg: "#080940",
+		date: "Apr. 2023 - Jun. 2023",
+		points: {
+			spanish: [
+				"Liderar el armado de la base de datos y del servidor (back-end)",
+				"Desarrollar las rutas y controladores de empleados",
+				"Asistir en el frontend y el armado de componentes",
+				"Proponer ideas para la mejora del back y el front-end",
+			],
+			english: [
+				"Leadershipness for the design of the database and the back-end of the application",
+				"Development of some routes and controllers",
+				"Assisting on the frontend and components development",
+				"Propose ideas for the improvement on the backend and frontend",
+			],
+		},
+	},
 	/* COMPLEX */
 	{
 		title: {
@@ -292,6 +353,33 @@ const experiences = [
 	},
 
 	/* PI */
+	// {
+	// 	title: {
+	// 		spanish: "Desarollador Full-stack",
+	// 		english: "Full-stack Developer",
+	// 	},
+	// 	company_name: {
+	// 		spanish: "Soy Henry",
+	// 		english: "Soy Henry",
+	// 	},
+	// 	icon: henry,
+	// 	iconBg: "#ffff01",
+	// 	date: "Jan. 2023 - Feb. 2023",
+	// 	points: {
+	// 		spanish: [
+	// 			"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",
+	// 			"Conexión del back-end y la base de datos con la api Rawg referente a videojuegos",
+	// 			"Diseño y elaboración del UX y UI",
+	// 			"Presentación formal del proyecto ante los profesores de Henry",
+	// 		],
+	// 		english: [
+	// 			"Building of the database using entity relationship diagrams and PostgreSQL",
+	// 			"Connecting of the back-end and database with the Rawg API for video games",
+	// 			"Designing and developing of the UX and UI",
+	// 			"Formal presentation of the project to Henry",
+	// 		],
+	// 	},
+	// },
 	{
 		title: {
 			spanish: "Desarollador Full-stack",
@@ -353,14 +441,15 @@ const projects = [
 		name_english: "Complex Gym - PF Henry",
 		name_spanish: "Gimnasio Complex - PF Henry",
 		description_english:
-			"Full-stack SPA fully responsive for a real client, we had to work with a team of 8 people.",
+			"Full-stack SPA fully responsive for a gym, I had to work with a team of 8 people.",
 		description_spanish:
-			"Full-stack SPA responsive para un cliente real, trabajamos en un equipo de ocho personas.",
+			"Full-stack SPA responsive para un gimnasio, trabajamos en un equipo de ocho personas.",
 		tags: [
 			{ name: "react", color: "text-[#2f80ed]" },
 			{ name: "node", color: "text-green-500" },
 			{ name: "tailwind", color: "text-yellow-500" },
 			{ name: "auth0", color: "text-gray-400" },
+			{ name: "team work", color: "text-white" },
 		],
 		image:
 			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186873/complex_zzdgnf.png",
@@ -368,52 +457,90 @@ const projects = [
 		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	},
 	{
-		name_english: "Rick and Morty Site",
-		name_spanish: "App de Rick and Morty",
+		name_english: "Liqui - No Country",
+		name_spanish: "Liqui - No Country",
 		description_english:
-			"SPA winner of a contest in a cohort of more than 400 people in Henry's bootcamp.",
+			"Academic full stack application made with a group of designers, testers and developers.",
 		description_spanish:
-			"SPA ganadora de un concurso en una cohorte de más de 400 personas en Henry.",
+			"Aplicación académica de liquidación de sueldos hecha con un grupo de diseñados y testers.",
 		tags: [
 			{ name: "react", color: "text-[#2f80ed]" },
 			{ name: "node", color: "text-green-500" },
-			{ name: "css modules", color: "text-red-500" },
+			{ name: "tailwind", color: "text-yellow-500" },
+			{ name: "figma", color: "text-red-500" },
+			{ name: "team work", color: "text-white" },
 		],
-		image: rick,
-		source_code_link: "https://github.com/nicovon24/Rick-and-Morty-App",
-		source_deploy: "https://rick-and-morty-nico-vonm-front.onrender.com/",
+		image:
+			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1687275493/2023-06-20_19_wgghth.png",
+		source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
+		source_deploy: "https://c11-10-m-node-js-react.vercel.app/",
 	},
 	{
-		name_english: "Videospedia - PI Henry",
-		name_spanish: "Videospedia - PI Henry",
+		name_english: "Aldia APP - Gen Consultores",
+		name_spanish: "Aldia APP - Gen Consultores",
 		description_english:
-			"Full-stack project made for Soy Henry bootcamp, with the topic of videogames.",
+			"Full stack freelance project on a group with the aim of helping people in the control of their money.",
 		description_spanish:
-			"Proyecto full-stack hecho para el bootcamp de Soy Henry, con el tema de videojuegos.",
+			"Proyecto grupal freelance con el objetivo de ayudar a las personas en el control de sus finanzas.",
 		tags: [
-			{ name: "react", color: "text-[#2f80ed]" },
+			{ name: "next.js", color: "text-gray-300" },
 			{ name: "node", color: "text-green-500" },
-			{ name: "css modules", color: "text-red-500" },
+			{ name: "tailwind", color: "text-yellow-500" },
+			{ name: "typescript", color: "text-blue-500" },
+			{ name: "team work", color: "text-white" },
 		],
-		image: videospedia,
-		source_code_link: "https://github.com/nicovon24/PI-Videogames-SoyHenry.git",
-		// source_deploy: "https://videospedia-nico-von.vercel.app/",
+		image:
+			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1687276957/2023-06-20_26_wxihws.png",
+		// source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
+		source_deploy: "https://aldia.lat/",
 	},
 	// {
-	// 	name_english: "Todo-list",
-	// 	name_spanish: "Lista de tareas",
+	// 	name_english: "Rick and Morty Site",
+	// 	name_spanish: "App de Rick and Morty",
 	// 	description_english:
-	// 		"First project made with Mongo DB and Mongoose technology.",
-	// 	description_spanish: "Primer proyecto hecho con Mongo DB y Mongoose.",
+	// 		"SPA winner of a contest in a cohort of more than 400 people in Henry's bootcamp.",
+	// 	description_spanish:
+	// 		"SPA ganadora de un concurso en una cohorte de más de 400 personas en Henry.",
 	// 	tags: [
 	// 		{ name: "react", color: "text-[#2f80ed]" },
-	// 		{ name: "mongo", color: "text-white" },
-	// 		{ name: "tailwind", color: "text-yellow-500" },
+	// 		{ name: "node", color: "text-green-500" },
+	// 		{ name: "css modules", color: "text-red-500" },
 	// 	],
-	// 	image: todo_list,
-	// 	source_code_link: "https://github.com/nicovon24/Todo-List-Mongo",
-	// 	// source_deploy: "https://pf-complex-gym-henry.vercel.app/",
+	// 	image: rick,
+	// 	source_code_link: "https://github.com/nicovon24/Rick-and-Morty-App",
+	// },
+	// {
+	// 	name_english: "Videospedia - PI Henry",
+	// 	name_spanish: "Videospedia - PI Henry",
+	// 	description_english:
+	// 		"Full-stack project made for Soy Henry bootcamp, with the topic of videogames.",
+	// 	description_spanish:
+	// 		"Proyecto full-stack hecho para el bootcamp de Soy Henry, con el tema de videojuegos.",
+	// 	tags: [
+	// 		{ name: "react", color: "text-[#2f80ed]" },
+	// 		{ name: "node", color: "text-green-500" },
+	// 		{ name: "css modules", color: "text-red-500" },
+	// 	],
+	// 	image: videospedia,
+	// 	source_code_link: "https://github.com/nicovon24/PI-Videogames-SoyHenry.git",
 	// },
 ];
 
-export { services, technologies, experiences, testimonials, projects, titles };
+const links = {
+	cv: {
+		spanish:
+			"https://drive.google.com/file/d/1NZeNZnvtEmJ2F9WGm8Duy6gAjJOrlM-Z/view?usp=drive_link",
+		english:
+			"https://drive.google.com/file/d/1NCbxnLinNSC08hUBNUEvYf4Lja4Pf5wh/view?usp=drive_link",
+	},
+};
+
+export {
+	services,
+	technologies,
+	experiences,
+	testimonials,
+	projects,
+	titles,
+	links,
+};
