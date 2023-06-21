@@ -351,39 +351,10 @@ const experiences = [
 			],
 		},
 	},
-
-	/* PI */
-	// {
-	// 	title: {
-	// 		spanish: "Desarollador Full-stack",
-	// 		english: "Full-stack Developer",
-	// 	},
-	// 	company_name: {
-	// 		spanish: "Soy Henry",
-	// 		english: "Soy Henry",
-	// 	},
-	// 	icon: henry,
-	// 	iconBg: "#ffff01",
-	// 	date: "Jan. 2023 - Feb. 2023",
-	// 	points: {
-	// 		spanish: [
-	// 			"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",
-	// 			"Conexión del back-end y la base de datos con la api Rawg referente a videojuegos",
-	// 			"Diseño y elaboración del UX y UI",
-	// 			"Presentación formal del proyecto ante los profesores de Henry",
-	// 		],
-	// 		english: [
-	// 			"Building of the database using entity relationship diagrams and PostgreSQL",
-	// 			"Connecting of the back-end and database with the Rawg API for video games",
-	// 			"Designing and developing of the UX and UI",
-	// 			"Formal presentation of the project to Henry",
-	// 		],
-	// 	},
-	// },
 	{
 		title: {
-			spanish: "Desarollador Full-stack",
-			english: "Full-stack Developer",
+			spanish: "Estudiante de Desarrollador Full-stack",
+			english: "Full-stack Developer Student",
 		},
 		company_name: {
 			spanish: "Soy Henry",
@@ -391,7 +362,7 @@ const experiences = [
 		},
 		icon: henry,
 		iconBg: "#ffff01",
-		date: "Jan. 2023 - Feb. 2023",
+		date: "Dic. 2023 - Apr. 2023",
 		points: {
 			spanish: [
 				"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",
@@ -407,33 +378,6 @@ const experiences = [
 			],
 		},
 	},
-];
-
-const testimonials = [
-	// {
-	// 	testimonial:
-	// 		"I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-	// 	name: "Sara Lee",
-	// 	designation: "CFO",
-	// 	company: "Acme Co",
-	// 	image: "https://randomuser.me/api/portraits/women/4.jpg",
-	// },
-	// {
-	// 	testimonial:
-	// 		"I've never met a web developer who truly cares about their clients' success like Rick does.",
-	// 	name: "Chris Brown",
-	// 	designation: "COO",
-	// 	company: "DEF Corp",
-	// 	image: "https://randomuser.me/api/portraits/men/5.jpg",
-	// },
-	// {
-	// 	testimonial:
-	// 		"After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-	// 	name: "Lisa Wang",
-	// 	designation: "CTO",
-	// 	company: "456 Enterprises",
-	// 	image: "https://randomuser.me/api/portraits/women/6.jpg",
-	// },
 ];
 
 const projects = [
@@ -494,36 +438,6 @@ const projects = [
 		// source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
 		source_deploy: "https://aldia.lat/",
 	},
-	// {
-	// 	name_english: "Rick and Morty Site",
-	// 	name_spanish: "App de Rick and Morty",
-	// 	description_english:
-	// 		"SPA winner of a contest in a cohort of more than 400 people in Henry's bootcamp.",
-	// 	description_spanish:
-	// 		"SPA ganadora de un concurso en una cohorte de más de 400 personas en Henry.",
-	// 	tags: [
-	// 		{ name: "react", color: "text-[#2f80ed]" },
-	// 		{ name: "node", color: "text-green-500" },
-	// 		{ name: "css modules", color: "text-red-500" },
-	// 	],
-	// 	image: rick,
-	// 	source_code_link: "https://github.com/nicovon24/Rick-and-Morty-App",
-	// },
-	// {
-	// 	name_english: "Videospedia - PI Henry",
-	// 	name_spanish: "Videospedia - PI Henry",
-	// 	description_english:
-	// 		"Full-stack project made for Soy Henry bootcamp, with the topic of videogames.",
-	// 	description_spanish:
-	// 		"Proyecto full-stack hecho para el bootcamp de Soy Henry, con el tema de videojuegos.",
-	// 	tags: [
-	// 		{ name: "react", color: "text-[#2f80ed]" },
-	// 		{ name: "node", color: "text-green-500" },
-	// 		{ name: "css modules", color: "text-red-500" },
-	// 	],
-	// 	image: videospedia,
-	// 	source_code_link: "https://github.com/nicovon24/PI-Videogames-SoyHenry.git",
-	// },
 ];
 
 const links = {
@@ -535,12 +449,4 @@ const links = {
 	},
 };
 
-export {
-	services,
-	technologies,
-	experiences,
-	testimonials,
-	projects,
-	titles,
-	links,
-};
+export { services, technologies, experiences, projects, titles, links };

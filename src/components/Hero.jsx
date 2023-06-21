@@ -1,7 +1,7 @@
 import { styles } from "../styles";
 import { yo } from "../assets/index";
 import { useSelector } from "react-redux";
-import { titles } from "../constants";
+import { links, titles } from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { TypeAnimation } from "react-type-animation";
 
@@ -83,7 +83,7 @@ const Hero = () => {
 									type="button"
 									onClick={() =>
 										window.open(
-											"https://drive.google.com/drive/folders/1WmRm2cVt6o1H8b7lDP8cdx0telYNCJNn?usp=share_link"
+											links.cv[language]
 										)
 									}
 								>
@@ -176,7 +176,7 @@ const Hero = () => {
 									type="button"
 									onClick={() =>
 										window.open(
-											"https://drive.google.com/drive/folders/1WmRm2cVt6o1H8b7lDP8cdx0telYNCJNn?usp=share_link"
+											links.cv[language]
 										)
 									}
 								>
