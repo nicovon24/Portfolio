@@ -1,31 +1,16 @@
 import {
-	backend,
-	creator,
-	mobile,
-	web,
-	github,
 	css,
 	git,
 	html,
 	javascript,
-	mongo,
-	nodejs,
 	reactjs,
 	redux,
 	tailwind,
-	postgres,
 	star_wars,
 	railway,
 	vercel,
-	mercadopago,
-	express,
-	sequelize,
 	trello,
 	no_country,
-	// complex,
-	rick,
-	videospedia,
-	todo_list,
 	henry,
 	complex_logo,
 	freelance,
@@ -63,13 +48,13 @@ const titles = {
 		spanish: {
 			title: "¡Hola! Soy Nico 👋",
 			subtitle:
-				"Soy un apasionado desarrollador Full Stack con habilidades en JavaScript, siempre motivado para aprender y crecer tanto personal como profesionalmente. Y amo lo que hago. 💙",
+				"Soy un apasionado desarrollador Front-end con habilidades en JavaScript, siempre motivado para aprender y crecer tanto personal como profesionalmente. Y amo lo que hago. 💙",
 			check_cv: "¡Revisá mi CV!",
 		},
 		english: {
 			title: "Hi, here Nico 👋",
 			subtitle:
-				"I am a passionate Full Stack developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
+				"I am a passionate Front-end developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
 
 			check_cv: "Check out my CV!",
 		},
@@ -164,7 +149,7 @@ const services = [
 ];
 
 const technologies = {
-	"Front end": [
+	"Languages": [
 		{
 			name: "HTML 5",
 			icon: html,
@@ -173,6 +158,12 @@ const technologies = {
 			name: "CSS 3",
 			icon: css,
 		},
+		{
+			name: "JavaScript",
+			icon: javascript,
+		},
+	],
+	"Libraries": [
 		{
 			name: "React JS",
 			icon: reactjs,
@@ -186,33 +177,29 @@ const technologies = {
 			icon: tailwind,
 		},
 	],
-	"Back end and DB": [
-		{
-			name: "Node JS",
-			icon: nodejs,
-		},
-		{
-			name: "express",
-			icon: express,
-		},
-		{
-			name: "postgreSQL",
-			icon: postgres,
-		},
-		{
-			name: "sequelize",
-			icon: sequelize,
-		},
-		{
-			name: "mongo DB",
-			icon: mongo,
-		},
-	],
+	// "Back end and DB": [
+	// 	{
+	// 		name: "Node JS",
+	// 		icon: nodejs,
+	// 	},
+	// 	{
+	// 		name: "express",
+	// 		icon: express,
+	// 	},
+	// 	{
+	// 		name: "postgreSQL",
+	// 		icon: postgres,
+	// 	},
+	// 	{
+	// 		name: "sequelize",
+	// 		icon: sequelize,
+	// 	},
+	// 	{
+	// 		name: "mongo DB",
+	// 		icon: mongo,
+	// 	},
+	// ],
 	Tools: [
-		{
-			name: "JavaScript",
-			icon: javascript,
-		},
 		{
 			name: "railway",
 			icon: railway,

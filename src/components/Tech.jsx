@@ -67,8 +67,8 @@ const Tech = () => {
 	const { language } = useSelector((s) => s);
 	const { title, subtitle } = titles?.tech[language];
 
-	const techFront = technologies["Front end"];
-	const techBack = technologies["Back end and DB"];
+	const techLanguages = technologies["Languages"];
+	const techLibraries = technologies["Libraries"];
 	const { Tools } = technologies;
 
 	return (
@@ -81,9 +81,9 @@ const Tech = () => {
 			</div>
 			{/* para que queden centrados los ultimos, justify-center y right-12 */}
 			<div className="flex flex-wrap justify-between">
-				<TechCard tech={techFront} spanish={"Front-end"} english={"Front-end"} />
+				<TechCard tech={techLanguages} spanish={"Lenguajes"} english={"Languages"} />
 
-				<TechCard tech={techBack} spanish={"Back-end"} english={"Back-end"} />
+				<TechCard tech={techLibraries} spanish={"Librerías"} english={"Libraries"} /> 
 
 				<TechCard tech={Tools} spanish={"Tecnologías"} english={"Tools"} />
 			</div>
