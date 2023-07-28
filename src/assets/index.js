@@ -10,23 +10,23 @@ import css from "./tech/css.png";
 import reactjs from "./tech/reactjs.png";
 import redux from "./tech/redux.png";
 import tailwind from "./tech/tailwind.png";
-import mongo from "./tech/mongo.png";
-import nodejs from "./tech/nodejs.png";
-import postgres from "./tech/postgres.png";
+import mongo from "./notUsed/mongo.png";
+import nodejs from "./notUsed/nodejs.png";
+import postgres from "./notUsed/postgres.png";
 import git from "./tech/git.png";
 import csharp from "./tech/c-sharp.png";
 import railway from "./tech/railway.png";
 import vercel from "./tech/vercel.png";
-import mercadopago from "./tech/mercado-pago.png";
+import mercadopago from "./notUsed/mercado-pago.png";
 import trello from "./tech/trello.png";
-import sequelize from "./tech/sequelize.png";
-import express from "./tech/express.png";
+import sequelize from "./notUsed/sequelize.png";
+import express from "./notUsed/express.png";
 
 import yo from "./me/./yo_celeste.png";
 import star_wars from "./otros/star_wars.png";
 
-import english from "./english.png";
-import spanish from "./spanish.png";
+import english from "./otros/english.png";
+import spanish from "./otros/spanish.png";
 
 import complex_logo from "./company/complex_logo.png";
 import rick from "./company/rick.png";
