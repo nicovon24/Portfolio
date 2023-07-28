@@ -1,3 +1,4 @@
+import React from "react";
 import { styles } from "../styles";
 import { yo } from "../assets/index";
 import { useSelector } from "react-redux";
@@ -118,10 +119,10 @@ const Hero = () => {
 											></i>
 
 											{/* tw */}
-											<i
+											{/* <i
 												className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
 												onClick={() => window.open("https://twitter.com/nicovon2")}
-											></i>
+											></i> */}
 										</div>
 									</div>
 								</div>

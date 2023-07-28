@@ -385,16 +385,11 @@ const projects = [
 	{
 		name_english: "Complex Gym - PF Henry",
 		name_spanish: "Gimnasio Complex - PF Henry",
-		description_english:
-			"Full-stack SPA fully responsive for a gym, I had to work with a team of 8 people.",
-		description_spanish:
-			"Full-stack SPA responsive para un gimnasio, trabajamos en un equipo de ocho personas.",
+		description_english: "Complete.",
+		description_spanish: "Completar.",
 		tags: [
-			{ name: "react", color: "text-[#2f80ed]" },
-			{ name: "node", color: "text-green-500" },
-			{ name: "tailwind", color: "text-yellow-500" },
-			{ name: "auth0", color: "text-gray-400" },
-			{ name: "team work", color: "text-white" },
+			{ name: "react", image: reactjs },
+			{ name: "tailwind", image: tailwind },
 		],
 		image: [complex_landing],
 		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
@@ -403,16 +398,11 @@ const projects = [
 	{
 		name_english: "Liqui - No Country",
 		name_spanish: "Liqui - No Country",
-		description_english:
-			"Academic full stack application made with a group of designers, testers and developers.",
-		description_spanish:
-			"Aplicación académica de liquidación de sueldos hecha con un grupo de diseñados y testers.",
+		description_english: "Complete.",
+		description_spanish: "Completar.",
 		tags: [
-			{ name: "react", color: "text-[#2f80ed]" },
-			{ name: "node", color: "text-green-500" },
-			{ name: "tailwind", color: "text-yellow-500" },
-			{ name: "figma", color: "text-red-500" },
-			{ name: "team work", color: "text-white" },
+			{ name: "react", image: reactjs },
+			{ name: "tailwind", image: tailwind },
 		],
 		image: [liqui_home],
 		source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
@@ -421,37 +411,39 @@ const projects = [
 	{
 		name_english: "Cloudlab - No Country",
 		name_spanish: "Cloudlab",
-		description_english:
-			"Full-stack project with the purpose of helping clinical laboratories to manage the sending of their exams.",
-		description_spanish:
-			"Proyecto full-stack con el objetivo de ayudar a los laboratorios clínicos a gestionar el envío de sus exámenes.",
+		description_english: "Complete.",
+		description_spanish: "Completar.",
 		tags: [
-			{ name: "next.js", color: "text-gray-300" },
-			{ name: "node", color: "text-green-500" },
-			{ name: "tailwind", color: "text-yellow-500" },
-			{ name: "typescript", color: "text-blue-500" },
-			{ name: "team work", color: "text-white" },
+			{ name: "react", image: next },
+			{ name: "typescript", image: ts },
+			{ name: "tailwind", image: tailwind },
+			// { name: "next.js", color: "text-gray-300" },
+			// { name: "node", color: "text-green-500" },
+			// { name: "tailwind", color: "text-yellow-500" },
+			// { name: "typescript", color: "text-blue-500" },
+			// { name: "team work", color: "text-white" },
 		],
 		image: [cloudlab_landing],
-		// source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
-		source_deploy: "https://aldia.lat/",
+		source_code_link: "https://github.com/No-Country/s9-16-m-node-react",
+		source_deploy: "https://cloudlab-s9-16.vercel.app/",
 	},
 	{
 		name_english: "Aldia APP - Gen Consultores",
 		name_spanish: "Aldia APP - Gen Consultores",
-		description_english:
-			"Full stack freelance project on a group with the aim of helping people in the control of their money.",
-		description_spanish:
-			"Proyecto grupal freelance con el objetivo de ayudar a las personas en el control de sus finanzas.",
+		description_english: "Complete.",
+		description_spanish: "Completar.",
 		tags: [
-			{ name: "next.js", color: "text-gray-300" },
-			{ name: "node", color: "text-green-500" },
-			{ name: "tailwind", color: "text-yellow-500" },
-			{ name: "typescript", color: "text-blue-500" },
-			{ name: "team work", color: "text-white" },
+			{ name: "react", image: next },
+			{ name: "typescript", image: ts },
+			{ name: "tailwind", image: tailwind },
+			// { name: "next.js", color: "text-gray-300" },
+			// { name: "node", color: "text-green-500" },
+			// { name: "tailwind", color: "text-yellow-500" },
+			// { name: "typescript", color: "text-blue-500" },
+			// { name: "team work", color: "text-white" },
 		],
 		image: [aldia_landing],
-		// source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
+		source_code_link: "https://github.com/Juanlopez01/aldia-app",
 		source_deploy: "https://aldia.lat/",
 	},
 ];

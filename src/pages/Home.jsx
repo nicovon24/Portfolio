@@ -1,13 +1,13 @@
 import {
 	Hero,
-	Navbar,
 	About,
 	Tech,
 	Experience,
 	Works,
-	Feedbacks,
 	Contact,
 } from "../components/index.js";
+
+import React from "react";
 
 const Home = () => {
 	return (

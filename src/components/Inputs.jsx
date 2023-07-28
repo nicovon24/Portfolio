@@ -1,3 +1,5 @@
+import React from "react";
+
 const InputText = ({ property, onHandleChange, value }) => {
 	return (
 		<div className="relative group">

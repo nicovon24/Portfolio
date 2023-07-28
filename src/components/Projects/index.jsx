@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 import {textVariant } from "../../utils/motion";
 import { styles } from "../../styles";
 import SectionWrapper from "../../hoc/SectionWrapper";
-import WorkCard from "./CardOld";
+import WorkCard from "./CardNew";
 
 const Works = () => {
 	const { language } = useSelector((s) => s);
@@ -25,7 +25,7 @@ const Works = () => {
 					<div className={styles.lineTitle}></div>
 				</div>
 			</motion.div>
-			<div className="text-white flex flex-wrap justify-between gap-x-10 ">
+			<div className="text-white flex flex-wrap gap-x-12 ">
 				{projects?.map((project, index) => {
 					return (
 						<WorkCard

@@ -1,3 +1,4 @@
+import React from "react";
 import { Tilt } from "react-tilt";
 import { InputText, InputTextArea } from "./Inputs";
 import { motion } from "framer-motion";
