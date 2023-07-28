@@ -1,11 +1,8 @@
 import React from "react";
-import { projects, titles } from "../constants";
-import { useSelector } from "react-redux";
 import { motion } from "framer-motion";
-import { fadeIn, textVariant } from "../utils/motion";
-import { styles } from "../styles";
+import { fadeIn } from "../../utils/motion";
+import { styles } from "../../styles";
 import { Tilt } from "react-tilt";
-import SectionWrapper from "../hoc/SectionWrapper";
 
 const WorkCard = ({ project, index, language }) => {
 	const {source_code_link, source_deploy} = project
@@ -41,7 +38,7 @@ const WorkCard = ({ project, index, language }) => {
 							<div className="relative ">
 								<img
 									className="relative z-10 top-0 left-0 w-full h-[220px] mb-3 rounded-xl"
-									src={project?.image} 
+									src={project?.image[0]} 
 									alt={project?.name + " img"}
 								/>
 							</div>
@@ -77,38 +74,4 @@ const WorkCard = ({ project, index, language }) => {
 	);
 };
 
-const Works = () => {
-	const { language } = useSelector((s) => s);
-	return (
-		<div
-			className="max-w-[90vw] text-white px-6 sm:py-16 py-10 mx-auto relative z-0"
-			id="work"
-		>
-			<motion.div variants={textVariant()} className="mt-8 mb-4 text-left ">
-				<p className={`${styles.sectionSubText} text-white`}>
-					{titles?.works[language]?.subtitle}
-				</p>
-				<div className="flex items-center">
-					<h2 className={`${styles.sectionHeadText} text-main-green`}>
-						{titles?.works[language]?.title}
-					</h2>
-					<div className={styles.lineTitle}></div>
-				</div>
-			</motion.div>
-			<div className="text-white flex flex-wrap justify-between gap-x-10 ">
-				{projects?.map((project, index) => {
-					return (
-						<WorkCard
-							project={project}
-							key={index}
-							index={index}
-							language={language}
-						/>
-					);
-				})}
-			</div>
-		</div>
-	);
-};
-
-export default SectionWrapper(Works, "works");
+export default WorkCard

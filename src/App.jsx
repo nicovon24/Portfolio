@@ -4,7 +4,6 @@ import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import React from "react";
 import { trailingCursor } from "cursor-effects";
-import ParticlesBackground from "./components/ParticlesBackground";
 
 function App() {
 	const { language } = useSelector((s) => s);
@@ -21,7 +20,7 @@ function App() {
 		// Set the new icon path
 		icon.type = "image/x-icon";
 		icon.rel = "icon";
-		icon.href = "/src/assets/pray.ico";
+		icon.href = "/src/assets/otros/pray.ico";
 
 		// Update the document's icon
 		document.head.appendChild(icon);
@@ -37,7 +36,7 @@ function App() {
 		// Set the new icon path
 		icon.type = "image/x-icon";
 		icon.rel = "icon";
-		icon.href = "/src/assets/logo_celeste_recortado.ico";
+		icon.href = "/src/assets/me/logo_celeste_recortado.ico";
 
 		// Update the document's icon
 		document.head.appendChild(icon);

@@ -6,6 +6,8 @@ import {
 	reactjs,
 	redux,
 	tailwind,
+	ts,
+	next,
 	star_wars,
 	railway,
 	vercel,
@@ -14,6 +16,10 @@ import {
 	henry,
 	complex_logo,
 	freelance,
+	complex_landing,
+	aldia_landing,
+	liqui_home,
+	cloudlab_landing,
 } from "../assets";
 
 export const navLinks = [
@@ -130,7 +136,7 @@ const services = [
 	},
 	{
 		spanish: "Desarrollador Back-end",
-		english: "Backend Developer",
+		english: "Backend experience",
 		icon: "fa-solid fa-database px-4 py-3",
 		// icon: backend,
 	},
@@ -149,7 +155,7 @@ const services = [
 ];
 
 const technologies = {
-	"Languages": [
+	Languages: [
 		{
 			name: "HTML 5",
 			icon: html,
@@ -162,8 +168,12 @@ const technologies = {
 			name: "JavaScript",
 			icon: javascript,
 		},
+		{
+			name: "Typescript",
+			icon: ts,
+		},
 	],
-	"Libraries": [
+	Libraries: [
 		{
 			name: "React JS",
 			icon: reactjs,
@@ -175,6 +185,10 @@ const technologies = {
 		{
 			name: "Tailwind CSS",
 			icon: tailwind,
+		},
+		{
+			name: "Next.js",
+			icon: next,
 		},
 	],
 	// "Back end and DB": [
@@ -382,8 +396,7 @@ const projects = [
 			{ name: "auth0", color: "text-gray-400" },
 			{ name: "team work", color: "text-white" },
 		],
-		image:
-			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1682186873/complex_zzdgnf.png",
+		image: [complex_landing],
 		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
 		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	},
@@ -401,10 +414,27 @@ const projects = [
 			{ name: "figma", color: "text-red-500" },
 			{ name: "team work", color: "text-white" },
 		],
-		image:
-			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1687275493/2023-06-20_19_wgghth.png",
+		image: [liqui_home],
 		source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
 		source_deploy: "https://c11-10-m-node-js-react.vercel.app/",
+	},
+	{
+		name_english: "Cloudlab - No Country",
+		name_spanish: "Cloudlab",
+		description_english:
+			"Full-stack project with the purpose of helping clinical laboratories to manage the sending of their exams.",
+		description_spanish:
+			"Proyecto full-stack con el objetivo de ayudar a los laboratorios clínicos a gestionar el envío de sus exámenes.",
+		tags: [
+			{ name: "next.js", color: "text-gray-300" },
+			{ name: "node", color: "text-green-500" },
+			{ name: "tailwind", color: "text-yellow-500" },
+			{ name: "typescript", color: "text-blue-500" },
+			{ name: "team work", color: "text-white" },
+		],
+		image: [cloudlab_landing],
+		// source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
+		source_deploy: "https://aldia.lat/",
 	},
 	{
 		name_english: "Aldia APP - Gen Consultores",
@@ -420,8 +450,7 @@ const projects = [
 			{ name: "typescript", color: "text-blue-500" },
 			{ name: "team work", color: "text-white" },
 		],
-		image:
-			"https://res.cloudinary.com/dmnkfkrtt/image/upload/v1687276957/2023-06-20_26_wxihws.png",
+		image: [aldia_landing],
 		// source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
 		source_deploy: "https://aldia.lat/",
 	},
