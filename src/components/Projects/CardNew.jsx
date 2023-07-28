@@ -19,9 +19,9 @@ const WorkCard = ({ project, index, language }) => {
 							/>
 						</div>
 
-						<div>
+						<div className="w-full">
 							{/* project name, icons deploy and git */}
-							<div className="text-left flex justify-between items-center pb-4">
+							<div className="w-full flex items-center justify-between pb-4">
 								<p
 									className={
 										"text-white hover:text-main-pink hover:opacity-90 duration-1000 font-black text-xl pb-2 "
