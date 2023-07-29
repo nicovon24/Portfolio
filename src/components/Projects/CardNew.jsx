@@ -12,9 +12,13 @@ const WorkCard = ({ project, index, language }) => {
 					<div key={index} className="flex flex-wrap gap-x-8">
 						{/* image and modal */}
 						<div>
-							<ModalProject project={project} children={<div>
-								<h1>Hola</h1>
-							</div>}/>
+							<img
+								className="relative z-10 top-0 left-0 w-full h-[220px] mb-3 rounded-xl
+								transition-transform hover:scale-[1.03] cursor-pointer"
+								src={project?.image[0]}
+								alt={project?.name + " img"}
+							/>
+							{/* <ModalProject project={project} /> */}
 						</div>
 
 						<div className="w-full">

@@ -6,8 +6,8 @@ import { useSelector } from "react-redux";
 import { titles } from "../constants";
 
 const Contact = () => {
-	const {language} = useSelector(s=>s)
-	const {title, subtitle} = titles?.contact[language]
+	const { language } = useSelector((s) => s);
+	const { title, subtitle } = titles?.contact[language];
 
 	return (
 		<div className="text-white text-left py-12 mx-auto w-full relative z-10">
@@ -21,11 +21,15 @@ const Contact = () => {
 
 				<div className="grid xl:grid-cols-[1.75fr,1fr] gap-8 xl:gap-16 pt-8">
 					{/* phone, mail, location */}
-					
-					<FormContact className="" />
+
+					<div className="relative z-0">
+						<FormContact className="" />
+					</div>
 
 					<div className="flex flex-col gap-4">
-						<p className="font-medium uppercase underline text-secondary">Other info</p>
+						<p className="font-medium uppercase underline text-secondary">
+							Other info
+						</p>
 						<div>
 							<div className="flex items-center">
 								<i
