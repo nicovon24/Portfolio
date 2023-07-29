@@ -34,7 +34,6 @@ export const navLinks = [
 	// 	spanish: "Tech",
 	// },
 
-	
 	{
 		id: "work",
 		english: "Work",
@@ -94,21 +93,21 @@ const titles = {
 	experiences: {
 		spanish: {
 			title: "Experiencia",
-			subtitle: "03. Prácticas y experiencia",
+			subtitle: "02. Prácticas y experiencia",
 		},
 		english: {
 			title: "Experiences",
-			subtitle: "03. Practical experience",
+			subtitle: "02. Practical experience",
 		},
 	},
 	works: {
 		spanish: {
 			title: "Proyectos",
-			subtitle: "02. Trabajos",
+			subtitle: "03. Trabajos",
 		},
 		english: {
 			title: "Projects",
-			subtitle: "02. Works",
+			subtitle: "03. Works",
 		},
 	},
 	contact: {

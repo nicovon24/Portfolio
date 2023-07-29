@@ -24,8 +24,8 @@ const Home = () => {
 			<div className="mx-auto bg-main-blue relative z-[0.8]">
 				<About />
 				<Tech />
-				<Works handleOpenModal={handleOpenModal}/>
 				<Experience />
+				<Works handleOpenModal={handleOpenModal}/>
 				<Contact />
 				{isOpen && <ModalProject project={{}} isOpen={isOpen} setIsOpen={setIsOpen}/>}
 			</div>
