@@ -1,9 +1,20 @@
-import React, { useRef } from "react";
+import React, { useRef, useState } from "react";
 import { styles } from "../../styles";
 import ModalProject from "../ModalProject";
+import { useDispatch } from "react-redux";
+import { changeProjectModal } from "../../redux/actions/actions";
 
-const WorkCard = ({ project, index, language }) => {
+const WorkCard = ({ project, index, language, handleOpenModal }) => {
 	const { source_code_link, source_deploy } = project;
+	// const [isOpenLocal, setIsOpenLocal] = useState(false)
+
+	const dispatch = useDispatch()
+
+	const handleOpenModalLocal = () => {
+		dispatch(changeProjectModal(project))
+
+		console.log(handleOpenModal()); 
+  };
 
 	return (
 		<div className="md:w-[60vw] lg:w-[40vw] 3xl:w-[25vw] gap-8 pt-16" key={index}>
@@ -17,6 +28,7 @@ const WorkCard = ({ project, index, language }) => {
 								transition-transform hover:scale-[1.03] cursor-pointer"
 								src={project?.image[0]}
 								alt={project?.name + " img"}
+								onClick={()=>handleOpenModalLocal()}
 							/>
 							{/* <ModalProject project={project} /> */}
 						</div>

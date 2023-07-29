@@ -1,31 +1,44 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { useDispatch, useSelector } from "react-redux";
+import { changeProjectModal } from "../redux/actions/actions";
 
-const ModalProject = ({ project, children }) => {
-	const [isOpen, setIsOpen] = useState(false);
+const ModalProject = ({ isOpen, setIsOpen }) => {
 
-	const openModal = () => {
-		setIsOpen(true);
-		document.body.style.overflow = "hidden";
-	};
+	const dispatch = useDispatch()
+
+	useEffect(()=>{
+		
+		if(isOpen){
+			document.body.style.overflow = "hidden";
+		}
+		else{
+			document.body.style.overflow = "auto";
+		}
+	}, [isOpen])
 
 	const closeModal = () => {
 		setIsOpen(false);
+		dispatch(changeProjectModal({}))
 		document.body.style.overflow = "auto";
 	};
+
+	const {modal_project} = useSelector(s=>s)
+	const project = modal_project
+
+	const { source_code_link, source_deploy } = project;
 
 	return (
 		<div>
 			{/* img button */}
-			<img
+			{/* <img
 				onClick={() => openModal()}
 				className="relative z-10 top-0 left-0 w-full h-[220px] mb-3 rounded-xl
 								transition-transform hover:scale-[1.03] cursor-pointer"
 				src={project?.image[0]}
 				alt={project?.name + " img"}
-			/>
+			/> */}
 
 			{/* modal */}
-			{isOpen && (
 				<>
 					<div className="fixed top-0 left-0 h-screen w-screen z-[1000000] bg-neutral-800 bg-opacity-90">
 						<div
@@ -40,15 +53,15 @@ const ModalProject = ({ project, children }) => {
 								/>
 							</div>
 							{/* buttons */}
-							<div className="flex justify-between md:text-lg text-center h-full pt-4 ">
+							<div className="flex items-center justify-between md:text-lg text-center h-full pt-4 ">
 								<div className="flex gap-x-4">
-									<button className=" text-base w-[100px] font-semibold py-1 rounded-lg bg-main-green text-black hover:opacity-70">
+									<a href={source_deploy} target="_blank" className="text-base w-[100px] font-semibold py-1 rounded-lg bg-main-green text-black hover:opacity-70">
 										Visit
-									</button>
+									</a>
 
-									<button className=" text-base px-4 font-semibold py-1 rounded-lg border-2 border-main-green text-main-green hover:text-black hover:bg-main-green duration-300 hover:opacity-70">
+									<a href={source_code_link} target="_blank" className="text-base px-4 font-semibold py-1 rounded-lg border-2 border-main-green text-main-green hover:text-black hover:bg-main-green duration-300 hover:opacity-70">
 										Repository
-									</button>
+									</a>
 								</div>
 
 								{/* close */}
@@ -64,7 +77,6 @@ const ModalProject = ({ project, children }) => {
 						</div>
 					</div>
 				</>
-			)}
 		</div>
 	);
 };

@@ -23,7 +23,6 @@ const ExperienceCard = ({ experience, index }) => {
         marginRight: "8px",
         border: "2px solid #64ffda",
         borderRadius: "10px",
-        
 			}}
       className="lg:w-[950px] xl:w-[1150px]" /* adjusting container experience size */
 			contentArrowStyle={{ borderRight: "7px solid  #64ffda" }}
@@ -70,7 +69,7 @@ const Experience = () => {
   const {language} = useSelector(s=>s)
   const {title, subtitle} = titles?.experiences?.[language]
 	return (
-		<div className="w-[85vw] md:w-[90vw] mt-20 mx-auto flex flex-col items-start">
+		<div className="w-[85vw] md:w-[90vw] mt-20 mx-auto flex flex-col items-start relative z-10">
 			<motion.div variants={textVariant()} >
 				<p className={`${styles.sectionSubText} text-white text-left`}>
 					{subtitle}

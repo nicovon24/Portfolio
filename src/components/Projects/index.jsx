@@ -7,8 +7,9 @@ import { styles } from "../../styles";
 import SectionWrapper from "../../hoc/SectionWrapper";
 import WorkCard from "./CardNew";
 
-const Works = () => {
+const Works = (props) => {
 	const { language } = useSelector((s) => s);
+
 	return (
 		<div
 			className="max-w-[90vw] text-white px-6 sm:py-16 py-10 mx-auto relative z-0"
@@ -33,6 +34,7 @@ const Works = () => {
 							key={index}
 							index={index}
 							language={language}
+							handleOpenModal={props.handleOpenModal}
 						/>
 					);
 				})}
@@ -41,4 +43,5 @@ const Works = () => {
 	);
 };
 
-export default SectionWrapper(Works, "works");
+const EnhancedWorks = SectionWrapper(Works, "works");
+export default EnhancedWorks;
