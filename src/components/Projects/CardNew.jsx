@@ -6,14 +6,13 @@ import { changeProjectModal } from "../../redux/actions/actions";
 
 const WorkCard = ({ project, index, language, handleOpenModal }) => {
 	const { source_code_link, source_deploy } = project;
-	// const [isOpenLocal, setIsOpenLocal] = useState(false)
 
 	const dispatch = useDispatch()
 
+	/* change project info and open modal */
 	const handleOpenModalLocal = () => {
 		dispatch(changeProjectModal(project))
-
-		console.log(handleOpenModal()); 
+		handleOpenModal(); 
   };
 
 	return (

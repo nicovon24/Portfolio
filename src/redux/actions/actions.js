@@ -8,6 +8,7 @@ export function changeLanguage() {
 	};
 }
 
+//*change info for modal
 export function changeProjectModal(project) {
 	return {
 		type: CHANGE_PROJ_MODAL,

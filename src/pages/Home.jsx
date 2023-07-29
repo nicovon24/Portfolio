@@ -11,6 +11,7 @@ import Works from "../components/Projects/index.jsx"; // Import the EnhancedWork
 import React, { useState } from "react";
 
 const Home = () => {
+	{/* open Modal function and state */}
 	const [isOpen, setIsOpen] = useState(false);
 
 	function handleOpenModal() {
