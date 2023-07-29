@@ -44,10 +44,10 @@ import no_country from "../assets/company/no_country.png";
 import freelance from "../assets/company/freelance.png";
 
 //*projects
-import complex_landing from "../assets/projects/complex/landing.png";
-import aldia_landing from "../assets/projects/aldia/landing.png";
-import cloudlab_landing from "../assets/projects/cloudlab/landing.png";
-import liqui_home from "../assets/projects/liqui/home.png";
+import complex_1 from "../assets/projects/complex/1.png";
+import aldia_1 from "../assets/projects/aldia/1.png";
+import cloudlab_1 from "../assets/projects/cloudlab/1.png";
+import liqui_1 from "../assets/projects/liqui/1.png";
 
 export {
 	logo_white,
@@ -81,8 +81,8 @@ export {
 	freelance,
 	ts,
 	next,
-	complex_landing,
-	aldia_landing,
-	liqui_home,
-	cloudlab_landing,
+	complex_1,
+	aldia_1,
+	liqui_1,
+	cloudlab_1,
 };

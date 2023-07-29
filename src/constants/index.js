@@ -16,10 +16,10 @@ import {
 	henry,
 	complex_logo,
 	freelance,
-	complex_landing,
-	aldia_landing,
-	liqui_home,
-	cloudlab_landing,
+	complex_1,
+	aldia_1,
+	liqui_1,
+	cloudlab_1,
 } from "../assets";
 
 export const navLinks = [
@@ -383,32 +383,6 @@ const experiences = [
 
 const projects = [
 	{
-		name_english: "Complex Gym - PF Henry",
-		name_spanish: "Gimnasio Complex - PF Henry",
-		description_english: "Complete.",
-		description_spanish: "Completar.",
-		tags: [
-			{ name: "react", image: reactjs },
-			{ name: "tailwind", image: tailwind },
-		],
-		image: [complex_landing],
-		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
-		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
-	},
-	{
-		name_english: "Liqui - No Country",
-		name_spanish: "Liqui - No Country",
-		description_english: "Complete.",
-		description_spanish: "Completar.",
-		tags: [
-			{ name: "react", image: reactjs },
-			{ name: "tailwind", image: tailwind },
-		],
-		image: [liqui_home],
-		source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
-		source_deploy: "https://c11-10-m-node-js-react.vercel.app/",
-	},
-	{
 		name_english: "Cloudlab - No Country",
 		name_spanish: "Cloudlab",
 		description_english: "Complete.",
@@ -423,7 +397,7 @@ const projects = [
 			// { name: "typescript", color: "text-blue-500" },
 			// { name: "team work", color: "text-white" },
 		],
-		image: [cloudlab_landing],
+		image: [cloudlab_1],
 		source_code_link: "https://github.com/No-Country/s9-16-m-node-react",
 		source_deploy: "https://cloudlab-s9-16.vercel.app/",
 	},
@@ -442,9 +416,35 @@ const projects = [
 			// { name: "typescript", color: "text-blue-500" },
 			// { name: "team work", color: "text-white" },
 		],
-		image: [aldia_landing],
+		image: [aldia_1],
 		source_code_link: "https://github.com/Juanlopez01/aldia-app",
 		source_deploy: "https://aldia.lat/",
+	},
+	{
+		name_english: "Liqui - No Country",
+		name_spanish: "Liqui - No Country",
+		description_english: "Complete.",
+		description_spanish: "Completar.",
+		tags: [
+			{ name: "react", image: reactjs },
+			{ name: "tailwind", image: tailwind },
+		],
+		image: [liqui_1],
+		source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
+		source_deploy: "https://c11-10-m-node-js-react.vercel.app/",
+	},
+	{
+		name_english: "Complex Gym - PF Henry",
+		name_spanish: "Gimnasio Complex - PF Henry",
+		description_english: "Complete.",
+		description_spanish: "Completar.",
+		tags: [
+			{ name: "react", image: reactjs },
+			{ name: "tailwind", image: tailwind },
+		],
+		image: [complex_1],
+		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
+		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	},
 ];
 
