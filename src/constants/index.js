@@ -35,14 +35,14 @@ export const navLinks = [
 	// },
 
 	{
-		id: "work",
-		english: "Work",
-		spanish: "Trabajos",
-	},
-	{
 		id: "experience",
 		english: "Experience",
 		spanish: "Experiencia",
+	},
+	{
+		id: "work",
+		english: "Work",
+		spanish: "Trabajos",
 	},
 	{
 		id: "contact",

@@ -87,7 +87,7 @@ const Navbar = () => {
 			<nav>
 				<div
 					className={`fixed w-full overflow-hidden flex justify-between items-center py-6 px-8
-					z-[10000000]  opacity-70 cursor-default ${
+					z-[100]  opacity-70 cursor-default ${
 						scrollPosition > 200 && "bg-[#081325] shadow-sm shadow-main-green"
 					}`}
 				>
@@ -167,7 +167,7 @@ const Navbar = () => {
 			</nav>
 
 			{/* MOBILE */}
-			<div className="block lg:hidden text-right mr-2 fixed top-[24px] right-0 z-[100000000]">
+			<div className="block lg:hidden text-right mr-2 fixed top-[24px] right-0 z-[1000]">
 				<button
 					id="hamburger-menu"
 					className="text-3xl lg:hidden cursor-pointer relative w-8 h-8 right-4"
@@ -182,7 +182,7 @@ const Navbar = () => {
 			</div>
 			<section
 				id=""
-				className={`fixed bg-hero w-full min-h-[102vh] top-0 flex flex-col justify-center left-0 z-[1000000] origin-top animate-open-menu ${
+				className={`fixed bg-hero w-full min-h-[102vh] top-0 flex flex-col justify-center left-0 z-[100] origin-top animate-open-menu ${
 					toggleMenu ? "block" : "hidden"
 				} lg:hidden`}
 			>
