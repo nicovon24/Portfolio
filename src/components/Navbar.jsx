@@ -48,18 +48,18 @@ const Navbar = () => {
 		};
 	}, []);
 
-	// const handleScroll = () => {
-	// 	const position = window.pageYOffset;
-	// 	setScrollPosition(position);
-	// };
+	const handleScroll = () => {
+		const position = window.pageYOffset;
+		setScrollPosition(position);
+	};
 
-	// useEffect(() => {
-	// 	window.addEventListener("scroll", handleScroll, { passive: true });
+	useEffect(() => {
+		window.addEventListener("scroll", handleScroll, { passive: true });
 
-	// 	return () => {
-	// 		window.removeEventListener("scroll", handleScroll);
-	// 	};
-	// }, []);
+		return () => {
+			window.removeEventListener("scroll", handleScroll);
+		};
+	}, []);
 
 	const handleChooseLanguage = () => {
 		swal({
@@ -108,12 +108,14 @@ const Navbar = () => {
 		}
 	};
 
+	console.log(scrollPosition);
+
 	return (
 		<div>
 			<nav>
 				<div
 					className={`fixed w-full overflow-hidden flex justify-between items-center py-6 px-8
-					z-[100]  opacity-70 cursor-default ${
+					z-[100] opacity-80 cursor-default ${
 						scrollPosition > 200 && "!bg-[#081325] shadow-sm shadow-main-green"
 					}`}
 				>
