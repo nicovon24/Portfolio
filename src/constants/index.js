@@ -375,7 +375,7 @@ const experiences = [
 		},
 		icon: henry,
 		iconBg: "#ffff01",
-		date: "Dic. 2023 - Apr. 2023",
+		date: "Dic. 2022 - Apr. 2023",
 		points: {
 			spanish: [
 				"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",

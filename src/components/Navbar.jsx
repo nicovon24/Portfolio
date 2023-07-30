@@ -114,7 +114,7 @@ const Navbar = () => {
 				<div
 					className={`fixed w-full overflow-hidden flex justify-between items-center py-6 px-8
 					z-[100]  opacity-70 cursor-default ${
-						scrollPosition > 200 && "bg-[#081325] shadow-sm shadow-main-green"
+						scrollPosition > 200 && "!bg-[#081325] shadow-sm shadow-main-green"
 					}`}
 				>
 					{/* logo and Nicolás Front-end. Both in desktop and phone */}
