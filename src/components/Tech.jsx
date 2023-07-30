@@ -72,7 +72,7 @@ const Tech = () => {
 	const { Tools } = technologies;
 
 	return (
-		<div id="tech " className={`mt-32 w-[85vw] md:w-[90vw] mx-auto`}>
+		<div id="tech" className={`mt-32 w-[85vw] md:w-[90vw] mx-auto`}>
 			<div variants={textVariant()} className={` mb-4 text-left `}>
 				<p className={`${styles.sectionSubText} text-white`}> {subtitle}</p>
 				<div className="flex">
