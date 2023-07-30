@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../styles";
-import FormContact from "./FormContact";
+import FormContact from "./microComponents/FormContact";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { useSelector } from "react-redux";
 import { titles } from "../constants";

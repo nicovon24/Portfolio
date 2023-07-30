@@ -1,8 +1,8 @@
-import ModalProject from "../components/ModalProject.jsx";
 import { Hero, About, Tech, Experience, Contact } from "../components/index.js";
 import Works from "../components/Projects/index.jsx"; // Import the EnhancedWorks component
 import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import ModalProject from "../components/microComponents/ModalProject.jsx";
 
 const Home = () => {
 	{

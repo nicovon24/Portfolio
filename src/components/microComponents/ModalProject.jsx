@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { changeProjectModal } from "../redux/actions/actions";
+import { changeProjectModal } from "../../redux/actions/actions";
 import Carousel from "./Carousel";
 
 const ModalProject = ({ isOpen, setIsOpen }) => {
@@ -28,6 +28,8 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 
 				// 👇️ your logic here
 				setIsOpen(false);
+
+				document.body.style.overflow = "auto";
 			}
 		};
 
@@ -59,14 +61,17 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 				{/* dark background */}
 				<div
 					className="fixed top-0 left-0 h-screen w-screen z-[10000] bg-neutral-800 bg-opacity-90"
-					onClick={() => setIsOpen(false)}
+					onClick={() => {
+						setIsOpen(false)
+						document.body.style.overflow = "auto";
+					}}
 				></div>
 
 				{/* content */}
 				<div className="fixed  z-[100000] top-[55%] cursor-auto p-8 left-1/2 -translate-x-1/2 -translate-y-1/2 ">
 					<div
 						className="bg-contact cursor-auto p-8 
-						min-h-[282px] min-w-[300px] md:min-h-[350px] rounded-lg border border-blue-secondary"
+						min-h-[282px] w-[350px] sm:min-w-[500px] md:min-w-[650px] md:min-h-[400px] rounded-lg border border-blue-secondary"
 					>
 						<div>
 							<Carousel project={project}/>
@@ -95,13 +100,14 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 						</div>
 						{/* buttons */}
 						<div className="flex items-center justify-between md:text-lg text-center h-full pt-4 ">
+							{/* visit & repository */}
 							<div className="flex gap-x-4">
 								<a
 									href={source_deploy}
 									target="_blank"
 									className="text-base w-[100px] font-semibold py-1 rounded-lg bg-main-green text-black hover:opacity-70"
 								>
-									Visit
+									Site
 								</a>
 
 								<a
