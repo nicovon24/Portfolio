@@ -12,7 +12,7 @@ const Works = (props) => {
 
 	return (
 		<div
-			className="max-w-[90vw] text-white px-6 sm:py-16 py-10 mx-auto relative z-0"
+			className="section max-w-[90vw] text-white px-6 sm:py-16 py-10 mx-auto relative z-0"
 			id="work"
 		>
 			<motion.div variants={textVariant()} className="mt-8 mb-4 text-left ">

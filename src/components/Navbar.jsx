@@ -12,28 +12,54 @@ import { useRef } from "react";
 import { Link } from "react-scroll";
 
 const Navbar = () => {
+	const [activeSection, setActiveSection] = useState(null);
 	const [active, setActive] = useState("");
 	const [toggleMenu, setToggleMenu] = useState(false);
-	const dispatch = useDispatch();
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [logo, setLogo] = useState("light-blue");
 
+	const refBtn = useRef();
+	const dispatch = useDispatch();
 	const { language } = useSelector((s) => s);
 
-	const handleScroll = () => {
-		const position = window.pageYOffset;
-		setScrollPosition(position);
-	};
-
+	//*highlighting navlinks based on scroll
+	const observer = useRef(null);
 	useEffect(() => {
-		window.addEventListener("scroll", handleScroll, { passive: true });
+		//create new instance and pass a callback function
+		observer.current = new IntersectionObserver((entries) => {
+			const visibleSection = entries.find((entry) => entry.isIntersecting)?.target;
+			//Update state with the visible section ID
+			if (visibleSection) {
+				setActiveSection(visibleSection.id);
+			}
+		});
 
+		//Get custom attribute data-section from all sections
+		const sections = document.querySelectorAll(".section");
+
+		sections.forEach((section) => {
+			observer.current.observe(section);
+		});
+		//Cleanup function to remove observer
 		return () => {
-			window.removeEventListener("scroll", handleScroll);
+			sections.forEach((section) => {
+				observer.current.unobserve(section);
+			});
 		};
 	}, []);
 
-	const refBtn = useRef();
+	// const handleScroll = () => {
+	// 	const position = window.pageYOffset;
+	// 	setScrollPosition(position);
+	// };
+
+	// useEffect(() => {
+	// 	window.addEventListener("scroll", handleScroll, { passive: true });
+
+	// 	return () => {
+	// 		window.removeEventListener("scroll", handleScroll);
+	// 	};
+	// }, []);
 
 	const handleChooseLanguage = () => {
 		swal({
@@ -77,7 +103,7 @@ const Navbar = () => {
 			const element = refBtn.current;
 			refBtn.current?.classList?.toggle("toggle-btn");
 		}
-		if(changeToggle===true){
+		if (changeToggle === true) {
 			setToggleMenu((prev) => !prev);
 		}
 	};
@@ -126,12 +152,13 @@ const Navbar = () => {
 								<li key={l?.id}>
 									<Link
 										to={`${l?.id}`}
-										smooth duration={500}
+										smooth
+										duration={500}
 										// to={l?.id}
 										className={`
 										link-nav text-sm px-4
-									${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
-										onClick={() => setActive(l?.spanish)}
+									${activeSection === l?.id ? "text-main-green" : "text-white"} hover:text-white`}
+										onClick={() => setActiveSection(l?.id)}
 									>
 										<span
 											className={`num-nav text-main-green text-[13px] xl:text-[15px]  cursor-pointer`}
@@ -172,7 +199,7 @@ const Navbar = () => {
 					id="hamburger-menu"
 					className="text-3xl lg:hidden cursor-pointer relative w-8 h-8 right-4"
 					ref={refBtn}
-					onClick={()=>handleAnimateHamburger(true)}
+					onClick={() => handleAnimateHamburger(true)}
 				>
 					<div
 						className="bg-white w-8 h-1 rounded absolute top-4 -mt-0.5 transition-all duration-500 before:content-[''] before:bg-white before:w-8 before:h-1 before:rounded before:absolute before:transition-all before:duration-500 before:-translate-x-4 before:-translate-y-3
@@ -193,14 +220,15 @@ const Navbar = () => {
 								<li key={l?.id} className="list-none">
 									<Link
 										to={`${l?.id}`}
-										smooth duration={500}
+										smooth
+										duration={500}
 										className={`
               			cursor-pointer px-4 transition duration-500 ease-in-out
-										${active === l?.spanish ? "text-main-green" : "text-white"} hover:text-white`}
+										${activeSection === l?.id ? "text-main-green" : "text-white"} hover:text-white`}
 										onClick={() => {
-											setActive(l?.spanish);
+											setActiveSection(l?.id);
 											setToggleMenu(false);
-											handleAnimateHamburger(false)
+											handleAnimateHamburger(false);
 										}}
 									>
 										{/* text */}
