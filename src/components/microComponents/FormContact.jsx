@@ -2,11 +2,11 @@ import React from "react";
 import { Tilt } from "react-tilt";
 import { InputText, InputTextArea } from "./Inputs";
 import { motion } from "framer-motion";
-import { fadeIn } from "../utils/motion";
+import { fadeIn } from "../../utils/motion";
 import { useSelector } from "react-redux";
-import { titles } from "../constants";
+import { titles } from "../../constants";
 import { useState } from "react";
-import validateForm from "./ValidateForm";
+import validateForm from "../ValidateForm";
 import emailjs from "@emailjs/browser";
 
 const FormContact = () => {

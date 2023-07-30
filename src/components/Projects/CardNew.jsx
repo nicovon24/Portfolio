@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
+import React from "react";
 import { styles } from "../../styles";
-import ModalProject from "../ModalProject";
 import { useDispatch } from "react-redux";
 import { changeProjectModal } from "../../redux/actions/actions";
 

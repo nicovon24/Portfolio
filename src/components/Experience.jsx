@@ -69,7 +69,7 @@ const Experience = () => {
   const {language} = useSelector(s=>s)
   const {title, subtitle} = titles?.experiences?.[language]
 	return (
-		<div className="w-[85vw] md:w-[90vw] mt-20 mx-auto flex flex-col items-start relative z-10">
+		<div className="section w-[85vw] md:w-[90vw] mt-20 mx-auto flex flex-col items-start relative z-10" id="experience">
 			<motion.div variants={textVariant()} >
 				<p className={`${styles.sectionSubText} text-white text-left`}>
 					{subtitle}

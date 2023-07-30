@@ -20,6 +20,17 @@ import {
 	aldia_1,
 	liqui_1,
 	cloudlab_1,
+	cloudlab_2,
+	cloudlab_4,
+	cloudlab_3,
+	aldia_2,
+	aldia_3,
+	aldia_4,
+	aldia_5,
+	liqui_2,
+	liqui_3,
+	complex_3,
+	complex_2,
 } from "../assets";
 
 export const navLinks = [
@@ -35,14 +46,14 @@ export const navLinks = [
 	// },
 
 	{
-		id: "work",
-		english: "Work",
-		spanish: "Trabajos",
-	},
-	{
 		id: "experience",
 		english: "Experience",
 		spanish: "Experiencia",
+	},
+	{
+		id: "work",
+		english: "Work",
+		spanish: "Trabajos",
 	},
 	{
 		id: "contact",
@@ -239,8 +250,8 @@ const experiences = [
 	/* ALDIA */
 	{
 		title: {
-			spanish: "Front-end developer",
-			english: "Front-end developer",
+			spanish: "Front-end Developer",
+			english: "Front-end Developer",
 		},
 		company_name: {
 			spanish: "Freelance en Gen Consultores",
@@ -248,7 +259,7 @@ const experiences = [
 		},
 		icon: freelance,
 		iconBg: "#0087e0",
-		date: "Apr. 2023 - Jun. 2023",
+		date: "Apr. 2023 - Jul. 2023",
 		points: {
 			spanish: [
 				"Estilado y diseño de gran parte de la aplicación",
@@ -269,8 +280,8 @@ const experiences = [
 	/* No Country */
 	{
 		title: {
-			spanish: "Full-stack developer",
-			english: "Full-stack developer",
+			spanish: "Full-stack Developer",
+			english: "Full-stack Developer",
 		},
 		company_name: {
 			spanish: "No Country",
@@ -278,7 +289,7 @@ const experiences = [
 		},
 		icon: no_country,
 		iconBg: "#080940",
-		date: "Apr. 2023 - Jun. 2023",
+		date: "Apr. 2023 - Jul. 2023",
 		points: {
 			spanish: [
 				"Liderar el armado de la base de datos y del servidor (back-end)",
@@ -398,7 +409,7 @@ const projects = [
 			// { name: "typescript", color: "text-blue-500" },
 			// { name: "team work", color: "text-white" },
 		],
-		image: [cloudlab_1],
+		image: [cloudlab_1, cloudlab_2, cloudlab_3, cloudlab_4],
 		source_code_link: "https://github.com/No-Country/s9-16-m-node-react",
 		source_deploy: "https://cloudlab-s9-16.vercel.app/",
 	},
@@ -417,7 +428,7 @@ const projects = [
 			// { name: "typescript", color: "text-blue-500" },
 			// { name: "team work", color: "text-white" },
 		],
-		image: [aldia_1],
+		image: [aldia_1, aldia_2, aldia_3, aldia_4, aldia_5],
 		source_code_link: "https://github.com/Juanlopez01/aldia-app",
 		source_deploy: "https://aldia.lat/",
 	},
@@ -430,7 +441,7 @@ const projects = [
 			{ name: "react", image: reactjs },
 			{ name: "tailwind", image: tailwind },
 		],
-		image: [liqui_1],
+		image: [liqui_1, liqui_2, liqui_3],
 		source_code_link: "https://github.com/No-Country/C11-10M-Node-js-react",
 		source_deploy: "https://c11-10-m-node-js-react.vercel.app/",
 	},
@@ -443,7 +454,7 @@ const projects = [
 			{ name: "react", image: reactjs },
 			{ name: "tailwind", image: tailwind },
 		],
-		image: [complex_1],
+		image: [complex_1, complex_2, complex_3],
 		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
 		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	},

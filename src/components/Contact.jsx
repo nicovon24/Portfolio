@@ -1,6 +1,6 @@
 import React from "react";
 import { styles } from "../styles";
-import FormContact from "./FormContact";
+import FormContact from "./microComponents/FormContact";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { useSelector } from "react-redux";
 import { titles } from "../constants";
@@ -10,7 +10,7 @@ const Contact = () => {
 	const { title, subtitle } = titles?.contact[language];
 
 	return (
-		<div className="text-white text-left py-12 mx-auto w-full relative z-10">
+		<div className="section text-white text-left py-12 mx-auto w-full relative z-10" id="contact">
 			<div className="max-w-[90vw] pl-4 mx-auto">
 				{/* titles */}
 				<p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>
