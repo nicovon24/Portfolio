@@ -250,8 +250,8 @@ const experiences = [
 	/* ALDIA */
 	{
 		title: {
-			spanish: "Front-end developer",
-			english: "Front-end developer",
+			spanish: "Front-end Developer",
+			english: "Front-end Developer",
 		},
 		company_name: {
 			spanish: "Freelance en Gen Consultores",
@@ -259,7 +259,7 @@ const experiences = [
 		},
 		icon: freelance,
 		iconBg: "#0087e0",
-		date: "Apr. 2023 - Jun. 2023",
+		date: "Apr. 2023 - Jul. 2023",
 		points: {
 			spanish: [
 				"Estilado y diseño de gran parte de la aplicación",
@@ -280,8 +280,8 @@ const experiences = [
 	/* No Country */
 	{
 		title: {
-			spanish: "Full-stack developer",
-			english: "Full-stack developer",
+			spanish: "Full-stack Developer",
+			english: "Full-stack Developer",
 		},
 		company_name: {
 			spanish: "No Country",
@@ -289,7 +289,7 @@ const experiences = [
 		},
 		icon: no_country,
 		iconBg: "#080940",
-		date: "Apr. 2023 - Jun. 2023",
+		date: "Apr. 2023 - Jul. 2023",
 		points: {
 			spanish: [
 				"Liderar el armado de la base de datos y del servidor (back-end)",

@@ -45,17 +45,17 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 	const project = modal_project;
 
 	const { source_code_link, source_deploy } = project;
+
+	const text = {
+		buttons: {
+			close: {spanish: "Cerrar", english: "Close"},
+			site:  {spanish: "Sitio", english: "Site"},
+			repo:  {spanish: "Repositorio", english: "Repository"}
+		}
+	}
+
 	return (
 		<div>
-			{/* img button */}
-			{/* <img
-				onClick={() => openModal()}
-				className="relative z-10 top-0 left-0 w-full h-[220px] mb-3 rounded-xl
-								transition-transform hover:scale-[1.03] cursor-pointer"
-				src={project?.image[0]}
-				alt={project?.name + " img"}
-			/> */}
-
 			{/* modal */}
 			<>
 				{/* dark background */}
@@ -75,11 +75,6 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 					>
 						<div>
 							<Carousel project={project}/>
-							{/* <img
-								src={project?.image}
-								alt={project?.name}
-								className="w-full min-w-[350px] content-center"
-							/> */}
 						</div>
 						<div className="text-white text-left pt-6">
 							<h3 className="text-xl font-medium">{project[`name_${language}`]}</h3>
@@ -107,7 +102,7 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 									target="_blank"
 									className="text-base w-[100px] font-semibold py-1 rounded-lg bg-main-green text-black hover:opacity-70"
 								>
-									Site
+									{text.buttons.site[language]}
 								</a>
 
 								<a
@@ -115,17 +110,18 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 									target="_blank"
 									className="text-base px-4 font-semibold py-1 rounded-lg border-2 border-main-green text-main-green hover:text-black hover:bg-main-green duration-300 hover:opacity-70"
 								>
-									Repository
+									{text.buttons.repo[language]}
 								</a>
 							</div>
 
 							{/* close */}
 							<div>
 								<button
-									className="text-white flex px-3 py-2 hover:bg-white hover:font-semibold hover:text-black duration-200 rounded-lg"
+									className="flex px-3 py-2 bg-white font-semibold text-black duration-200 rounded-lg
+									hover:bg-transparent hover:text-white !cursor-pointer"
 									onClick={() => closeModal()}
 								>
-									Close
+									{text.buttons.close[language]}
 								</button>
 							</div>
 						</div>
