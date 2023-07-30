@@ -45,8 +45,14 @@ import freelance from "../assets/company/freelance.png";
 
 //*projects
 import complex_1 from "../assets/projects/complex/1.png";
+import complex_2 from "../assets/projects/complex/2.png";
+import complex_3 from "../assets/projects/complex/3.png";
 
 import aldia_1 from "../assets/projects/aldia/1.png";
+import aldia_2 from "../assets/projects/aldia/2.png";
+import aldia_3 from "../assets/projects/aldia/3.png";
+import aldia_4 from "../assets/projects/aldia/4.png";
+import aldia_5 from "../assets/projects/aldia/5.png";
 
 import cloudlab_1 from "../assets/projects/cloudlab/1.png";
 import cloudlab_2 from "../assets/projects/cloudlab/2.png";
@@ -54,6 +60,8 @@ import cloudlab_3 from "../assets/projects/cloudlab/3.png";
 import cloudlab_4 from "../assets/projects/cloudlab/4.png";
 
 import liqui_1 from "../assets/projects/liqui/1.png";
+import liqui_2 from "../assets/projects/liqui/2.png";
+import liqui_3 from "../assets/projects/liqui/3.png";
 
 export {
 	logo_white,
@@ -88,10 +96,18 @@ export {
 	ts,
 	next,
 	complex_1,
+	complex_2,
+	complex_3,
 	aldia_1,
+	aldia_2,
+	aldia_3,
+	aldia_4,
+	aldia_5,
 	liqui_1,
+	liqui_2,
+	liqui_3,
 	cloudlab_1,
 	cloudlab_2,
 	cloudlab_3,
-	cloudlab_4
+	cloudlab_4,
 };
