@@ -20,6 +20,9 @@ import {
 	aldia_1,
 	liqui_1,
 	cloudlab_1,
+	cloudlab_2,
+	cloudlab_4,
+	cloudlab_3,
 } from "../assets";
 
 export const navLinks = [
@@ -398,7 +401,7 @@ const projects = [
 			// { name: "typescript", color: "text-blue-500" },
 			// { name: "team work", color: "text-white" },
 		],
-		image: [cloudlab_1],
+		image: [cloudlab_1, cloudlab_2, cloudlab_3, cloudlab_4],
 		source_code_link: "https://github.com/No-Country/s9-16-m-node-react",
 		source_deploy: "https://cloudlab-s9-16.vercel.app/",
 	},

@@ -45,8 +45,14 @@ import freelance from "../assets/company/freelance.png";
 
 //*projects
 import complex_1 from "../assets/projects/complex/1.png";
+
 import aldia_1 from "../assets/projects/aldia/1.png";
+
 import cloudlab_1 from "../assets/projects/cloudlab/1.png";
+import cloudlab_2 from "../assets/projects/cloudlab/2.png";
+import cloudlab_3 from "../assets/projects/cloudlab/3.png";
+import cloudlab_4 from "../assets/projects/cloudlab/4.png";
+
 import liqui_1 from "../assets/projects/liqui/1.png";
 
 export {
@@ -85,4 +91,7 @@ export {
 	aldia_1,
 	liqui_1,
 	cloudlab_1,
+	cloudlab_2,
+	cloudlab_3,
+	cloudlab_4
 };

@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { changeProjectModal } from "../redux/actions/actions";
+import Carousel from "./Carousel";
 
 const ModalProject = ({ isOpen, setIsOpen }) => {
 	const dispatch = useDispatch();
@@ -68,11 +69,12 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 						min-h-[282px] min-w-[300px] md:min-h-[350px] rounded-lg border border-blue-secondary"
 					>
 						<div>
-							<img
+							<Carousel project={project}/>
+							{/* <img
 								src={project?.image}
 								alt={project?.name}
 								className="w-full min-w-[350px] content-center"
-							/>
+							/> */}
 						</div>
 						<div className="text-white text-left pt-6">
 							<h3 className="text-xl font-medium">{project[`name_${language}`]}</h3>
