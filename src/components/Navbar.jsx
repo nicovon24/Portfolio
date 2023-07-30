@@ -108,19 +108,17 @@ const Navbar = () => {
 		}
 	};
 
-	console.log(scrollPosition);
-
 	return (
 		<div>
 			<nav>
 				<div
 					className={`fixed w-full overflow-hidden flex justify-between items-center py-6 px-8
-					z-[100] opacity-80 cursor-default ${
+					z-[10000] opacity-80 cursor-default ${
 						scrollPosition > 200 && "!bg-[#081325] shadow-sm shadow-main-green"
 					}`}
 				>
 					{/* logo and Nicolás Front-end. Both in desktop and phone */}
-					<div className="flex items-center font-secondary text-sm ">
+					<div className="flex items-center font-secondary text-sm">
 						<img
 							src={logo === "light-blue" ? logo_celeste : logo_white}
 							className="w-20 cursor-pointer"
@@ -130,7 +128,7 @@ const Navbar = () => {
 						{/* desktop, in the same line */}
 						<div className="hidden lg:flex font-bold">
 							<h3 className="text-main-green text-left">Nicolás </h3>
-							<label className="text-white text-left relative z-100">
+							<label className="text-white text-left">
 								&nbsp; | Front-end developer
 							</label>
 						</div>
@@ -196,7 +194,7 @@ const Navbar = () => {
 			</nav>
 
 			{/* MOBILE */}
-			<div className="block lg:hidden text-right mr-2 fixed top-[24px] right-0 z-[1000]">
+			<div className="block lg:hidden text-right mr-2 fixed top-[24px] right-0 z-[100000]">
 				<button
 					id="hamburger-menu"
 					className="text-3xl lg:hidden cursor-pointer relative w-8 h-8 right-4"
