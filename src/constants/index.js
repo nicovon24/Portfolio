@@ -396,7 +396,7 @@ const experiences = [
 const projects = [
 	{
 		name_english: "Cloudlab - No Country",
-		name_spanish: "Cloudlab",
+		name_spanish: "Cloudlab - No Country",
 		description_english: "Complete.",
 		description_spanish: "Completar.",
 		tags: [
