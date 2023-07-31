@@ -6,7 +6,7 @@
 
   <!--tech-->
   <div>
-    <h2>Built With</h2>
+    <h2>👾 Built With</h2>
     <p>My personal <a href="https://nicovon-arg.vercel.app/">portfolio</a> which features some of my github projects as well as my resume and technical skills.</p>
     <p>This project was built using these technologies.</p>
     <ul>
@@ -21,7 +21,7 @@
 
   <!--getting started-->
   <div>
-    <h2>Getting Started</h2>
+    <h2>👀 Getting Started</h2>
     <p>Clone down this repository. You will need node.js and git installed globally on your machine.</p>
   </div>
 
