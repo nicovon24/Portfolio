@@ -29,8 +29,8 @@
   <div>
     <h2>🛠 Installation and Setup Instructions</h2>
     <ol>
-      <li>Installation: npm install</li>
-      <li>In the project directory, you can run: npm start</li>
+      <li>Installation: <code>npm install</code></li>
+      <li>In the project directory, you can run: <code>npm start</code></li>
     </ol>
     <p>Runs the app in the development mode. <br/> Open <a href="http://localhost:5173/">http://localhost:5173/</a> to view it in the browser. The page will reload if you make edits.</p>
   </div>
