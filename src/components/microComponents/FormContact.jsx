@@ -37,6 +37,8 @@ const FormContact = () => {
 		);
 	};
 
+	const [isLoadingMsg, setIsLoadingMsg] = useState(false)
+
 	const onHandleSubmit = (e) => {
 		e.preventDefault();
 
@@ -47,6 +49,7 @@ const FormContact = () => {
 		const valuesErrors = Object.values(errors);
 
 		if (valuesErrors.length === 0) {
+			setIsLoadingMsg(true)
 			emailjs
 				.send(
 					"service_2n12b5l", //service id
@@ -61,6 +64,7 @@ const FormContact = () => {
 					"wlCYUd_KEO_Z9vBR7"
 				)
 				.then(() => {
+					setIsLoadingMsg(false)
 					swal({
 						cursor: "text",
 						title: `${language === "english" ? "Success:" : "Éxitoso:"}`,
@@ -74,6 +78,7 @@ const FormContact = () => {
 					});
 				})
 				.catch(() => {
+					setIsLoadingMsg(false)
 					swal({
 						cursor: "text",
 						title: `${language === "english" ? "Fail:" : "Error:"}`,
@@ -384,6 +389,7 @@ const FormContact = () => {
 													className="btn2 px-10 py-6 relative border border-white uppercase font-semibold tracking-wider leading-none overflow-hidden hover:text-black rounded-md w-full
 										bg-white"
 													type="submit"
+													disabled={isLoadingMsg}
 												>
 													<span className="absolute inset-0 bg-[#efa8cc]"></span>
 													<span className="absolute inset-0 flex justify-center items-center font-bold">
@@ -391,6 +397,7 @@ const FormContact = () => {
 													</span>
 												</button>
 											</div>
+											{isLoadingMsg && <p className="text-white">Loading...</p>}
 										</form>
 									</div>
 								</div>

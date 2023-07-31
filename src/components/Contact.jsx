@@ -10,7 +10,7 @@ const Contact = () => {
 	const { title, subtitle } = titles?.contact[language];
 
 	return (
-		<div className="section text-white text-left py-12 mx-auto w-full relative z-10" id="contact">
+		<div className="section bg-hero text-white text-left py-12 mx-auto w-full relative z-10" id="contact">
 			<div className="max-w-[90vw] pl-4 mx-auto">
 				{/* titles */}
 				<p className={`${styles.sectionSubText} text-white`}>{subtitle}</p>

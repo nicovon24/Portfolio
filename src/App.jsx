@@ -55,7 +55,7 @@ function App() {
 
 
 	return (
-		<div className="App  bg-cover bg-no-repeat overflow-hidden">
+		<div className="App bg-cover bg-no-repeat overflow-hidden">
 			<Navbar />
 
 			<Home />
