@@ -31,6 +31,11 @@ import {
 	liqui_3,
 	complex_3,
 	complex_2,
+	complex_4,
+	complex_5,
+	complex_6,
+	complex_7,
+	complex_8,
 } from "../assets";
 
 export const navLinks = [
@@ -82,13 +87,13 @@ const titles = {
 			title: "Introducción",
 			subtitle: "01. Sobre mí",
 			text:
-				"¡Hola a todos! Radicado en Córdoba - Argentina, soy un desarrollador full-stack y estudiante de analista de sistemas. Hablo tres idiomas y me apasiona mejorar mis habilidades de codificación y de desarrollo de aplicaciones y sitios web con las tecnologías PERN. Además, me encanta trabajar por mi cuenta para mejorar mis habilidades blandas y duras creando proyectos individuales y de equipo",
+				"¡Hola a todos! Radicado en Córdoba - Argentina, soy un desarrollador full-stack y estudiante de analista de sistemas. Hablo tres idiomas y me apasiona mejorar mis habilidades de codificación y de desarrollo de aplicaciones y sitios web con las tecnologías PERN y MERN. Además, me encanta trabajar por mi cuenta para mejorar mis habilidades blandas y duras creando proyectos individuales y de equipo",
 		},
 		english: {
 			title: "Introduction",
 			subtitle: "01. About me",
 			text:
-				"Hi there! I'm a trilingual full-stack developer and systems analyst student based in Cordoba, Argentina. I'm passionate about improving my coding and application development skills, and I build websites using the PERN stack. I also enjoy working independently to improve my soft and hard skills by creating individual and team projects.",
+				"Hello there! I'm a trilingual full-stack developer and systems analyst student based in Cordoba, Argentina. I'm passionate about improving my coding and application development skills, and I build websites using the PERN and MERN stack. I also enjoy working independently to improve my soft and hard skills by creating individual and team projects.",
 		},
 	},
 	tech: {
@@ -147,7 +152,7 @@ const services = [
 		// icon: mobile,
 	},
 	{
-		spanish: "Desarrollador Back-end",
+		spanish: "Experiencia en Back-end",
 		english: "Backend experience",
 		icon: "fa-solid fa-database px-4 py-3",
 		// icon: backend,
@@ -454,12 +459,22 @@ const projects = [
 			{ name: "react", image: reactjs },
 			{ name: "tailwind", image: tailwind },
 		],
-		image: [complex_1, complex_2, complex_3],
+		image: [
+			complex_1,
+			complex_6,
+			complex_7,
+			// complex_4,
+			complex_5,
+			complex_2,
+			complex_8,
+			// complex_3,
+		],
 		source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
 		source_deploy: "https://pf-complex-gym-henry.vercel.app/",
 	},
 ];
 
+//*cv
 const links = {
 	cv: {
 		spanish:

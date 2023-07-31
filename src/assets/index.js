@@ -47,6 +47,11 @@ import freelance from "../assets/company/freelance.png";
 import complex_1 from "../assets/projects/complex/1.png";
 import complex_2 from "../assets/projects/complex/2.png";
 import complex_3 from "../assets/projects/complex/3.png";
+import complex_4 from "../assets/projects/complex/4.png";
+import complex_5 from "../assets/projects/complex/5.png";
+import complex_6 from "../assets/projects/complex/6.png";
+import complex_7 from "../assets/projects/complex/7.png";
+import complex_8 from "../assets/projects/complex/8.png";
 
 import aldia_1 from "../assets/projects/aldia/1.png";
 import aldia_2 from "../assets/projects/aldia/2.png";
@@ -98,6 +103,11 @@ export {
 	complex_1,
 	complex_2,
 	complex_3,
+	complex_4,
+	complex_5,
+	complex_6,
+	complex_7,
+	complex_8,
 	aldia_1,
 	aldia_2,
 	aldia_3,
