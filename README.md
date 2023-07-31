@@ -1,7 +1,41 @@
-I present you my personal Portfolio :D! 
+<div>
+  <!--site img -->
+  <div>
+    <img src="https://res.cloudinary.com/dmnkfkrtt/image/upload/v1690771862/2023-07-30_16_jdxnww.png" alt="main img"/>
+  </div>
 
-Started on 10th of April, 2023.
-¡¡IS NOT FINISHED YET!!
+  <!--tech-->
+  <div>
+    <h2>Built With</h2>
+    <p>My personal <a href="https://nicovon-arg.vercel.app/">portfolio</a> which features some of my github projects as well as my resume and technical skills.</p>
+    <p>This project was built using these technologies.</p>
+    <ul>
+      <li>React</li>
+      <li>Vite.js</li>
+      <li>Tailwind CSS</li>
+      <li>Framer Motion & react-three</li>
+      <li>React-scroll</li>
+      <li>Cursor-effects</li>
+    </ul>
+  </div>
 
-https://user-images.githubusercontent.com/98624393/232325593-acc8c00c-7160-4be7-9265-ae865dfaf928.mp4
+  <!--getting started-->
+  <div>
+    <h2>Getting Started</h2>
+    <p>Clone down this repository. You will need node.js and git installed globally on your machine.</p>
+  </div>
 
+   <!--installation-->
+  <div>
+    <h2>🛠 Installation and Setup Instructions</h2>
+    <ol>
+      <li>Installation: npm install</li>
+      <li>In the project directory, you can run: npm start</li>
+    </ol>
+    <p>Runs the app in the development mode. <br/> Open <a href="http://localhost:5173/">http://localhost:5173/</a> to view it in the browser. The page will reload if you make edits.</p>
+  </div>
+
+  <div>
+    
+  </div>
+</div>
