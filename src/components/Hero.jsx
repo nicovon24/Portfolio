@@ -23,7 +23,7 @@ const Hero = () => {
 				className="w-[85vw] md:w-[90vw] text-white pt-[130px] xl:pt-[170px] 
 		"
 			>
-				<div className="min-h-[90vh] sm:min-h-[130vh] xl:min-h-[100vh] 2xl:min-h-[85vh]">
+				<div className="min-h-[100vh] sm:min-h-[130vh] xl:min-h-[100vh] 2xl:min-h-[85vh]">
 					<section
 						className={`grid grid-cols-1 text-left xl:grid-cols-2 relative min-h-[50vh] mx-auto `}
 					>
@@ -38,7 +38,7 @@ const Hero = () => {
 							</div>
 
 							<div>
-								<h1 className="mb-2 font-medium text-4xl text-gray-100 md:text-5xl">
+								<h1 className="mb-2 font-medium text-3xl sm:text-4xl text-gray-100 md:text-5xl">
 									{titleIntro}{" "}
 									<span className="relative">
 										<span
@@ -48,6 +48,7 @@ const Hero = () => {
 												
 											</span>
 											
+											{/* animation */}
 											<TypeAnimation
 													sequence={[
 														titleName, // Types 'One'
@@ -62,7 +63,7 @@ const Hero = () => {
 													repeat={Infinity}
 													style={{
 														display: "inline-block",
-														color: "#64ffda",
+														color: "#64ffda"
 													}}
 												/>
 										</span>
@@ -162,10 +163,10 @@ const Hero = () => {
 									></i>
 
 									{/* tw */}
-									<i
+									{/* <i
 										className={`fa-brands fa-twitter text-[20px] rounded-full p-2 mr-[12px] cursor-pointer ${styles.hoverChangeBorderAndColor} hover:scale-110 border-[1px]`}
 										onClick={() => window.open("https://twitter.com/nicovon2")}
-									></i>
+									></i> */}
 								</div>
 
 								{/* show btn after social media in mobile */}
