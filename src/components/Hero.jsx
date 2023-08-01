@@ -1,12 +1,18 @@
-import React from "react";
+import React, { useState } from "react";
 import { styles } from "../styles";
-import { yo } from "../assets/index";
+import { pdfenglish, pdfspanish, yo } from "../assets/index";
 import { useSelector } from "react-redux";
 import { links, titles } from "../constants";
 import SectionWrapper from "../hoc/SectionWrapper";
 import { TypeAnimation } from "react-type-animation";
+import { Document, Page } from "react-pdf";
+import { BlobProvider, PDFDownloadLink } from "@react-pdf/renderer";
+import DocuPdf from "./DocuPdf";
 
 const Hero = () => {
+	const [numPages, setNumPages] = useState();
+	const [pageNumber, setPageNumber] = useState(1);
+
 	const { language } = useSelector((s) => s);
 	const { title, subtitle, check_cv } = titles.hero[language];
 
@@ -15,6 +21,10 @@ const Hero = () => {
 	const titleIntro = titleSplit?.slice(0, titleSplit?.length - 2)?.join(" ");
 	const titleName = titleSplit[titleSplit.length - 2];
 	const titleWave = titleSplit[titleSplit.length - 1];
+
+	function onDocumentLoadSuccess({ numPages }) {
+		setNumPages(numPages);
+	}
 
 	//*the structure varies in mobile, tablet and desktop
 	return (
@@ -44,33 +54,29 @@ const Hero = () => {
 										<span
 											className={`h-20 pt-2 whitespace-nowrap text-brand-accent ${styles?.heroHeadText} `}
 										>
-											<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000">
-												
-											</span>
-											
+											<span className="text-main-green hover:text-main-pink hover:opacity-90 duration-1000"></span>
+
 											{/* animation */}
 											<TypeAnimation
-													sequence={[
-														titleName, // Types 'One'
-														3000, // Waits 1s
-														"Von", // Deletes 'One' and types 'Two'
-														2000, // Waits 2s
-														titleWave,
-														2000
-													]}
-													wrapper="span"
-													cursor={true}
-													repeat={Infinity}
-													style={{
-														display: "inline-block",
-														color: "#64ffda"
-													}}
-												/>
+												sequence={[
+													titleName, // Types 'One'
+													3000, // Waits 1s
+													"Von", // Deletes 'One' and types 'Two'
+													2000, // Waits 2s
+													titleWave,
+													2000,
+												]}
+												wrapper="span"
+												cursor={true}
+												repeat={Infinity}
+												style={{
+													display: "inline-block",
+													color: "#64ffda",
+												}}
+											/>
 										</span>
 										<div>
-											<div className={"font-black "}>
-												
-											</div>
+											<div className={"font-black "}></div>
 										</div>
 										{/* <span className="{`cursor absolute -bottom-0 left-0 xl:left-10 -top-2 inline-block bg-hero border-l-8 border-main-green w-full animate-type will-change`}"></span> */}
 									</span>
@@ -79,21 +85,7 @@ const Hero = () => {
 									{subtitle}
 								</p>
 
-								<button
-									className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none  text-[13px] w-[180px] 
-								hidden md:block overflow-hidden font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
-									type="button"
-									onClick={() =>
-										window.open(
-											links.cv[language]
-										)
-									}
-								>
-									<span className="absolute inset-0 bg-[#1a345d]"></span>
-									<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
-										{check_cv}
-									</span>
-								</button>
+								<PDFViewer check_cv={check_cv}/>
 
 								{/* follow me desktop */}
 								<div className="hidden xl:block mt-24 tracking-wide">
@@ -176,11 +168,7 @@ const Hero = () => {
 								block md:hidden overflow-hidden  font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink hover:border-main-pink
 								z-[100]"
 									type="button"
-									onClick={() =>
-										window.open(
-											links.cv[language]
-										)
-									}
+									onClick={() => window.open(links.cv[language])}
 								>
 									<span className="absolute inset-0 bg-[#1a345d]"></span>
 									<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
@@ -194,6 +182,25 @@ const Hero = () => {
 			</div>
 		</div>
 	);
+};
+
+const PDFViewer = ({check_cv}) => {
+	const { language } = useSelector((s) => s);
+
+	// Replace the path to the PDF file with the correct one
+	const pdfFile = language === "english" ? pdfenglish : pdfspanish;
+
+	return pdfFile ? (
+		<button className="btn2 relative border-1 text-main-green border-main-green font-secondary tracking-wider leading-none  text-[13px] w-[180px]  hidden md:block overflow-hidden font-medium mt-8 py-6 rounded-lg border-[1px] cursor-pointer hover:text-main-pink  hover:border-main-pink"
+		type="button">
+			<a download={`Nicolás Von ${language}`} href={pdfFile}>
+				<span className="absolute inset-0 bg-[#1a345d]"></span>
+				<span className="absolute inset-0 flex justify-center px-2 items-center font-bold cursor-pointer ">
+					{check_cv}
+				</span>
+			</a>
+		</button>
+	) : null;
 };
 
 export default SectionWrapper(Hero, "Hero");
