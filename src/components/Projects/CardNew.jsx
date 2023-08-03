@@ -16,17 +16,16 @@ const WorkCard = ({ project, index, language, handleOpenModal }) => {
 
 	return (
 		<div className="md:w-[60vw] lg:w-[40vw] 3xl:w-[25vw] gap-8 pt-16" key={index}>
-			<div className="p-[1px] rounded-[20px] shadow-card green-pink-gradient-not-hover">
-				<div className="bg-main-blue rounded-[20px] p-6 flex flex-col flex-wrap justify-center">
+			<div className="p-[1px] rounded-[20px] shadow-card !hover:green-pink-gradient bg-[#112240] border-2 border-white">
+				<div className="rounded-[20px] p-6 flex flex-col flex-wrap justify-center">
 					<div key={index} className="flex flex-wrap gap-x-8">
 						{/* image and modal */}
 						<div>
 							<img
 								className="relative z-10 top-0 left-0 w-full h-[220px] mb-3 rounded-xl
-								transition-transform hover:scale-[1.03] cursor-pointer"
+								"
 								src={project?.image[0]}
 								alt={project?.name + " img"}
-								onClick={()=>handleOpenModalLocal()}
 							/>
 							{/* <ModalProject project={project} /> */}
 						</div>
@@ -36,8 +35,9 @@ const WorkCard = ({ project, index, language, handleOpenModal }) => {
 							<div className="w-full flex items-center justify-between pb-4">
 								<p
 									className={
-										"text-white hover:text-main-pink hover:opacity-90 duration-1000 font-black text-xl pb-2 "
+										"text-main-green hover:opacity-90 duration-1000 font-black text-xl pb-2 underline cursor-pointer"
 									}
+									onClick={()=>handleOpenModalLocal()}
 								>
 									{project["name_" + language]}
 								</p>
