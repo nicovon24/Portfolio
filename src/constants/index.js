@@ -50,11 +50,11 @@ export const navLinks = [
 	// 	spanish: "Tech",
 	// },
 
-	{
-		id: "experience",
-		english: "Experience",
-		spanish: "Experiencia",
-	},
+	// {
+	// 	id: "experience",
+	// 	english: "Experience",
+	// 	spanish: "Experiencia",
+	// },
 	{
 		id: "work",
 		english: "Work",

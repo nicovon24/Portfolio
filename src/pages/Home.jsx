@@ -20,7 +20,7 @@ const Home = () => {
 			<div className="mx-auto bg-main-blue relative z-[0.8]">
 				<About />
 				<Tech />
-				<Experience />
+				{/* <Experience /> */}
 				<Works handleOpenModal={handleOpenModal} />
 				<Contact />
 

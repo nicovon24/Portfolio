@@ -2,11 +2,31 @@ import { useSelector } from "react-redux";
 import "./App.css";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import React from "react";
+import React, { useEffect } from "react";
 import { trailingCursor } from "cursor-effects";
 
 function App() {
 	const { language } = useSelector((s) => s);
+
+	const addInitialLogo = () => {
+		document.title = "Nicolás Von Muhlinen";
+
+		//*changing document icon
+		const icon =
+			document.querySelector("link[rel='icon']") || document.createElement("link");
+
+		// Set the new icon path
+		icon.type = "image/x-icon";
+		icon.rel = "icon";
+		icon.href = "/src/assets/me/logo_celeste_recortado.ico";
+
+		// Update the document's icon
+		document.head.appendChild(icon);
+	};
+	
+	useEffect(()=>{
+		addInitialLogo()
+	}, [])
 
 	//*app title and icon, changing it
 	window.addEventListener("blur", () => {
@@ -27,19 +47,7 @@ function App() {
 	});
 
 	window.addEventListener("focus", () => {
-		document.title = "Nicolás Von Muhlinen";
-
-		//*changing document icon
-		const icon =
-			document.querySelector("link[rel='icon']") || document.createElement("link");
-
-		// Set the new icon path
-		icon.type = "image/x-icon";
-		icon.rel = "icon";
-		icon.href = "/src/assets/me/logo_celeste_recortado.ico";
-
-		// Update the document's icon
-		document.head.appendChild(icon);
+		addInitialLogo()
 	});
 
 	//*cursor effect
@@ -52,7 +60,6 @@ function App() {
 			// "https://o.remove.bg/downloads/7e9a5784-8a12-412e-b038-36c3158c7122/luna-llena__9_-removebg-preview.png"
 		});
 	});
-
 
 	return (
 		<div className="App bg-cover bg-no-repeat overflow-hidden">

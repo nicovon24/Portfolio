@@ -68,6 +68,9 @@ import liqui_1 from "../assets/projects/liqui/1.png";
 import liqui_2 from "../assets/projects/liqui/2.png";
 import liqui_3 from "../assets/projects/liqui/3.png";
 
+import pdfenglish from "../assets/pdf/CV Nicolás Von Muhlinen English.pdf";
+import pdfspanish from "../assets/pdf/CV Nicolás Von Muhlinen Spanish.pdf";
+
 export {
 	logo_white,
 	logo_celeste,
@@ -120,4 +123,6 @@ export {
 	cloudlab_2,
 	cloudlab_3,
 	cloudlab_4,
+	pdfspanish,
+	pdfenglish,
 };
