@@ -44,11 +44,11 @@ export const navLinks = [
 		english: "About",
 		spanish: "Sobre mi",
 	},
-	// {
-	// 	id: "tech",
-	// 	english: "Tech",
-	// 	spanish: "Tech",
-	// },
+	{
+		id: "tech",
+		english: "Tech",
+		spanish: "Tech",
+	},
 
 	// {
 	// 	id: "experience",
@@ -99,11 +99,11 @@ const titles = {
 	tech: {
 		spanish: {
 			title: "Tecnologías",
-			// subtitle: "02. Conocimientos",
+			subtitle: "02. Conocimientos",
 		},
 		english: {
 			title: "Technologies",
-			// subtitle: "02. Tech stack",
+			subtitle: "02. Tech stack",
 		},
 	},
 	experiences: {
