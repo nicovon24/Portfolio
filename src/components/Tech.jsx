@@ -12,8 +12,9 @@ const TechCard = ({ tech, spanish, english, index }) => {
 
 	return (
 		<div
-			className={`flex flex-wrap gap-8 justify-between relative pt-8`}
+			className={`section flex flex-wrap gap-8 justify-between relative pt-8`}
 			key={index}
+			id="tech"
 		>
 			<Tilt className="w-full mb-16" 
 					options={{
