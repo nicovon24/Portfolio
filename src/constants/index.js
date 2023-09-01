@@ -87,13 +87,13 @@ const titles = {
 		spanish: {
 			title: "¡Hola! Soy Nico 👋",
 			subtitle:
-				"Soy un apasionado desarrollador Front-end con habilidades en JavaScript, siempre motivado para aprender y crecer tanto personal como profesionalmente. Y amo lo que hago. 💙",
+				"Soy un apasionado desarrollador Full-stack con habilidades en JavaScript, siempre motivado para aprender y crecer tanto personal como profesionalmente. Y amo lo que hago. 💙",
 			check_cv: "¡Revisá mi CV!",
 		},
 		english: {
 			title: "Hi, here Nico 👋",
 			subtitle:
-				"I am a passionate Front-end developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
+				"I am a passionate Full-stack developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
 
 			check_cv: "Check out my CV!",
 		},
@@ -109,7 +109,7 @@ const titles = {
 			title: "Introduction",
 			subtitle: "01. About me",
 			text:
-				"Hello there! I'm a trilingual full-stack developer and systems analyst student based in Cordoba, Argentina. I'm passionate about improving my coding and application development skills, and I build websites using the PERN and MERN stack. I also enjoy working independently to improve my soft and hard skills by creating individual and team projects.",
+				"Hello there! I'm a bilingual full-stack developer and systems analyst student based in Cordoba, Argentina. I'm passionate about improving my coding and application development skills, and I build websites using the PERN and MERN stack. I also enjoy working independently to improve my soft and hard skills by creating individual and team projects.",
 		},
 	},
 	tech: {
@@ -162,7 +162,7 @@ const titles = {
 
 const services = [
 	{
-		spanish: "Desarrollador Front-end",
+		spanish: "Desarrollador Full-stack",
 		english: "Frontend developer",
 		icon: "fa-solid fa-computer p-3",
 		// icon: mobile,
@@ -374,8 +374,8 @@ const experiences = [
 	/* ALDIA */
 	{
 		title: {
-			spanish: "Front-end Developer",
-			english: "Front-end Developer",
+			spanish: "Full-stack Developer",
+			english: "Full-stack Developer",
 		},
 		company_name: {
 			spanish: "Freelance en Gen Consultores",
@@ -419,7 +419,7 @@ const experiences = [
 				"Liderar el armado de la base de datos y del servidor (back-end)",
 				"Desarrollar las rutas y controladores de empleados",
 				"Asistir en el frontend y el armado de componentes",
-				"Proponer ideas para la mejora del back y el front-end",
+				"Proponer ideas para la mejora del back y el Full-stack",
 			],
 			english: [
 				"Leadershipness for the design of the database and the back-end of the application",
@@ -432,8 +432,8 @@ const experiences = [
 	/* COMPLEX */
 	{
 		title: {
-			spanish: "Desarrollador Front-end",
-			english: "Front-end Developer",
+			spanish: "Desarrollador Full-stack",
+			english: "Full-stack Developer",
 		},
 		company_name: {
 			spanish: "Gimnasio Complex",
@@ -605,9 +605,9 @@ const projects = [
 const links = {
 	cv: {
 		spanish:
-			"https://drive.google.com/file/d/1NZeNZnvtEmJ2F9WGm8Duy6gAjJOrlM-Z/view?usp=drive_link",
+			"https://drive.google.com/file/d/1rNwCZttv3oW6M9a8DdBI6Bfu1yxVgAKK/view?usp=drive_link",
 		english:
-			"https://drive.google.com/file/d/1NCbxnLinNSC08hUBNUEvYf4Lja4Pf5wh/view?usp=drive_link",
+			"https://drive.google.com/file/d/1rNwCZttv3oW6M9a8DdBI6Bfu1yxVgAKK/view?usp=drive_link",
 	},
 };
 

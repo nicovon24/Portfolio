@@ -117,7 +117,7 @@ const Navbar = () => {
 						scrollPosition > 200 && "!bg-[#081325] shadow-sm shadow-main-green"
 					}`}
 				>
-					{/* logo and Nicolás Front-end. Both in desktop and phone */}
+					{/* logo and Nicolás Full-stack. Both in desktop and phone */}
 					<div className="flex items-center font-secondary text-sm">
 						<img
 							src={logo === "light-blue" ? logo_celeste : logo_white}
@@ -129,7 +129,7 @@ const Navbar = () => {
 						<div className="hidden lg:flex font-bold">
 							<h3 className="text-main-green text-left">Nicolás </h3>
 							<label className="text-white text-left">
-								&nbsp; | Front-end developer
+								&nbsp; | Full-stack developer
 							</label>
 						</div>
 
@@ -137,7 +137,7 @@ const Navbar = () => {
 						<div className="block lg:hidden font-bold">
 							<h3 className="text-white text-left">Nicolás </h3>
 							<label className="text-white text-left relative z-100">
-								| Front-end developer
+								| Full-stack developer
 							</label>
 						</div>
 					</div>

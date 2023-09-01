@@ -68,8 +68,8 @@ function App() {
 
 			<Home />
 
-			<div class="scrollbar" id="style-1">
-				<div class="force-overflow"></div>
+			<div className="scrollbar" id="style-1">
+				<div className="force-overflow"></div>
 			</div>
 		</div>
 	);
