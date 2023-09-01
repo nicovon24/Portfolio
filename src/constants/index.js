@@ -49,6 +49,8 @@ import {
 	csharpSvg,
 	linuxSvg,
 	gitSvg,
+	sequelizeSvg,
+	sqlSvg,
 } from "../assets";
 
 export const navLinks = [
@@ -323,14 +325,20 @@ const techSvg = {
 			nivel_english: "Intermediate",
 		},
 		{
-			name: "Mongo DB",
-			icon: mongoSvg,
+			name: "Sequelize",
+			icon: sequelizeSvg,
 			nivel_spanish: "Intermedio",
 			nivel_english: "Intermediate",
 		},
 		{
-			name: "C Sharp",
-			icon: csharpSvg,
+			name: "SQL",
+			icon: sqlSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
+		},
+		{
+			name: "Mongo DB",
+			icon: mongoSvg,
 			nivel_spanish: "Intermedio",
 			nivel_english: "Intermediate",
 		},
@@ -345,6 +353,12 @@ const techSvg = {
 			icon: gitSvg,
 			nivel_spanish: "Avanzado",
 			nivel_english: "Advanced",
+		},
+		{
+			name: "C Sharp",
+			icon: csharpSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
 		},
 	],
 };
@@ -500,8 +514,10 @@ const projects = [
 	{
 		name_english: "Cloudlab - No Country",
 		name_spanish: "Cloudlab - No Country",
-		description_english: "Complete.",
-		description_spanish: "Completar.",
+		description_english:
+			"Platform for clinical laboratories that seek to help in the management of the results of the different studies and patients.",
+		description_spanish:
+			"Plataforma para laboratorios clínicos que busquen agilizar la gestión de los resultados de los diferentes estudios y pacientes.",
 		tags: [
 			{ name: "react", image: next },
 			{ name: "typescript", image: ts },
@@ -519,8 +535,10 @@ const projects = [
 	{
 		name_english: "Aldia APP - Gen Consultores",
 		name_spanish: "Aldia APP - Gen Consultores",
-		description_english: "Complete.",
-		description_spanish: "Completar.",
+		description_english:
+			"Application for small businesses and individuals to improve the flexible management of their finances, income and expenses.",
+		description_spanish:
+			"Aplicación para pequeñas empresas e individuos para mejorar la gestión flexible de sus finanzas, ingresos y egresos.",
 		tags: [
 			{ name: "react", image: next },
 			{ name: "typescript", image: ts },
@@ -538,8 +556,10 @@ const projects = [
 	{
 		name_english: "Liqui - No Country",
 		name_spanish: "Liqui - No Country",
-		description_english: "Complete.",
-		description_spanish: "Completar.",
+		description_english:
+			"Academic SPA where an organization can improve the management of salaries and settlements of its employees.",
+		description_spanish:
+			"SPA académico donde una organización puede mejorar la gestión de los sueldos y liquidaciones de sus empleados.",
 		tags: [
 			{ name: "react", image: reactjs },
 			{ name: "tailwind", image: tailwind },
@@ -551,8 +571,10 @@ const projects = [
 	{
 		name_english: "Complex Gym - PF Henry",
 		name_spanish: "Gimnasio Complex - PF Henry",
-		description_english: "Complete.",
-		description_spanish: "Completar.",
+		description_english:
+			"Website for an Argentine gym to manage its activities. It is currently not active.",
+		description_spanish:
+			"Sitio web para un gimnasio argentino para gestión de sus actividades. Actualmente no está activa.",
 		tags: [
 			{ name: "react", image: reactjs },
 			{ name: "tailwind", image: tailwind },

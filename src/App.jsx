@@ -8,6 +8,7 @@ import { trailingCursor } from "cursor-effects";
 function App() {
 	const { language } = useSelector((s) => s);
 
+	//logo
 	const addInitialLogo = () => {
 		document.title = "Nicolás Von Muhlinen";
 

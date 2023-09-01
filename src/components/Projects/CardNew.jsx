@@ -22,7 +22,7 @@ const WorkCard = ({ project, index, language, handleOpenModal }) => {
 						{/* image and modal */}
 						<div>
 							<img
-								className="relative z-10 top-0 left-0 w-full h-[220px] mb-3 rounded-xl
+								className="relative z-10 top-0 left-0 w-screen max-h-[220px] mb-3 rounded-xl
 								hover:scale-[1.03] duration-300 cursor-pointer"
 								onClick={()=>handleOpenModalLocal()}
 								src={project?.image[0]}

@@ -40,6 +40,8 @@ import reactSvg from "./svg/react.svg";
 import reduxSvg from "./svg/redux.svg";
 import tailwindSvg from "./svg/tailwind.svg";
 import tsSvg from "./svg/ts.svg";
+import sequelizeSvg from "./svg/sequelize.svg";
+import sqlSvg from "./svg/sqlSvg.svg";
 
 import yo from "./me/./yo_celeste.png";
 import star_wars from "./otros/star_wars.png";
@@ -151,5 +153,7 @@ export {
 	tailwindSvg,
 	reduxSvg,
 	reactSvg,
-	mongoSvg
+	mongoSvg,
+	sequelizeSvg,
+	sqlSvg,
 };
