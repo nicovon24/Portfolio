@@ -7,7 +7,6 @@ const Carousel = ({ project }) => {
 	for (let i = 1; i <= length; i++) {
 		arrNums.push(i);
 	}
-	console.log(active);
 
 	return (
 		<>
