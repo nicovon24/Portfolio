@@ -51,6 +51,7 @@ import {
 	gitSvg,
 	sequelizeSvg,
 	sqlSvg,
+	aspSvg,
 } from "../assets";
 
 export const navLinks = [
@@ -359,6 +360,12 @@ const techSvg = {
 			icon: csharpSvg,
 			nivel_spanish: "Intermedio",
 			nivel_english: "Intermediate",
+		},
+		{
+			name: "ASP.NET",
+			icon: aspSvg,
+			nivel_spanish: "Básico+",
+			nivel_english: "Basic+",
 		},
 	],
 };

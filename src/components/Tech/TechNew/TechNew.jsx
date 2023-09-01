@@ -54,7 +54,7 @@ const TechCard = ({ tech, spanish, english, index }) => {
 										{/* name and level tech */}
 										<div className="">
 											<p className="text-white font-bold flex justify-left">{t?.name}</p>
-											<p className="text-gray-400">{t[`nivel_${language}`]}</p>
+											<p className="text-gray-400 flex justify-left">{t[`nivel_${language}`]}</p>
 										</div>
 										{/* <p className={`ball-text text-secondary relative top-[3px] ${t?.name==="git" && "top-[4px]"}`}>{t?.name}</p> */}
 									</div>
