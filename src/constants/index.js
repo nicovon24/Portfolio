@@ -36,6 +36,19 @@ import {
 	complex_6,
 	complex_7,
 	complex_8,
+	nodeSvg,
+	nextSvg,
+	tailwindSvg,
+	reduxSvg,
+	reactSvg,
+	tsSvg,
+	jsSvg,
+	cssSvg,
+	htmlSvg,
+	mongoSvg,
+	csharpSvg,
+	linuxSvg,
+	gitSvg,
 } from "../assets";
 
 export const navLinks = [
@@ -247,6 +260,91 @@ const technologies = {
 		{
 			name: "git",
 			icon: git,
+		},
+	],
+};
+
+const techSvg = {
+	frontend: [
+		{
+			name: "HTML 5",
+			icon: htmlSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
+		},
+		{
+			name: "CSS 3",
+			icon: cssSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
+		},
+		{
+			name: "Javascript",
+			icon: jsSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
+		},
+		{
+			name: "Typescript",
+			icon: tsSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
+		},
+		{
+			name: "React",
+			icon: reactSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
+		},
+		{
+			name: "Redux",
+			icon: reduxSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
+		},
+		{
+			name: "Tailwind",
+			icon: tailwindSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
+		},
+		{
+			name: "Next.js",
+			icon: nextSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
+		},
+	],
+	backend: [
+		{
+			name: "Node.js",
+			icon: nodeSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
+		},
+		{
+			name: "Mongo DB",
+			icon: mongoSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
+		},
+		{
+			name: "C Sharp",
+			icon: csharpSvg,
+			nivel_spanish: "Intermedio",
+			nivel_english: "Intermediate",
+		},
+		{
+			name: "Linux",
+			icon: linuxSvg,
+			nivel_spanish: "Básico",
+			nivel_english: "Basic",
+		},
+		{
+			name: "Git",
+			icon: gitSvg,
+			nivel_spanish: "Avanzado",
+			nivel_english: "Advanced",
 		},
 	],
 };
@@ -484,4 +582,12 @@ const links = {
 	},
 };
 
-export { services, technologies, experiences, projects, titles, links };
+export {
+	services,
+	technologies,
+	techSvg,
+	experiences,
+	projects,
+	titles,
+	links,
+};
