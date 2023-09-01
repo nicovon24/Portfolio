@@ -94,7 +94,7 @@ const ModalProject = ({ isOpen, setIsOpen }) => {
 							</div>
 						</div>
 						{/* buttons */}
-						<div className="flex items-center justify-between md:text-lg text-center h-full pt-4 ">
+						<div className="flex flex-col gap-y-4 md:flex-row md:items-center justify-between md:text-lg text-center h-full pt-4 ">
 							{/* visit & repository */}
 							<div className="flex gap-x-4">
 								<a

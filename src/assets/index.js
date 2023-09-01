@@ -27,6 +27,23 @@ import trello from "./tech/trello.png";
 // import nodejs from "./notUsed/nodejs.png";
 // import postgres from "./notUsed/postgres.png";
 
+import csharpSvg from "./svg/c-sharp.svg";
+import cssSvg from "./svg/css.svg";
+import gitSvg from "./svg/git.svg";
+import htmlSvg from "./svg/html.svg";
+import jsSvg from "./svg/js.svg";
+import linuxSvg from "./svg/linux.svg";
+import mongoSvg from "./svg/mongo.svg";
+import nextSvg from "./svg/next.svg";
+import nodeSvg from "./svg/node.svg";
+import reactSvg from "./svg/react.svg";
+import reduxSvg from "./svg/redux.svg";
+import tailwindSvg from "./svg/tailwind.svg";
+import tsSvg from "./svg/ts.svg";
+import sequelizeSvg from "./svg/sequelize.svg";
+import sqlSvg from "./svg/sqlSvg.svg";
+import aspSvg from "./svg/asp.svg";
+
 import yo from "./me/./yo_celeste.png";
 import star_wars from "./otros/star_wars.png";
 
@@ -125,4 +142,20 @@ export {
 	cloudlab_4,
 	pdfspanish,
 	pdfenglish,
+	jsSvg,
+	tsSvg,
+	cssSvg,
+	gitSvg,
+	htmlSvg,
+	nextSvg,
+	nodeSvg,
+	linuxSvg,
+	csharpSvg,
+	tailwindSvg,
+	reduxSvg,
+	reactSvg,
+	mongoSvg,
+	sequelizeSvg,
+	sqlSvg,
+	aspSvg,
 };
