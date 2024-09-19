@@ -88,6 +88,26 @@ import liqui_3 from "../assets/projects/liqui/3.png";
 import pdfenglish from "../assets/pdf/CV Nicolás Von Muhlinen English.pdf";
 import pdfspanish from "../assets/pdf/CV Nicolás Von Muhlinen Spanish.pdf";
 
+import demo_1 from "../assets/projects/senzary/demo/1.png";
+import demo_2 from "../assets/projects/senzary/demo/2.png";
+import demo_3 from "../assets/projects/senzary/demo/3.png";
+import demo_4 from "../assets/projects/senzary/demo/4.png";
+import demo_5 from "../assets/projects/senzary/demo/5.png";
+import demo_6 from "../assets/projects/senzary/demo/6.png";
+import demo_7 from "../assets/projects/senzary/demo/7.png";
+
+import airport_1 from "../assets/projects/senzary/airport/1.png";
+import airport_2 from "../assets/projects/senzary/airport/2.png";
+import airport_3 from "../assets/projects/senzary/airport/3.png";
+import airport_4 from "../assets/projects/senzary/airport/4.png";
+import airport_5 from "../assets/projects/senzary/airport/5.png";
+import airport_6 from "../assets/projects/senzary/airport/6.png";
+import airport_7 from "../assets/projects/senzary/airport/7.png";
+
+import indiana_1 from "../assets/projects/senzary/indiana/1.png";
+import indiana_2 from "../assets/projects/senzary/indiana/2.png";
+import indiana_3 from "../assets/projects/senzary/indiana/3.png";
+
 export {
 	logo_white,
 	logo_celeste,
@@ -158,4 +178,21 @@ export {
 	sequelizeSvg,
 	sqlSvg,
 	aspSvg,
+	demo_1,
+	demo_2,
+	demo_3,
+	demo_4,
+	demo_5,
+	demo_6,
+	demo_7,
+	airport_1,
+	airport_2,
+	airport_3,
+	airport_4,
+	airport_5,
+	airport_6,
+	airport_7,
+	indiana_1,
+	indiana_2,
+	indiana_3,
 };

@@ -52,6 +52,23 @@ import {
 	sequelizeSvg,
 	sqlSvg,
 	aspSvg,
+	demo_1,
+	demo_2,
+	demo_3,
+	demo_4,
+	demo_5,
+	demo_6,
+	demo_7,
+	airport_2,
+	airport_3,
+	airport_4,
+	airport_5,
+	airport_6,
+	airport_7,
+	airport_1,
+	indiana_1,
+	indiana_2,
+	indiana_3,
 } from "../assets";
 
 export const navLinks = [
@@ -524,6 +541,75 @@ const experiences = [
 ];
 
 const projects = [
+	{
+		name_english: "IoTLogIQ Demo - Senzary",
+		name_spanish: "IoTLogIQ Demo - Senzary",
+		description_english:
+			"Demo to show the Senzary possible use cases for clients and the platform potential, including real-time monitoring, predictive analytics, and seamless integration with existing infrastructure.",
+		description_spanish:
+			"Demo de Senzary para mostrar los posibles casos de uso para clientes y el potencial de la plataforma, incluyendo monitoreo en tiempo real y análisis predictivo",
+		tags: [
+			// { name: "react", image: reactjs },
+			// { name: "tailwind", image: tailwind },
+		],
+		image: [
+			demo_1,
+			demo_2,
+			demo_3,
+			demo_4,
+			demo_5,
+			demo_6,
+			demo_7,
+			// complex_3,
+		],
+		// source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
+		source_deploy:
+			"https://iotlogiq.com/dashboard/85d17f60-c2b2-11ed-92b1-afe70ad8d627?publicId=b3a5e4e0-3257-11ec-b905-3f4bd228fc52",
+	},
+	{
+		name_english: "Smart Airport Solution - Senzary",
+		name_spanish: "Smart Airport Solution - Senzary",
+		description_english:
+			"This solution highlights the features such as real-time monitoring of environment variables, predictive analytics for passenger flow and equipment maintenance.",
+		description_spanish:
+			"Esta solución destaca funciones como el monitoreo en tiempo real de variables del ambiente del aeropuerto, análisis predictivos para el flujo de pasajeros y el mantenimiento de equipos",
+		tags: [
+			// { name: "react", image: reactjs },
+			// { name: "tailwind", image: tailwind },
+		],
+		image: [
+			airport_1,
+			airport_2,
+			airport_3,
+			airport_4,
+			airport_5,
+			airport_6,
+			airport_7,
+			// complex_3,
+		],
+		// source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
+		// source_deploy: "https://pf-complex-gym-henry.vercel.app/",
+	},
+	{
+		name_english: "Aquifer Monitoring Solution - Senzary",
+		name_spanish: "Monitoreo de Acuíferos - Senzary",
+		description_english:
+			"This solution focuses on the real-time monitoring of aquifer water levels, providing valuable data for sustainable water management. It features predictive analytics that helps optimize resource usage.",
+		description_spanish:
+			"Esta solución se enfoca en el monitoreo en tiempo real de los niveles de agua de acuíferos, proporcionando datos para la gestión del agua y optimización de uso de recursos.",
+		tags: [
+			// { name: "react", image: reactjs },
+			// { name: "tailwind", image: tailwind },
+		],
+		image: [
+			indiana_1,
+			indiana_2,
+			indiana_3,
+			// complex_3,
+		],
+		// source_code_link: "https://github.com/complexgym/PF-Complex-Gym-JS",
+		// source_deploy: "https://pf-complex-gym-henry.vercel.app/",
+	},
 	{
 		name_english: "Cloudlab - No Country",
 		name_spanish: "Cloudlab - No Country",
