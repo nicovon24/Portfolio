@@ -93,7 +93,7 @@ const titles = {
 		english: {
 			title: "Hi, here Nico 👋",
 			subtitle:
-				"I am a passionate Full-stack developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
+				"I am a passionate Full-stack IoT developer with skills in JavaScript, always motivated to learn and grow both personally and professionally. And I love what I do. 💙",
 
 			check_cv: "Check out my CV!",
 		},
@@ -162,17 +162,23 @@ const titles = {
 
 const services = [
 	{
-		spanish: "Desarrollador Full-stack",
-		english: "Frontend developer",
-		icon: "fa-solid fa-computer p-3",
+		spanish: "Desarrollador IoT",
+		english: "IoT developer",
+
 		// icon: mobile,
 	},
 	{
-		spanish: "Experiencia en Back-end",
-		english: "Backend experience",
-		icon: "fa-solid fa-database px-4 py-3",
-		// icon: backend,
+		spanish: "Desarrollador Full-stack",
+		english: "Frontend developer with Backend experience",
+		icon: "fa-solid fa-computer p-3",
+		// icon: mobile,
 	},
+	// {
+	// 	spanish: "Experiencia en Back-end",
+	// 	english: "Backend experience",
+	// 	icon: "fa-solid fa-database px-4 py-3",
+	// 	// icon: backend,
+	// },
 	{
 		spanish: "Amante del deporte",
 		english: "Sports enthusiast",
