@@ -13,7 +13,7 @@ import { Link } from "react-scroll";
 
 const Navbar = () => {
 	const [activeSection, setActiveSection] = useState(null);
-	const [active, setActive] = useState("");
+	// const [active, setActive] = useState("");
 	const [toggleMenu, setToggleMenu] = useState(false);
 	const [scrollPosition, setScrollPosition] = useState(0);
 	const [logo, setLogo] = useState("light-blue");

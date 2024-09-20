@@ -108,6 +108,7 @@ import indiana_1 from "../assets/projects/senzary/indiana/1.png";
 import indiana_2 from "../assets/projects/senzary/indiana/2.png";
 import indiana_3 from "../assets/projects/senzary/indiana/3.png";
 
+import logo_senzary from "../assets/projects/senzary/logo/1.png";
 export {
 	logo_white,
 	logo_celeste,
@@ -195,4 +196,5 @@ export {
 	indiana_1,
 	indiana_2,
 	indiana_3,
+	logo_senzary,
 };

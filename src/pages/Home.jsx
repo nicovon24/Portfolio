@@ -4,6 +4,7 @@ import React, { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import ModalProject from "../components/microComponents/ModalProject.jsx";
 
+
 const Home = () => {
 	{
 		/* open Modal function and state */
@@ -22,6 +23,9 @@ const Home = () => {
 				<Tech />
 				{/* <Experience /> */}
 				<Works handleOpenModal={handleOpenModal} />
+
+				<Experience/>
+
 				<Contact />
 
 				{/* animation with framer motion for close and open modal */}

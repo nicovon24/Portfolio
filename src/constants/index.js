@@ -69,6 +69,7 @@ import {
 	indiana_1,
 	indiana_2,
 	indiana_3,
+	logo_senzary,
 } from "../assets";
 
 export const navLinks = [
@@ -92,6 +93,11 @@ export const navLinks = [
 		id: "work",
 		english: "Work",
 		spanish: "Trabajos",
+	},
+	{
+		id: "experience",
+		english: "Experience",
+		spanish: "Experiencia",
 	},
 	{
 		id: "contact",
@@ -142,11 +148,11 @@ const titles = {
 	experiences: {
 		spanish: {
 			title: "Experiencia",
-			subtitle: "02. Prácticas y experiencia",
+			subtitle: "04. Prácticas y experiencia",
 		},
 		english: {
 			title: "Experiences",
-			subtitle: "02. Practical experience",
+			subtitle: "04. Practical experience",
 		},
 	},
 	works: {
@@ -162,14 +168,14 @@ const titles = {
 	contact: {
 		spanish: {
 			title: "Contacto",
-			subtitle: "04. Comunicate conmigo",
+			subtitle: "05. Comunicate conmigo",
 			formTitle: "Contactame",
 			formSubtitle:
 				"Puedes dejarme un mensaje si necesitas ayuda para crear un sitio web para ti o para tu empresa.",
 		},
 		english: {
 			title: "Contact",
-			subtitle: "04. Contact me",
+			subtitle: "05. Contact me",
 			formTitle: "Message me",
 			formSubtitle:
 				"You can send me a message if you need any help in making a website for you or your company.",
@@ -394,8 +400,41 @@ const techSvg = {
 };
 
 const experiences = [
+	/* SENZARY */
+	{
+		key: 1,
+		title: {
+			spanish: "Full-stack IoT Developer",
+			english: "Full-stack IoT Developer",
+		},
+		company_name: {
+			spanish: "Senzary",
+			english: "Senzary",
+		},
+		icon: logo_senzary,
+		icon_type: "work",
+		iconBg: "#0087e0",
+		date: "August 2023",
+		points: {
+			spanish: [
+				"Desarrollo y diseño de dashboards para diversos casos de uso",
+				"Análisis de casos de uso, estableciendo offsets y thresholds",
+				"Implementación de rule chains y procesamiento avanzado de datos",
+				"Implementación de metodologías ágiles",
+				"Capacitación a otros desarrolladores",
+			],
+			english: [
+				"Development and design of dashboards for various use cases",
+				"Analysis of use cases, establishing offsets and thresholds",
+				"Implementation of rule chains and advanced data processing",
+				"Scrum implementation",
+				"Mentorship of other developers",
+			],
+		},
+	},
 	/* ALDIA */
 	{
+		key: 2,
 		title: {
 			spanish: "Full-stack Developer",
 			english: "Full-stack Developer",
@@ -405,27 +444,25 @@ const experiences = [
 			english: "Freelance in Gen Consultores",
 		},
 		icon: freelance,
+		icon_type: "work",
 		iconBg: "#0087e0",
-		date: "Apr. 2023 - Jul. 2023",
+		date: "April 2023 - July 2023",
 		points: {
 			spanish: [
-				"Estilado y diseño de gran parte de la aplicación",
-				"Renderizado de componentes en diferentes secciones",
+				"Renderizado de componentes y estilos en diferentes secciones",
 				"Mantenimiento y optimización de la app",
-				"Asegurar alta calidad y rendimiento",
 				"Trabajo en equipo y propuestas de mejora",
 			],
 			english: [
-				"Styles and design of a great part of the application",
-				"Rendering of the components in different sections",
+				"Rendering of the components and styles in different sections",
 				"Maintaining  and optimization of the site",
-				"Ensuring high quality and performance",
 				"Teamwork and proposing improvement opportunities",
 			],
 		},
 	},
 	/* No Country */
 	{
+		key: 3,
 		title: {
 			spanish: "Full-stack Developer",
 			english: "Full-stack Developer",
@@ -435,20 +472,19 @@ const experiences = [
 			english: "No Country",
 		},
 		icon: no_country,
+		icon_type: "school",
 		iconBg: "#080940",
-		date: "Apr. 2023 - Jul. 2023",
+		date: "April 2023 - July 2023",
 		points: {
 			spanish: [
 				"Liderar el armado de la base de datos y del servidor (back-end)",
 				"Desarrollar las rutas y controladores de empleados",
 				"Asistir en el frontend y el armado de componentes",
-				"Proponer ideas para la mejora del back y el Full-stack",
 			],
 			english: [
 				"Leadershipness for the design of the database and the back-end of the application",
 				"Development of some routes and controllers",
 				"Assisting on the frontend and components development",
-				"Propose ideas for the improvement on the backend and frontend",
 			],
 		},
 	},
@@ -463,6 +499,7 @@ const experiences = [
 			english: "Complex Gym",
 		},
 		icon: complex_logo,
+		icon_type: "school",
 		iconBg: "rgba(238, 237, 242)",
 		date: "Feb. 2023 - Mar. 2023",
 		points: {
@@ -470,19 +507,18 @@ const experiences = [
 				"Desarrollo de una SPA responsive utilizando principalmente React JS",
 				"Trabajar con otros desarrolladores para crear un producto que sobrepase los requerimientos del usuario",
 				"Diseñar y elaborar un panel de administrador para uso exclusivo de profesores y dueños",
-				"Participar en reuniones utilizando metodologías ágiles para facilitar la mejora continua en el producto.",
 			],
 			english: [
 				"Develop a responsive SPA primarily using React JS apart from other technologies",
 				"Collaborate with other developers to create a product that exceeds user requirements",
 				"Design and build an exclusive administrator panel for trainers and owners' use",
-				"Participate in meetings using agile methodologies to facilitate continuous improvement in the product.",
 			],
 		},
 	},
 
 	/* Teaching Assistant */
 	{
+		key: 4,
 		title: {
 			spanish: "Asistente de enseñanza / Tutor",
 			english: "Teaching Assistant / Tutor",
@@ -492,52 +528,49 @@ const experiences = [
 			english: "Soy Henry",
 		},
 		icon: henry,
+		icon_type: "school",
 		iconBg: "#ffff01",
-		date: "Jan. 2023 - Apr. 2023",
+		date: "January 2023 - April 2023",
 		points: {
 			spanish: [
 				"Coordinar el grupo de estudiantes con el objetivo de lograr su adaptación al programa",
-				"Orientar a los estudiantes en los primeros pasos de la cursada y resolver sus inquietudes",
-				"Asistir y acompañar en la resolución de ejercicios y promover la colaboración grupal (Pair Programming)",
 				"Proponer ideas para la mejora de los procesos del Bootcamp",
 				"Promover la cohesión grupal y generar comunidad",
 			],
 			english: [
 				"Coordinate a group of new joining students throughout the whole bootcamp experience",
-				"Guide students in the first steps of the course and clarify their doubts",
-				"Provide assistance in solving exercises and encourage group teamwork (Pair Programming)",
 				"Suggest ideas to improve the Bootcamp processes",
 				"Promote collaboration and build community within the students",
 			],
 		},
 	},
-	{
-		title: {
-			spanish: "Estudiante de Desarrollador Full-stack",
-			english: "Full-stack Developer Student",
-		},
-		company_name: {
-			spanish: "Soy Henry",
-			english: "Soy Henry",
-		},
-		icon: henry,
-		iconBg: "#ffff01",
-		date: "Dic. 2022 - Apr. 2023",
-		points: {
-			spanish: [
-				"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",
-				"Conexión del back-end y la base de datos con la api Rawg referente a videojuegos",
-				"Diseño y elaboración del UX y UI",
-				"Presentación formal del proyecto ante los profesores de Henry",
-			],
-			english: [
-				"Building of the database using entity relationship diagrams and PostgreSQL",
-				"Connecting of the back-end and database with the Rawg API for video games",
-				"Designing and developing of the UX and UI",
-				"Formal presentation of the project to Henry",
-			],
-		},
-	},
+	// {
+	// 	title: {
+	// 		spanish: "Estudiante de Desarrollador Full-stack",
+	// 		english: "Full-stack Developer Student",
+	// 	},
+	// 	company_name: {
+	// 		spanish: "Soy Henry",
+	// 		english: "Soy Henry",
+	// 	},
+	// 	icon: henry,
+	// 	iconBg: "#ffff01",
+	// 	date: "Dic. 2022 - Apr. 2023",
+	// 	points: {
+	// 		spanish: [
+	// 			"Armado de la base de datos utilizando diagramas de relación y PostgreSQL",
+	// 			"Conexión del back-end y la base de datos con la api Rawg referente a videojuegos",
+	// 			"Diseño y elaboración del UX y UI",
+	// 			"Presentación formal del proyecto ante los profesores de Henry",
+	// 		],
+	// 		english: [
+	// 			"Building of the database using entity relationship diagrams and PostgreSQL",
+	// 			"Connecting of the back-end and database with the Rawg API for video games",
+	// 			"Designing and developing of the UX and UI",
+	// 			"Formal presentation of the project to Henry",
+	// 		],
+	// 	},
+	// },
 ];
 
 const projects = [
